@@ -184,7 +184,7 @@ class BinaryTree{
                 }
             }
 
-            /*Assigning root_start to root global variable and returning one for successful creation of binary tree */
+            /*Assigning root_start to root global variable and returning one for successful creation of binary tree*/
             root=root_start;
             return true;
         }
