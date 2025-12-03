@@ -1,6 +1,9 @@
 """Python program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure
-and we are going to find the size of binary tree using the recursive approach"""
+and we are going to find the minimum element in binary tree using the recursive approach"""
+
+#Importing infinity from math module
+from math import inf
 
 #Declaring a class to implement the binary tree
 class BinaryTree:
@@ -154,14 +157,14 @@ class BinaryTree:
             self.root=root_start
             return True
 
-        #Member function of class: to find the size of binary tree using recursive approach
-        def size(self, root_add):
-            """Declaring base case for recursion: when binary tree is/becomes empty, in that case we are going
-            to return zero else we are going to return summation of sizes of left and right subtree plus one"""
+        #Member function of class: to find the minimum element in binary tree using recursive approach
+        def minInBinaryTree(self, root_add):
+            """Declaring base case for recursion: when binary tree is/becomes empty, in that case we are going to
+            return inf else we are going to return minimum of values from left and right subtrees and current node"""
             if(not(root_add)):
-                return 0
+                return inf
             else:
-                return self.size(root_add.left)+self.size(root_add.right)+1
+                return min(min(self.minInBinaryTree(root_add.left), self.minInBinaryTree(root_add.right)), root_add.val)
 
 #Declaring object of class BinaryTree
 BT=BinaryTree();
@@ -169,6 +172,6 @@ BT=BinaryTree();
 #Checking whether the binary tree creation failed or not
 if(BT.createBinaryTree()):
     print("Successfully created binary tree!")
-    print(f"The size of binary tree is:{BT.size(BT.root)}")
+    print(f"The minimum element in binary tree is:{BT.minInBinaryTree(BT.root)}")
 else:
     print("Binary tree creation failed!")

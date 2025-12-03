@@ -21,8 +21,8 @@ class BinaryTree:
 
         #Member function of class: to create a new node for the binary tree and returning it
         def createTreeNode(self, data):
-            """Dynamically allocating memory for the new node using malloc function and checking if the memory allocation was
-            successful if it was, then populating the node with the data passed to function and returning it's address"""
+            """Dynamically allocating memory for the new node and checking if the memory allocation was successful
+            if it was, then populating the node with the data passed to function and returning it's address"""
             try:
                 newTreeNode=self.TreeNode(data)
             except:

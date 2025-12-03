@@ -2,10 +2,10 @@
 that means we are going to create a complete binary tree using queue data structure
 and we are going to find the maximum element in binary tree using the recursive approach"""
 
-#Declaring a class to implement the binary tree
+#Importing infinity from math module
 from math import inf
 
-
+#Declaring a class to implement the binary tree
 class BinaryTree:
 
         """Defining some class variables: capacity variable of long long unsigned int type for the capacity of binary tree,
@@ -25,8 +25,8 @@ class BinaryTree:
 
         #Member function of class: to create a new node for the binary tree and returning it
         def createTreeNode(self, data):
-            """Dynamically allocating memory for the new node using malloc function and checking if the memory allocation was
-            successful if it was, then populating the node with the data passed to function and returning it's address"""
+            """Dynamically allocating memory for the new node and checking if the memory allocation was successful
+            if it was, then populating the node with the data passed to function and returning it's address"""
             try:
                 newTreeNode=self.TreeNode(data)
             except:
