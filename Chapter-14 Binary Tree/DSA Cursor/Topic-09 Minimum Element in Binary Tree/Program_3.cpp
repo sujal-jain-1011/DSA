@@ -1,6 +1,6 @@
 /*C++ program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure
-and we are going to find the size of binary tree using iterative approach*/
+and we are going to find the minimum element in binary tree using iterative approach*/
 
 /*Including limits.h header file for using ULLONG_MAX, iostream header file for input and output
 functions, new header file for memory allocation functions and queue for using the queue data structure*/
@@ -191,8 +191,8 @@ class BinaryTree{
             return true;
         }
 
-        /*Member function of class: to find the size of binary tree using iterative approach*/
-        long long unsigned int size(struct TreeNode** root_add)
+        /*Member function of class: to find the minimum element in binary tree using iterative approach*/
+        int minInBinaryTree(struct TreeNode** root_add)
         {
             /*Handling corner case: when binary tree is empty, in that
             case we are going to print Binary tree is empty!" and return*/
@@ -205,18 +205,18 @@ class BinaryTree{
             {
                 /*Declaring queue data structure and, enqueuing root node and NULL into the created
                 circular queue and then iterating the binary tree to traverse all of it's nodes*/
-                long long unsigned int sz=0;
+                int minel=INT_MAX;
                 queue<struct TreeNode*> queLOT;
                 queLOT.push((*root_add)); queLOT.push(nullptr);
                 while(!queLOT.empty())
                 {
-                    /*Getting and removing the front element of the queue, incrementing sz variable
+                    /*Getting and removing the front element of the queue, comparing minel variable
                     and enqueuing it's child nodes into the queue data structure, if it's not NULL*/
                     struct TreeNode* qptr=queLOT.front(); queLOT.pop();
                     if(qptr)
                     {
                         /*Enqueuing child nodes of the current node into queue if they exist*/
-                        sz+=1;
+                        minel=qptr->val<minel?qptr->val:minel;
                         if(qptr->left) queLOT.push(qptr->left);
                         if(qptr->right) queLOT.push(qptr->right);
                     }
@@ -227,8 +227,8 @@ class BinaryTree{
                     }
                 }
 
-                /*Returning sz variable*/
-                return sz;
+                /*Returning minel variable*/
+                return minel;
             }
         }
 };
@@ -243,7 +243,7 @@ int main(void)
     if(BT.createBinaryTree())
     {
         cout<<"Successfully created binary tree!"<<endl;
-        cout<<"The size of binary tree is:"<<BT.size(&(BT.root))<<endl;
+        cout<<"The minimum element in binary tree is:"<<BT.minInBinaryTree(&(BT.root))<<endl;
     }
     else cout<<"Binary tree creation failed!"<<endl;
     return 0;

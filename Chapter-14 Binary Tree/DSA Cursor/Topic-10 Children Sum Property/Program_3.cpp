@@ -1,6 +1,6 @@
 /*C++ program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure
-and we are going to find the size of binary tree using iterative approach*/
+and we are going to check whether children sum property exists in binary tree or not*/
 
 /*Including limits.h header file for using ULLONG_MAX, iostream header file for input and output
 functions, new header file for memory allocation functions and queue for using the queue data structure*/
@@ -191,34 +191,44 @@ class BinaryTree{
             return true;
         }
 
-        /*Member function of class: to find the size of binary tree using iterative approach*/
-        long long unsigned int size(struct TreeNode** root_add)
+        /*Member function of class: to check whether children sum property exists in binary tree or not, that means for
+        all nodes except leaf node the value of current node equals the value of left child plus the value of right child*/
+        bool csp(struct TreeNode** root_add)
         {
             /*Handling corner case: when binary tree is empty, in that
             case we are going to print Binary tree is empty!" and return*/
             if(!(*root_add))
             {
                 cout<<"Binary tree is empty!"<<endl;
-                return 0;
+                return false;
             }
             else
             {
                 /*Declaring queue data structure and, enqueuing root node and NULL into the created
                 circular queue and then iterating the binary tree to traverse all of it's nodes*/
-                long long unsigned int sz=0;
                 queue<struct TreeNode*> queLOT;
                 queLOT.push((*root_add)); queLOT.push(nullptr);
                 while(!queLOT.empty())
                 {
-                    /*Getting and removing the front element of the queue, incrementing sz variable
+                    /*Getting and removing the front element of the queue, checking whether it obeys csp
                     and enqueuing it's child nodes into the queue data structure, if it's not NULL*/
                     struct TreeNode* qptr=queLOT.front(); queLOT.pop();
                     if(qptr)
                     {
-                        /*Enqueuing child nodes of the current node into queue if they exist*/
-                        sz+=1;
-                        if(qptr->left) queLOT.push(qptr->left);
-                        if(qptr->right) queLOT.push(qptr->right);
+                        /*Checking whether the current node obeys children sum property or not
+                        if the current node is a non-leaf node by checking it's child nodes*/
+                        int leftChild=0, rightChild=0;
+
+                        /*Checking whether the current node is a leaf node or not*/
+                        if(qptr->left || qptr->right)
+                        {
+                            /*Enqueuing child nodes of the current node into queue if they exist*/
+                            if(qptr->left) {queLOT.push(qptr->left); leftChild=qptr->left->val;}
+                            if(qptr->right) {queLOT.push(qptr->right); rightChild=qptr->right->val;}
+
+                            /*Checking for csp property*/
+                            if(qptr->val!=(leftChild+rightChild)) return false;
+                        }
                     }
                     else
                     {
@@ -227,8 +237,8 @@ class BinaryTree{
                     }
                 }
 
-                /*Returning sz variable*/
-                return sz;
+                /*Returning one to indicate that csp property is satisfied*/
+                return true;
             }
         }
 };
@@ -243,7 +253,8 @@ int main(void)
     if(BT.createBinaryTree())
     {
         cout<<"Successfully created binary tree!"<<endl;
-        cout<<"The size of binary tree is:"<<BT.size(&(BT.root))<<endl;
+        if(BT.csp(&(BT.root))) cout<<"Children sum property exists in binary tree!"<<endl;
+        else cout<<"Children sum property does not exist in binary tree!"<<endl;
     }
     else cout<<"Binary tree creation failed!"<<endl;
     return 0;

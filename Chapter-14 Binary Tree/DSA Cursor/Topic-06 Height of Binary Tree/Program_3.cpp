@@ -198,7 +198,7 @@ class BinaryTree{
             case we are going to print Binary tree is empty!" and return*/
             if(!(*root_add))
             {
-                printf("Binary tree is empty!\n");
+                cout<<"Binary tree is empty!"<<endl;
                 return 0;
             }
             else
