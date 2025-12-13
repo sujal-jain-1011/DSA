@@ -230,7 +230,6 @@ class BinaryTree{
         }
 };
 
-
 /*Defining main function(driver code)*/
 int main(void)
 {

@@ -1,12 +1,13 @@
 /*C++ program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure
-and print the preorder traversal of binary tree using the depth first search algorithm*/
+and we are going to find the height of binary tree using iterative approach*/
 
-/*Including limits.h header file for using ULLONG_MAX, iostream header file for input
-and output functions and new header file for memory allocation functions*/
+/*Including limits.h header file for using ULLONG_MAX, iostream header file for input and output
+functions, new header file for memory allocation functions and queue for using the queue data structure*/
 #include<limits.h>
 #include<iostream>
 #include<new>
+#include<queue>
 
 /*Using standard namespace*/
 using namespace std;
@@ -190,17 +191,44 @@ class BinaryTree{
             return true;
         }
 
-        /*Member function of class: to print the preorder traversal the binary tree by taking the address of root node*/
-        void preorder(struct TreeNode** root_add)
+        /*Member function of class: to find the height of binary tree using iterative approach*/
+        long long unsigned int height(struct TreeNode** root_add)
         {
-            /*Declaring base case for recursion: when the binary tree is/becomes empty*/
-            if((*root_add))
+            /*Handling corner case: when binary tree is empty, in that
+            case we are going to print Binary tree is empty!" and return*/
+            if(!(*root_add))
             {
-                /*Printing the value of current node to console, calling preorder function
-                recursively for left subtree and then calling it recursively for right subtree*/
-                cout<<(*root_add)->val<<" ";
-                preorder(&((*root_add)->left));
-                preorder(&((*root_add)->right));
+                printf("Binary tree is empty!\n");
+                return 0;
+            }
+            else
+            {
+                /*Declaring queue data structure and, enqueuing root node and NULL into the created
+                circular queue and then iterating the binary tree to traverse all of it's nodes*/
+                long long unsigned int hgt=0;
+                queue<struct TreeNode*> queLOT;
+                queLOT.push((*root_add)); queLOT.push(nullptr);
+                while(!queLOT.empty())
+                {
+                    /*Getting and removing the front element of the queue, incrementing hgt variable
+                    and enqueuing it's child nodes into the queue data structure, if it's not NULL*/
+                    struct TreeNode* qptr=queLOT.front(); queLOT.pop();
+                    if(qptr)
+                    {
+                        /*Enqueuing child nodes of the current node into queue if they exist*/
+                        if(qptr->left) queLOT.push(qptr->left);
+                        if(qptr->right) queLOT.push(qptr->right);
+                    }
+                    else
+                    {
+                        /*Enqueuing NULL into queue to mark the ending of the current level*/
+                        hgt+=1;
+                        if(!queLOT.empty()) queLOT.push(nullptr);
+                    }
+                }
+
+                /*Returning hgt variable*/
+                return hgt;
             }
         }
 };
@@ -215,9 +243,7 @@ int main(void)
     if(BT.createBinaryTree())
     {
         cout<<"Successfully created binary tree!"<<endl;
-        cout<<"The preorder traversal of binary tree is:"<<endl;
-        BT.preorder(&(BT.root));
-        cout<<endl;
+        cout<<"The height of binary tree is:"<<BT.height(&(BT.root))<<endl;
     }
     else cout<<"Binary tree creation failed!"<<endl;
     return 0;
