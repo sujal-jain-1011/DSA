@@ -15,7 +15,7 @@ class BinaryTree{
     
     public:
         /*Defining some class variables: capacity variable of long long unsigned int type for the capacity of binary tree,
-        front ad rear variables of long long unsigned int type for the front and rear indices of the queue, a root pointer to
+        front and rear variables of long long unsigned int type for the front and rear indices of the queue, a root pointer to
         store the address of the root node of the binary tree, a ptr pointer to traverse the binary tree for it's creation
         and a queue pointer to store the address of the first cell that will created to implement the queue data structure*/
         long long unsigned int capacity, front=ULLONG_MAX, rear=ULLONG_MAX;
@@ -129,7 +129,7 @@ class BinaryTree{
             cout<<"Enter the capacity of binary tree:";
             cin>>capacity;
 
-            /*User is instructed to enter the capacity less than LLONG_MAX to avoid wrap around
+            /*User is instructed to enter the capacity less than ULLONG_MAX to avoid wrap around
             otherwise the result will not be as predicted because of the wrap around property,
             writing a basic check but it won't be evaluated because of the wrap around property*/
             if(capacity>ULLONG_MAX || capacity<0)
