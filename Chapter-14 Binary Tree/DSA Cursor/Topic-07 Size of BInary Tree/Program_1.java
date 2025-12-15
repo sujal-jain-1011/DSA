@@ -1,12 +1,9 @@
 /*Java program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure
-and we are going to find the height of binary tree using the iterative approach*/
+and we are going to find the size of binary tree using the recursive approach*/
 
-/*Importing Scanner class from java.util for taking the input from user,
-queue and LinkedList classes to implement queue data structure*/
+/*Importing Scanner class from java.util for taking the input from user*/
 import java.util.Scanner;
-import java.util.Queue;
-import java.util.LinkedList;
 
 /*Declaring a class to implement the binary tree*/
 class BinaryTree{
@@ -186,50 +183,18 @@ class BinaryTree{
         return true;
     }
 
-    /*Member function of class: to find the height of binary tree using iterative approach*/
-    int height(TreeNode root_add)
+    /*Member function of class: to find the size of binary tree using recursive approach*/
+    int size(TreeNode root_add)
     {
-        /*Handling corner case: when binary tree is empty, in that
-        case we are going to print Binary tree is empty!" and return*/
-        if(root_add==null)
-        {
-            System.out.println("Binary tree is empty!");
-            return 0;
-        }
-        else
-        {
-            /*Declaring queue data structure and, enqueuing root node and NULL into the created
-            circular queue and then iterating the binary tree to traverse all of it's nodes*/
-            int hgt=0;
-            Queue<TreeNode> queLOT=new LinkedList<>();
-            queLOT.offer(root_add); queLOT.offer(null);
-            while(!queLOT.isEmpty())
-            {
-                /*Getting and removing the front element of the queue, incrementing hgt variable
-                and enqueuing it's child nodes into the queue data structure, if it's not NULL*/
-                TreeNode qptr=queLOT.poll();
-                if(qptr!=null)
-                {
-                    /*Enqueuing child nodes of the current node into queue if they exist*/
-                    if(qptr.left!=null) queLOT.offer(qptr.left);
-                    if(qptr.right!=null) queLOT.offer(qptr.right);
-                }
-                else
-                {
-                    /*Enqueuing NULL into queue to mark the ending of the current level*/
-                    hgt+=1;
-                    if(!queLOT.isEmpty()) queLOT.offer(null);
-                }
-            }
-
-            /*Returning hgt variable*/
-            return hgt;
-        }
+        /*Declaring base case for recursion: when binary tree is/becomes empty, in that case we are going
+        to return zero else we are going to return summation of sizes of left and right subtree plus one*/
+        if(root_add==null) return 0;
+        else return size(root_add.left)+size(root_add.right)+1;
     }
 };
 
 /*Defining Program_1 class(driver code)*/
-public class Program_2
+public class Program_1
 {
     /*Defining main function*/
     public static void main(String[] args)
@@ -241,7 +206,7 @@ public class Program_2
         if(BT.createBinaryTree())
         {
             System.out.println("Successfully created binary tree!");
-            System.out.println("The height of binary tree is:"+BT.height(BT.root));
+            System.out.println("The size of binary tree is:"+BT.size(BT.root));
         }
         else
         System.out.println("Binary tree creation failed!");

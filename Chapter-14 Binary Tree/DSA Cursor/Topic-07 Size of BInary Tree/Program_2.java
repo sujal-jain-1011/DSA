@@ -1,6 +1,6 @@
 /*Java program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure
-and we are going to find the height of binary tree using the iterative approach*/
+and we are going to find the size of binary tree using the iterative approach*/
 
 /*Importing Scanner class from java.util for taking the input from user,
 queue and LinkedList classes to implement queue data structure*/
@@ -186,8 +186,8 @@ class BinaryTree{
         return true;
     }
 
-    /*Member function of class: to find the height of binary tree using iterative approach*/
-    int height(TreeNode root_add)
+    /*Member function of class: to find the size of binary tree using iterative approach*/
+    int size(TreeNode root_add)
     {
         /*Handling corner case: when binary tree is empty, in that
         case we are going to print Binary tree is empty!" and return*/
@@ -200,30 +200,30 @@ class BinaryTree{
         {
             /*Declaring queue data structure and, enqueuing root node and NULL into the created
             circular queue and then iterating the binary tree to traverse all of it's nodes*/
-            int hgt=0;
+            int sz=0;
             Queue<TreeNode> queLOT=new LinkedList<>();
             queLOT.offer(root_add); queLOT.offer(null);
             while(!queLOT.isEmpty())
             {
-                /*Getting and removing the front element of the queue, incrementing hgt variable
+                /*Getting and removing the front element of the queue, incrementing sz variable
                 and enqueuing it's child nodes into the queue data structure, if it's not NULL*/
                 TreeNode qptr=queLOT.poll();
                 if(qptr!=null)
                 {
                     /*Enqueuing child nodes of the current node into queue if they exist*/
+                    sz+=1;
                     if(qptr.left!=null) queLOT.offer(qptr.left);
                     if(qptr.right!=null) queLOT.offer(qptr.right);
                 }
                 else
                 {
                     /*Enqueuing NULL into queue to mark the ending of the current level*/
-                    hgt+=1;
                     if(!queLOT.isEmpty()) queLOT.offer(null);
                 }
             }
 
-            /*Returning hgt variable*/
-            return hgt;
+            /*Returning sz variable*/
+            return sz;
         }
     }
 };
@@ -241,7 +241,7 @@ public class Program_2
         if(BT.createBinaryTree())
         {
             System.out.println("Successfully created binary tree!");
-            System.out.println("The height of binary tree is:"+BT.height(BT.root));
+            System.out.println("The size of binary tree is:"+BT.size(BT.root));
         }
         else
         System.out.println("Binary tree creation failed!");
