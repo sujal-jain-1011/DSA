@@ -27,7 +27,6 @@ class BinaryTree{
     TreeNode ptr; 
     TreeNode []que;
 
-
     /*Member function of class: to create a new node for the binary tree and returning it*/
     TreeNode createTreeNode(int data)
     {

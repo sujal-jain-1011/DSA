@@ -231,6 +231,22 @@ class BinaryTree{
                 return minel;
             }
         }
+
+        /*Member function of class: to deallocate the space allocated to binary tree in order to avoid memory
+        leakages, for that we are going to do the postorder traversal of binary tree in order to deallocate
+        memory to binary tree, so that we don't loose the address or reference of the child nodes*/
+        void freeBinaryTree(struct TreeNode** root_add)
+        {
+            /*Declaring base case for recursion: when binary tree is/becomes empty*/
+            if((*root_add))
+            {
+                /*Calling freeBinaryTree function recursively for left and right subtrees
+                of the current node and then deallocating memory to current node of tree*/
+                freeBinaryTree(&((*root_add)->left));
+                freeBinaryTree(&((*root_add)->right));
+                delete (*root_add);
+            }
+        }
 };
 
 /*Defining main function(driver code)*/
@@ -244,6 +260,11 @@ int main(void)
     {
         cout<<"Successfully created binary tree!"<<endl;
         cout<<"The minimum element in binary tree is:"<<BT.minInBinaryTree(&(BT.root))<<endl;
+
+        /*Deallocating memory to created binary tree and
+        the queue used for creating the binary tree*/
+        BT.freeBinaryTree(&(BT.root));
+        delete BT.que;
     }
     else cout<<"Binary tree creation failed!"<<endl;
     return 0;

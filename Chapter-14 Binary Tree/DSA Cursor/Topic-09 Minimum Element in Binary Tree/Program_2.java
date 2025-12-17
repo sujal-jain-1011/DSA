@@ -3,7 +3,7 @@ that means we are going to create a complete binary tree using queue data struct
 and we are going to find the minimum element in binary tree using the iterative approach*/
 
 /*Importing Scanner class from java.util for taking the input from user,
-queue and LinkedList classes to implement queue data structure*/
+queue and LinkedList class to implement queue data structure*/
 import java.util.Scanner;
 import java.util.Queue;
 import java.util.LinkedList;
@@ -29,7 +29,6 @@ class BinaryTree{
     TreeNode root;
     TreeNode ptr; 
     TreeNode []que;
-
 
     /*Member function of class: to create a new node for the binary tree and returning it*/
     TreeNode createTreeNode(int data)

@@ -255,6 +255,22 @@ struct TreeNode* createBT()
     return new_root;
 }
 
+/*Function to deallocate the space allocated to binary tree in order to avoid memory leakages,
+for that we are going to do the postorder traversal of binary tree in order to deallocate
+memory to binary tree, so that we don't loose the address or reference of the child nodes*/
+void freeBinaryTree(struct TreeNode** root_add)
+{
+    /*Declaring base case for recursion: when binary tree is/becomes empty*/
+    if((*root_add))
+    {
+        /*Calling freeBinaryTree function recursively for left and right subtrees
+        of the current node and then deallocating memory to current node of tree*/
+        freeBinaryTree(&((*root_add)->left));
+        freeBinaryTree(&((*root_add)->right));
+        free(*root_add);
+    }
+}
+
 /*Defining main function(driver code)*/
 int main(void)
 {
@@ -268,5 +284,10 @@ int main(void)
     printf("The preorder traversal of the binary tree is:\n");
     preorder(&root);
     printf("\n");
+
+    /*Deallocating memory to created binary tree and
+    the queue used for creating the binary tree*/
+    freeBinaryTree(&root);
+    free(que);
     return 0;
 }

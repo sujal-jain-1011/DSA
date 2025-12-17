@@ -190,9 +190,6 @@ class BinaryTree:
                         if(bool(queLOT)):
                             queLOT.append(None)
 
-                #Returning one to indicate that csp property is satisfied
-                return True
-
 #Declaring object of class BinaryTree
 BT=BinaryTree();
 
