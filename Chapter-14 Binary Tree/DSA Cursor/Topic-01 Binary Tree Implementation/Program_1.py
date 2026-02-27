@@ -4,10 +4,10 @@ that means we are going to create a complete binary tree using queue data struct
 #Declaring a class to implement the binary tree
 class BinaryTree:
 
-        """Defining some class variables: capacity variable of long long unsigned int type for the capacity of binary tree,
-        front and rear variables of long long unsigned int type for the front and rear indices of the queue, a root pointer to
+        """Defining some class variables: capacity variable of eq. to long long unsigned int type for the capacity of binary tree,
+        front and rear variables of eq. to long long signed int type for the front and rear indices of the queue, a root pointer to
         store the address of the root node of the binary tree, a ptr pointer to traverse the binary tree for it's creation
-        and a queue pointer to store the address of the first cell that will created to implement the queue data structure"""
+        and a queue pointer to store the address of the first cell that will be created to implement the queue data structure"""
         def __init__(self):
             self.capacity, self.front, self.rear=0, -1, -1
             self.root, self.ptr, self.que=None, None, None
@@ -32,8 +32,8 @@ class BinaryTree:
             #Returning the newly created node
             return newTreeNode;
 
-        """Member function of class: to implement circular queue data structure that will be used to create a complete
-        binary tree this function is going to take no arguments since we can directly access the capacity global variable"""
+        """Member function of class: to implement circular queue data structure that will be used to create a complete binary
+        tree this function is going to take no arguments since we can directly access the capacity global/class variable"""
         def implementCircularQueue(self):
             """Allocating memory dynamically to create an array for implementing circular queue
             data structure and checking if the memory allocation was successful or not"""
@@ -143,17 +143,17 @@ class BinaryTree:
                     self.enqueue(left_child);
                 #Checking for insertion in right child pointer
                 if(iter<self.capacity and not(currentTreeNode.right)):
-                    #Creating new TreeNode for left child pointer and inserting into queue
+                    #Creating new TreeNode for right child pointer and inserting into queue
                     right_child=self.createTreeNode(arr[iter])
                     iter+=1
                     currentTreeNode.right=right_child
                     self.enqueue(right_child)
 
-            #Assigning root_start to root global variable and returning one for successful creation of binary tree
+            #Assigning root_start to root global/class variable and returning one/true for successful creation of binary tree
             self.root=root_start
             return True
 
-        #Member function of class: to print the preorder traversal the binary tree by taking the root node
+        #Member function of class: to print the preorder traversal of the binary tree by taking the root node
         def preorder(self, root_add):
             #Declaring base case for recursion: when the binary tree is/becomes empty
             if(root_add):
