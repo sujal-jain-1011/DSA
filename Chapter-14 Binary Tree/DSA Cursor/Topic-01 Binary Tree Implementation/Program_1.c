@@ -170,7 +170,7 @@ short unsigned int createBinaryTree()
         /*Checking for insertion in right child pointer*/
         if(iter<capacity && !currentTreeNode->right)
         {
-            /*Creating new TreeNode for left child pointer and inserting into queue*/
+            /*Creating new TreeNode for right child pointer and inserting into queue*/
             struct TreeNode* right_child=createTreeNode(arr[iter++]);
             currentTreeNode->right=right_child;
             enqueue(right_child);
