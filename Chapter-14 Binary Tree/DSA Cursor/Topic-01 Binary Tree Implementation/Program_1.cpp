@@ -17,7 +17,7 @@ class BinaryTree{
         /*Defining some class variables: capacity variable of long long unsigned int type for the capacity of binary tree,
         front and rear variables of long long unsigned int type for the front and rear indices of the queue, a root pointer to
         store the address of the root node of the binary tree, a ptr pointer to traverse the binary tree for it's creation
-        and a queue pointer to store the address of the first cell that will created to implement the queue data structure*/
+        and a queue pointer to store the address of the first cell that will be created to implement the queue data structure*/
         long long unsigned int capacity, front=ULLONG_MAX, rear=ULLONG_MAX;
 
         /*Defining a structure for binary tree node that contains data, left and right child pointers
@@ -28,15 +28,15 @@ class BinaryTree{
             struct TreeNode* right;
         };
         struct TreeNode* root;
-        struct TreeNode* ptr; 
+        struct TreeNode* ptr;
         struct TreeNode** que;
 
         /*Member function of class: to create a new node for the binary tree and returning it*/
         struct TreeNode* createTreeNode(int data)
         {
             
-            /*Dynamically allocating memory for the new node using malloc function and checking if the memory allocation was
-            successful if it was, then populating the node with the data passed to function and returning it's address*/
+            /*Dynamically allocating memory for the new node using new (eq. to malloc function) and checking if the memory alloca-
+            tion was successful if it was, then populating the node with the data passed to function and returning it's address*/
             struct TreeNode* newTreeNode=new(nothrow) struct TreeNode;
             if(newTreeNode==nullptr)
             {
@@ -54,8 +54,8 @@ class BinaryTree{
             return newTreeNode;
         }
 
-        /*Member function of class: to implement circular queue data structure that will be used to create a complete
-        binary tree this function is going to take no arguments since we can directly access the capacity global variable*/
+        /*Member function of class: to implement circular queue data structure that will be used to create a complete binary
+        tree this function is going to take no arguments since we can directly access the capacity global/class variable*/
         bool implementCircularQueue()
         {
             /*Allocating memory dynamically to create an array for implementing circular queue
@@ -176,19 +176,19 @@ class BinaryTree{
                 /*Checking for insertion in right child pointer*/
                 if(iter<capacity && !currentTreeNode->right)
                 {
-                    /*Creating new TreeNode for left child pointer and inserting into queue*/
+                    /*Creating new TreeNode for right child pointer and inserting into queue*/
                     struct TreeNode* right_child=createTreeNode(arr[iter++]);
                     currentTreeNode->right=right_child;
                     enqueue(right_child);
                 }
             }
 
-            /*Assigning root_start to root global variable and returning one for successful creation of binary tree*/
+            /*Assigning root_start to root global/class variable and returning one/true for successful creation of binary tree*/
             root=root_start;
             return true;
         }
 
-        /*Member function of class: to print the preorder traversal the binary tree by taking the address of root node*/
+        /*Member function of class: to print the preorder traversal of the binary tree by taking the address of root node*/
         void preorder(struct TreeNode** root_add)
         {
             /*Declaring base case for recursion: when the binary tree is/becomes empty*/
