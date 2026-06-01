@@ -1,10 +1,10 @@
 /*C++ program to implement a binary tree by allocating memory dynamically from the heap,
 that means we are going to create a complete binary tree using queue data structure*/
 
-/*Including limits.h header file for using ULLONG_MAX, iostream header file for input
-and output functions and new header file for memory allocation functions*/
-#include<limits.h>
+/*Including iostream header file for input and output functions, limits.h header
+file for using ULLONG_MAX and new header file for memory allocation functions*/
 #include<iostream>
+#include<limits.h>
 #include<new>
 
 /*Using standard namespace*/
@@ -30,7 +30,6 @@ class BinaryTree{
         struct TreeNode* root;
         struct TreeNode* ptr; 
         struct TreeNode** que;
-
 
         /*Member function of class: to create a new node for the binary tree and returning it*/
         struct TreeNode* createTreeNode(int data)
@@ -237,7 +236,7 @@ int main(void)
         /*Deallocating memory to created binary tree and
         the queue used for creating the binary tree*/
         BT.freeBinaryTree(&(BT.root));
-        delete BT.que;
+        delete[] BT.que;
     }
     else cout<<"Binary tree creation failed!"<<endl;
     return 0;

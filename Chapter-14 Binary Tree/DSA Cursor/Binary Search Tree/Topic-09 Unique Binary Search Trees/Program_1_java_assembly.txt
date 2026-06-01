@@ -1,0 +1,200 @@
+Classfile /home/sujal/Documents/DSA/Chapter-14 Binary Tree/DSA Cursor/Binary Search Tree/Topic-09 Unique Binary Search Trees/Program_1.class
+  Last modified Apr 11, 2026; size 1613 bytes
+  SHA-256 checksum 378d1b622462adbd53f32599922e9778d8f8a15725511f1f2403b3e77975525e
+  Compiled from "Program_1.java"
+public class Program_1
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #68                         // Program_1
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // BinarySearchTree
+   #8 = Utf8               BinarySearchTree
+   #9 = Methodref          #7.#3          // BinarySearchTree."<init>":()V
+  #10 = Class              #11            // java/util/Scanner
+  #11 = Utf8               java/util/Scanner
+  #12 = Fieldref           #13.#14        // java/lang/System.in:Ljava/io/InputStream;
+  #13 = Class              #15            // java/lang/System
+  #14 = NameAndType        #16:#17        // in:Ljava/io/InputStream;
+  #15 = Utf8               java/lang/System
+  #16 = Utf8               in
+  #17 = Utf8               Ljava/io/InputStream;
+  #18 = Methodref          #10.#19        // java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  #19 = NameAndType        #5:#20         // "<init>":(Ljava/io/InputStream;)V
+  #20 = Utf8               (Ljava/io/InputStream;)V
+  #21 = Fieldref           #13.#22        // java/lang/System.out:Ljava/io/PrintStream;
+  #22 = NameAndType        #23:#24        // out:Ljava/io/PrintStream;
+  #23 = Utf8               out
+  #24 = Utf8               Ljava/io/PrintStream;
+  #25 = String             #26            // Enter the number of nodes in binary search tree:
+  #26 = Utf8               Enter the number of nodes in binary search tree:
+  #27 = Methodref          #28.#29        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #28 = Class              #30            // java/io/PrintStream
+  #29 = NameAndType        #31:#32        // print:(Ljava/lang/String;)V
+  #30 = Utf8               java/io/PrintStream
+  #31 = Utf8               print
+  #32 = Utf8               (Ljava/lang/String;)V
+  #33 = Methodref          #10.#34        // java/util/Scanner.nextInt:()I
+  #34 = NameAndType        #35:#36        // nextInt:()I
+  #35 = Utf8               nextInt
+  #36 = Utf8               ()I
+  #37 = Class              #38            // java/util/ArrayList
+  #38 = Utf8               java/util/ArrayList
+  #39 = Methodref          #7.#40         // BinarySearchTree.createUniqueBST:(I)Ljava/util/List;
+  #40 = NameAndType        #41:#42        // createUniqueBST:(I)Ljava/util/List;
+  #41 = Utf8               createUniqueBST
+  #42 = Utf8               (I)Ljava/util/List;
+  #43 = Methodref          #37.#44        // java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+  #44 = NameAndType        #5:#45         // "<init>":(Ljava/util/Collection;)V
+  #45 = Utf8               (Ljava/util/Collection;)V
+  #46 = InterfaceMethodref #47.#48        // java/util/List.size:()I
+  #47 = Class              #49            // java/util/List
+  #48 = NameAndType        #50:#36        // size:()I
+  #49 = Utf8               java/util/List
+  #50 = Utf8               size
+  #51 = InvokeDynamic      #0:#52         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #52 = NameAndType        #53:#54        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #53 = Utf8               makeConcatWithConstants
+  #54 = Utf8               (I)Ljava/lang/String;
+  #55 = InterfaceMethodref #47.#56        // java/util/List.get:(I)Ljava/lang/Object;
+  #56 = NameAndType        #57:#58        // get:(I)Ljava/lang/Object;
+  #57 = Utf8               get
+  #58 = Utf8               (I)Ljava/lang/Object;
+  #59 = Class              #60            // BinarySearchTree$TreeNode
+  #60 = Utf8               BinarySearchTree$TreeNode
+  #61 = Methodref          #7.#62         // BinarySearchTree.preorder:(LBinarySearchTree$TreeNode;)V
+  #62 = NameAndType        #63:#64        // preorder:(LBinarySearchTree$TreeNode;)V
+  #63 = Utf8               preorder
+  #64 = Utf8               (LBinarySearchTree$TreeNode;)V
+  #65 = Methodref          #28.#66        // java/io/PrintStream.println:()V
+  #66 = NameAndType        #67:#6         // println:()V
+  #67 = Utf8               println
+  #68 = Class              #69            // Program_1
+  #69 = Utf8               Program_1
+  #70 = Utf8               Code
+  #71 = Utf8               LineNumberTable
+  #72 = Utf8               main
+  #73 = Utf8               ([Ljava/lang/String;)V
+  #74 = Utf8               StackMapTable
+  #75 = Class              #76            // "[Ljava/lang/String;"
+  #76 = Utf8               [Ljava/lang/String;
+  #77 = Utf8               SourceFile
+  #78 = Utf8               Program_1.java
+  #79 = Utf8               BootstrapMethods
+  #80 = String             #81            // Preorder traversal of binary search tree \u0001 is:
+  #81 = Utf8               Preorder traversal of binary search tree \u0001 is:
+  #82 = MethodHandle       6:#83          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #83 = Methodref          #84.#85        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #84 = Class              #86            // java/lang/invoke/StringConcatFactory
+  #85 = NameAndType        #53:#87        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #86 = Utf8               java/lang/invoke/StringConcatFactory
+  #87 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #88 = Utf8               InnerClasses
+  #89 = Utf8               TreeNode
+  #90 = Class              #91            // java/lang/invoke/MethodHandles$Lookup
+  #91 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #92 = Class              #93            // java/lang/invoke/MethodHandles
+  #93 = Utf8               java/lang/invoke/MethodHandles
+  #94 = Utf8               Lookup
+{
+  public Program_1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 250: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=8, args_size=1
+         0: new           #7                  // class BinarySearchTree
+         3: dup
+         4: invokespecial #9                  // Method BinarySearchTree."<init>":()V
+         7: astore_1
+         8: new           #10                 // class java/util/Scanner
+        11: dup
+        12: getstatic     #12                 // Field java/lang/System.in:Ljava/io/InputStream;
+        15: invokespecial #18                 // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+        18: astore_2
+        19: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        22: ldc           #25                 // String Enter the number of nodes in binary search tree:
+        24: invokevirtual #27                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        27: aload_2
+        28: invokevirtual #33                 // Method java/util/Scanner.nextInt:()I
+        31: istore_3
+        32: new           #37                 // class java/util/ArrayList
+        35: dup
+        36: aload_1
+        37: iload_3
+        38: invokevirtual #39                 // Method BinarySearchTree.createUniqueBST:(I)Ljava/util/List;
+        41: invokespecial #43                 // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+        44: astore        4
+        46: aload         4
+        48: invokeinterface #46,  1           // InterfaceMethod java/util/List.size:()I
+        53: istore        5
+        55: iconst_0
+        56: istore        6
+        58: iload         6
+        60: iload         5
+        62: if_icmpge     112
+        65: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        68: iload         6
+        70: iconst_1
+        71: iadd
+        72: invokedynamic #51,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        77: invokevirtual #27                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        80: aload         4
+        82: iload         6
+        84: invokeinterface #55,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        89: checkcast     #59                 // class BinarySearchTree$TreeNode
+        92: astore        7
+        94: aload_1
+        95: aload         7
+        97: invokevirtual #61                 // Method BinarySearchTree.preorder:(LBinarySearchTree$TreeNode;)V
+       100: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       103: invokevirtual #65                 // Method java/io/PrintStream.println:()V
+       106: iinc          6, 1
+       109: goto          58
+       112: return
+      LineNumberTable:
+        line 256: 0
+        line 260: 8
+        line 261: 19
+        line 262: 32
+        line 265: 46
+        line 266: 55
+        line 269: 65
+        line 270: 80
+        line 271: 94
+        line 266: 106
+        line 273: 112
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 58
+          locals = [ class "[Ljava/lang/String;", class BinarySearchTree, class java/util/Scanner, int, class java/util/List, int, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 53
+}
+SourceFile: "Program_1.java"
+BootstrapMethods:
+  0: #82 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #80 Preorder traversal of binary search tree \u0001 is:
+InnerClasses:
+  #89= #59 of #7;                         // TreeNode=class BinarySearchTree$TreeNode of class BinarySearchTree
+  public static final #94= #90 of #92;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

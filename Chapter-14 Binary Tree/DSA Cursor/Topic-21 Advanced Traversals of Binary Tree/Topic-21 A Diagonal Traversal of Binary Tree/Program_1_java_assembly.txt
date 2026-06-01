@@ -1,0 +1,269 @@
+Classfile /home/sujal/Documents/DSA/Chapter-14 Binary Tree/DSA Cursor/Topic-21 Advanced Traversals of Binary Tree/Topic-21 A Diagonal Traversal of Binary Tree/Program_1.class
+  Last modified Apr 18, 2026; size 1992 bytes
+  SHA-256 checksum af18a18068f8aa9e08854c98ef52c0dc961976c4da1ccd654420bda5b9342d18
+  Compiled from "Program_1.java"
+public class Program_1
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #100                        // Program_1
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Class              #8            // BinaryTree
+    #8 = Utf8               BinaryTree
+    #9 = Methodref          #7.#3         // BinaryTree."<init>":()V
+   #10 = Methodref          #7.#11        // BinaryTree.createBinaryTree:()Z
+   #11 = NameAndType        #12:#13       // createBinaryTree:()Z
+   #12 = Utf8               createBinaryTree
+   #13 = Utf8               ()Z
+   #14 = Fieldref           #15.#16       // java/lang/System.out:Ljava/io/PrintStream;
+   #15 = Class              #17           // java/lang/System
+   #16 = NameAndType        #18:#19       // out:Ljava/io/PrintStream;
+   #17 = Utf8               java/lang/System
+   #18 = Utf8               out
+   #19 = Utf8               Ljava/io/PrintStream;
+   #20 = String             #21           // Successfully created binary tree!
+   #21 = Utf8               Successfully created binary tree!
+   #22 = Methodref          #23.#24       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #23 = Class              #25           // java/io/PrintStream
+   #24 = NameAndType        #26:#27       // println:(Ljava/lang/String;)V
+   #25 = Utf8               java/io/PrintStream
+   #26 = Utf8               println
+   #27 = Utf8               (Ljava/lang/String;)V
+   #28 = String             #29           // The preorder traversal of binary tree is:
+   #29 = Utf8               The preorder traversal of binary tree is:
+   #30 = Fieldref           #7.#31        // BinaryTree.root:LBinaryTree$TreeNode;
+   #31 = NameAndType        #32:#33       // root:LBinaryTree$TreeNode;
+   #32 = Utf8               root
+   #33 = Utf8               LBinaryTree$TreeNode;
+   #34 = Methodref          #7.#35        // BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+   #35 = NameAndType        #36:#37       // preorder:(LBinaryTree$TreeNode;)V
+   #36 = Utf8               preorder
+   #37 = Utf8               (LBinaryTree$TreeNode;)V
+   #38 = Methodref          #23.#39       // java/io/PrintStream.println:()V
+   #39 = NameAndType        #26:#6        // println:()V
+   #40 = Class              #41           // java/util/TreeMap
+   #41 = Utf8               java/util/TreeMap
+   #42 = Methodref          #40.#3        // java/util/TreeMap."<init>":()V
+   #43 = Methodref          #7.#44        // BinaryTree.populateMap:(LBinaryTree$TreeNode;Ljava/util/Map;I)V
+   #44 = NameAndType        #45:#46       // populateMap:(LBinaryTree$TreeNode;Ljava/util/Map;I)V
+   #45 = Utf8               populateMap
+   #46 = Utf8               (LBinaryTree$TreeNode;Ljava/util/Map;I)V
+   #47 = String             #48           // The diagonal order traversal of binary tree is:
+   #48 = Utf8               The diagonal order traversal of binary tree is:
+   #49 = InterfaceMethodref #50.#51       // java/util/Map.entrySet:()Ljava/util/Set;
+   #50 = Class              #52           // java/util/Map
+   #51 = NameAndType        #53:#54       // entrySet:()Ljava/util/Set;
+   #52 = Utf8               java/util/Map
+   #53 = Utf8               entrySet
+   #54 = Utf8               ()Ljava/util/Set;
+   #55 = InterfaceMethodref #56.#57       // java/util/Set.iterator:()Ljava/util/Iterator;
+   #56 = Class              #58           // java/util/Set
+   #57 = NameAndType        #59:#60       // iterator:()Ljava/util/Iterator;
+   #58 = Utf8               java/util/Set
+   #59 = Utf8               iterator
+   #60 = Utf8               ()Ljava/util/Iterator;
+   #61 = InterfaceMethodref #62.#63       // java/util/Iterator.hasNext:()Z
+   #62 = Class              #64           // java/util/Iterator
+   #63 = NameAndType        #65:#13       // hasNext:()Z
+   #64 = Utf8               java/util/Iterator
+   #65 = Utf8               hasNext
+   #66 = InterfaceMethodref #62.#67       // java/util/Iterator.next:()Ljava/lang/Object;
+   #67 = NameAndType        #68:#69       // next:()Ljava/lang/Object;
+   #68 = Utf8               next
+   #69 = Utf8               ()Ljava/lang/Object;
+   #70 = Class              #71           // java/util/Map$Entry
+   #71 = Utf8               java/util/Map$Entry
+   #72 = InterfaceMethodref #70.#73       // java/util/Map$Entry.getValue:()Ljava/lang/Object;
+   #73 = NameAndType        #74:#69       // getValue:()Ljava/lang/Object;
+   #74 = Utf8               getValue
+   #75 = Class              #76           // java/util/List
+   #76 = Utf8               java/util/List
+   #77 = InterfaceMethodref #75.#78       // java/util/List.size:()I
+   #78 = NameAndType        #79:#80       // size:()I
+   #79 = Utf8               size
+   #80 = Utf8               ()I
+   #81 = InterfaceMethodref #75.#82       // java/util/List.get:(I)Ljava/lang/Object;
+   #82 = NameAndType        #83:#84       // get:(I)Ljava/lang/Object;
+   #83 = Utf8               get
+   #84 = Utf8               (I)Ljava/lang/Object;
+   #85 = Class              #86           // BinaryTree$TreeNode
+   #86 = Utf8               BinaryTree$TreeNode
+   #87 = Fieldref           #85.#88       // BinaryTree$TreeNode.val:I
+   #88 = NameAndType        #89:#90       // val:I
+   #89 = Utf8               val
+   #90 = Utf8               I
+   #91 = InvokeDynamic      #0:#92        // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+   #92 = NameAndType        #93:#94       // makeConcatWithConstants:(I)Ljava/lang/String;
+   #93 = Utf8               makeConcatWithConstants
+   #94 = Utf8               (I)Ljava/lang/String;
+   #95 = Methodref          #23.#96       // java/io/PrintStream.print:(Ljava/lang/String;)V
+   #96 = NameAndType        #97:#27       // print:(Ljava/lang/String;)V
+   #97 = Utf8               print
+   #98 = String             #99           // Binary tree creation failed!
+   #99 = Utf8               Binary tree creation failed!
+  #100 = Class              #101          // Program_1
+  #101 = Utf8               Program_1
+  #102 = Utf8               Code
+  #103 = Utf8               LineNumberTable
+  #104 = Utf8               main
+  #105 = Utf8               ([Ljava/lang/String;)V
+  #106 = Utf8               StackMapTable
+  #107 = Utf8               SourceFile
+  #108 = Utf8               Program_1.java
+  #109 = Utf8               BootstrapMethods
+  #110 = String             #111          // \u0001
+  #111 = Utf8               \u0001
+  #112 = MethodHandle       6:#113        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #113 = Methodref          #114.#115     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #114 = Class              #116          // java/lang/invoke/StringConcatFactory
+  #115 = NameAndType        #93:#117      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #116 = Utf8               java/lang/invoke/StringConcatFactory
+  #117 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #118 = Utf8               InnerClasses
+  #119 = Utf8               TreeNode
+  #120 = Utf8               Entry
+  #121 = Class              #122          // java/lang/invoke/MethodHandles$Lookup
+  #122 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #123 = Class              #124          // java/lang/invoke/MethodHandles
+  #124 = Utf8               java/lang/invoke/MethodHandles
+  #125 = Utf8               Lookup
+{
+  public Program_1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 221: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=7, args_size=1
+         0: new           #7                  // class BinaryTree
+         3: dup
+         4: invokespecial #9                  // Method BinaryTree."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #10                 // Method BinaryTree.createBinaryTree:()Z
+        12: ifeq          182
+        15: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        18: ldc           #20                 // String Successfully created binary tree!
+        20: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        23: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: ldc           #28                 // String The preorder traversal of binary tree is:
+        28: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        31: aload_1
+        32: aload_1
+        33: getfield      #30                 // Field BinaryTree.root:LBinaryTree$TreeNode;
+        36: invokevirtual #34                 // Method BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+        39: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        42: invokevirtual #38                 // Method java/io/PrintStream.println:()V
+        45: new           #40                 // class java/util/TreeMap
+        48: dup
+        49: invokespecial #42                 // Method java/util/TreeMap."<init>":()V
+        52: astore_2
+        53: aload_1
+        54: aload_1
+        55: getfield      #30                 // Field BinaryTree.root:LBinaryTree$TreeNode;
+        58: aload_2
+        59: iconst_0
+        60: invokevirtual #43                 // Method BinaryTree.populateMap:(LBinaryTree$TreeNode;Ljava/util/Map;I)V
+        63: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        66: ldc           #47                 // String The diagonal order traversal of binary tree is:
+        68: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        71: aload_2
+        72: invokeinterface #49,  1           // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+        77: invokeinterface #55,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        82: astore_3
+        83: aload_3
+        84: invokeinterface #61,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        89: ifeq          173
+        92: aload_3
+        93: invokeinterface #66,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        98: checkcast     #70                 // class java/util/Map$Entry
+       101: astore        4
+       103: aload         4
+       105: invokeinterface #72,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+       110: checkcast     #75                 // class java/util/List
+       113: invokeinterface #77,  1           // InterfaceMethod java/util/List.size:()I
+       118: istore        5
+       120: iconst_0
+       121: istore        6
+       123: iload         6
+       125: iload         5
+       127: if_icmpge     170
+       130: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       133: aload         4
+       135: invokeinterface #72,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+       140: checkcast     #75                 // class java/util/List
+       143: iload         6
+       145: invokeinterface #81,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+       150: checkcast     #85                 // class BinaryTree$TreeNode
+       153: getfield      #87                 // Field BinaryTree$TreeNode.val:I
+       156: invokedynamic #91,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+       161: invokevirtual #95                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+       164: iinc          6, 1
+       167: goto          123
+       170: goto          83
+       173: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       176: invokevirtual #38                 // Method java/io/PrintStream.println:()V
+       179: goto          190
+       182: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       185: ldc           #98                 // String Binary tree creation failed!
+       187: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       190: return
+      LineNumberTable:
+        line 227: 0
+        line 230: 8
+        line 232: 15
+        line 233: 23
+        line 234: 31
+        line 235: 39
+        line 240: 45
+        line 241: 53
+        line 244: 63
+        line 247: 71
+        line 250: 103
+        line 251: 120
+        line 252: 170
+        line 253: 173
+        line 254: 179
+        line 256: 182
+        line 257: 190
+      StackMapTable: number_of_entries = 6
+        frame_type = 254 /* append */
+          offset_delta = 83
+          locals = [ class BinaryTree, class java/util/Map, class java/util/Iterator ]
+        frame_type = 254 /* append */
+          offset_delta = 39
+          locals = [ class java/util/Map$Entry, int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 46
+        frame_type = 250 /* chop */
+          offset_delta = 2
+        frame_type = 250 /* chop */
+          offset_delta = 8
+        frame_type = 7 /* same */
+}
+SourceFile: "Program_1.java"
+BootstrapMethods:
+  0: #112 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #110 \u0001
+InnerClasses:
+  #119= #85 of #7;                        // TreeNode=class BinaryTree$TreeNode of class BinaryTree
+  public static #120= #70 of #50;         // Entry=class java/util/Map$Entry of class java/util/Map
+  public static final #125= #121 of #123; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

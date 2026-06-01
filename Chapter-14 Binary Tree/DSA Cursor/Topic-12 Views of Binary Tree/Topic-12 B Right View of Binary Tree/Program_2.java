@@ -2,12 +2,12 @@
 that means we are going to create a complete binary tree using queue data structure
 and we are going to print the right view of the binary tree using iterative approach*/
 
-/*Importing Scanner class from java.util for taking the input from user, queue, LinkedList
-class to implement queue data structure and ArrayList class to use dynamic arrays*/
-import java.util.Scanner;
-import java.util.Queue;
-import java.util.LinkedList;
+/*Importing ArrayList class to use dynamic arrays, LinkedList class to implement Queue class, Queue
+class to use queue data structure, Scanner class for taking the input from user from java.util*/
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 /*Declaring a class to implement the binary tree*/
 class BinaryTree{
@@ -190,7 +190,7 @@ class BinaryTree{
     void rightView(TreeNode root_add)
     {
         /*Handling corner case: when binary tree is empty, in that
-        case we are going to print Binary tree is empty!" and return*/
+        case we are going to print "Binary tree is empty!" and return*/
         if(root_add==null)
         {
             System.out.println("Binary tree is empty!");
@@ -228,7 +228,7 @@ class BinaryTree{
     }
 };
 
-/*Defining Program_1 class(driver code)*/
+/*Defining Program_2 class(driver code)*/
 public class Program_2
 {
     /*Defining main function*/

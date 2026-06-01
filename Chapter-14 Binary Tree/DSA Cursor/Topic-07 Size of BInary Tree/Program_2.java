@@ -2,11 +2,11 @@
 that means we are going to create a complete binary tree using queue data structure
 and we are going to find the size of binary tree using the iterative approach*/
 
-/*Importing Scanner class from java.util for taking the input from user,
-queue and LinkedList class to implement queue data structure*/
-import java.util.Scanner;
-import java.util.Queue;
+/*Importing LinkedList class to implement Queue class, Queue class to use queue
+data structure, Scanner class for taking the input from user from java.util*/
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 /*Declaring a class to implement the binary tree*/
 class BinaryTree{
@@ -227,7 +227,7 @@ class BinaryTree{
     }
 };
 
-/*Defining Program_1 class(driver code)*/
+/*Defining Program_2 class(driver code)*/
 public class Program_2
 {
     /*Defining main function*/

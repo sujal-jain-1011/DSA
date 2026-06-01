@@ -25,7 +25,6 @@ struct TreeNode* root;
 struct TreeNode* ptr; 
 struct TreeNode** que;
 
-
 /*Function to create a new node for the binary tree and returning it*/
 struct TreeNode* createTreeNode(int data)
 {

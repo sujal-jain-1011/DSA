@@ -1,0 +1,191 @@
+Classfile /home/sujal/Documents/DSA/Chapter-14 Binary Tree/DSA Cursor/Topic-19 Path Sums in Binary Tree/Topic-19 B Finding Path Existence with Given Sum in Binary Tree/Program_1.class
+  Last modified May 7, 2026; size 1320 bytes
+  SHA-256 checksum bdfb3a999ba0179edc0487f169f04ea479a4e12a9f0460425ffc5ba642e255dd
+  Compiled from "Program_1.java"
+public class Program_1
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #72                         // Program_1
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 2
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // BinaryTree
+   #8 = Utf8               BinaryTree
+   #9 = Methodref          #7.#3          // BinaryTree."<init>":()V
+  #10 = Methodref          #7.#11         // BinaryTree.createBinaryTree:()Z
+  #11 = NameAndType        #12:#13        // createBinaryTree:()Z
+  #12 = Utf8               createBinaryTree
+  #13 = Utf8               ()Z
+  #14 = Fieldref           #15.#16        // java/lang/System.out:Ljava/io/PrintStream;
+  #15 = Class              #17            // java/lang/System
+  #16 = NameAndType        #18:#19        // out:Ljava/io/PrintStream;
+  #17 = Utf8               java/lang/System
+  #18 = Utf8               out
+  #19 = Utf8               Ljava/io/PrintStream;
+  #20 = String             #21            // Successfully created binary tree!
+  #21 = Utf8               Successfully created binary tree!
+  #22 = Methodref          #23.#24        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #23 = Class              #25            // java/io/PrintStream
+  #24 = NameAndType        #26:#27        // println:(Ljava/lang/String;)V
+  #25 = Utf8               java/io/PrintStream
+  #26 = Utf8               println
+  #27 = Utf8               (Ljava/lang/String;)V
+  #28 = String             #29            // The preorder traversal of binary tree before conversion is:
+  #29 = Utf8               The preorder traversal of binary tree before conversion is:
+  #30 = Fieldref           #7.#31         // BinaryTree.root:LBinaryTree$TreeNode;
+  #31 = NameAndType        #32:#33        // root:LBinaryTree$TreeNode;
+  #32 = Utf8               root
+  #33 = Utf8               LBinaryTree$TreeNode;
+  #34 = Methodref          #7.#35         // BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+  #35 = NameAndType        #36:#37        // preorder:(LBinaryTree$TreeNode;)V
+  #36 = Utf8               preorder
+  #37 = Utf8               (LBinaryTree$TreeNode;)V
+  #38 = Methodref          #23.#39        // java/io/PrintStream.println:()V
+  #39 = NameAndType        #26:#6         // println:()V
+  #40 = Class              #41            // java/util/Scanner
+  #41 = Utf8               java/util/Scanner
+  #42 = Fieldref           #15.#43        // java/lang/System.in:Ljava/io/InputStream;
+  #43 = NameAndType        #44:#45        // in:Ljava/io/InputStream;
+  #44 = Utf8               in
+  #45 = Utf8               Ljava/io/InputStream;
+  #46 = Methodref          #40.#47        // java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  #47 = NameAndType        #5:#48         // "<init>":(Ljava/io/InputStream;)V
+  #48 = Utf8               (Ljava/io/InputStream;)V
+  #49 = String             #50            // Enter the target sum:
+  #50 = Utf8               Enter the target sum:
+  #51 = Methodref          #23.#52        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #52 = NameAndType        #53:#27        // print:(Ljava/lang/String;)V
+  #53 = Utf8               print
+  #54 = Methodref          #40.#55        // java/util/Scanner.nextInt:()I
+  #55 = NameAndType        #56:#57        // nextInt:()I
+  #56 = Utf8               nextInt
+  #57 = Utf8               ()I
+  #58 = Methodref          #7.#59         // BinaryTree.isPathExist:(LBinaryTree$TreeNode;II)V
+  #59 = NameAndType        #60:#61        // isPathExist:(LBinaryTree$TreeNode;II)V
+  #60 = Utf8               isPathExist
+  #61 = Utf8               (LBinaryTree$TreeNode;II)V
+  #62 = Fieldref           #7.#63         // BinaryTree.isFound:Z
+  #63 = NameAndType        #64:#65        // isFound:Z
+  #64 = Utf8               isFound
+  #65 = Utf8               Z
+  #66 = String             #67            // Path exists in the binary tree with given sum!
+  #67 = Utf8               Path exists in the binary tree with given sum!
+  #68 = String             #69            // Path does not exist in the binary tree with given sum!
+  #69 = Utf8               Path does not exist in the binary tree with given sum!
+  #70 = String             #71            // Binary tree creation failed!
+  #71 = Utf8               Binary tree creation failed!
+  #72 = Class              #73            // Program_1
+  #73 = Utf8               Program_1
+  #74 = Utf8               Code
+  #75 = Utf8               LineNumberTable
+  #76 = Utf8               main
+  #77 = Utf8               ([Ljava/lang/String;)V
+  #78 = Utf8               StackMapTable
+  #79 = Utf8               SourceFile
+  #80 = Utf8               Program_1.java
+  #81 = Utf8               InnerClasses
+  #82 = Class              #83            // BinaryTree$TreeNode
+  #83 = Utf8               BinaryTree$TreeNode
+  #84 = Utf8               TreeNode
+{
+  public Program_1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 219: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=1
+         0: new           #7                  // class BinaryTree
+         3: dup
+         4: invokespecial #9                  // Method BinaryTree."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #10                 // Method BinaryTree.createBinaryTree:()Z
+        12: ifeq          108
+        15: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        18: ldc           #20                 // String Successfully created binary tree!
+        20: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        23: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: ldc           #28                 // String The preorder traversal of binary tree before conversion is:
+        28: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        31: aload_1
+        32: aload_1
+        33: getfield      #30                 // Field BinaryTree.root:LBinaryTree$TreeNode;
+        36: invokevirtual #34                 // Method BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+        39: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        42: invokevirtual #38                 // Method java/io/PrintStream.println:()V
+        45: new           #40                 // class java/util/Scanner
+        48: dup
+        49: getstatic     #42                 // Field java/lang/System.in:Ljava/io/InputStream;
+        52: invokespecial #46                 // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+        55: astore_2
+        56: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: ldc           #49                 // String Enter the target sum:
+        61: invokevirtual #51                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        64: aload_2
+        65: invokevirtual #54                 // Method java/util/Scanner.nextInt:()I
+        68: istore_3
+        69: aload_1
+        70: aload_1
+        71: getfield      #30                 // Field BinaryTree.root:LBinaryTree$TreeNode;
+        74: iload_3
+        75: iconst_0
+        76: invokevirtual #58                 // Method BinaryTree.isPathExist:(LBinaryTree$TreeNode;II)V
+        79: aload_1
+        80: getfield      #62                 // Field BinaryTree.isFound:Z
+        83: ifeq          97
+        86: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        89: ldc           #66                 // String Path exists in the binary tree with given sum!
+        91: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        94: goto          105
+        97: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       100: ldc           #68                 // String Path does not exist in the binary tree with given sum!
+       102: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       105: goto          116
+       108: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       111: ldc           #70                 // String Binary tree creation failed!
+       113: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       116: return
+      LineNumberTable:
+        line 225: 0
+        line 228: 8
+        line 232: 15
+        line 233: 23
+        line 234: 31
+        line 237: 45
+        line 238: 56
+        line 239: 64
+        line 242: 69
+        line 245: 79
+        line 246: 97
+        line 247: 105
+        line 249: 108
+        line 250: 116
+      StackMapTable: number_of_entries = 4
+        frame_type = 254 /* append */
+          offset_delta = 97
+          locals = [ class BinaryTree, class java/util/Scanner, int ]
+        frame_type = 249 /* chop */
+          offset_delta = 7
+        frame_type = 2 /* same */
+        frame_type = 7 /* same */
+}
+SourceFile: "Program_1.java"
+InnerClasses:
+  #84= #82 of #7;                         // TreeNode=class BinaryTree$TreeNode of class BinaryTree

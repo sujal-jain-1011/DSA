@@ -26,7 +26,6 @@ struct TreeNode* ptr;
 struct TreeNode** que;
 struct TreeNode** queLOT;
 
-
 /*Function to create a new node for the binary tree and returning it*/
 struct TreeNode* createTreeNode(int data)
 {
@@ -190,7 +189,7 @@ short unsigned int createBinaryTree()
 void leftView(struct TreeNode** root_add)
 {
     /*Handling corner case: when binary tree is empty, in that
-    case we are going to print Binary tree is empty!" and return*/
+    case we are going to print "Binary tree is empty!" and return*/
     if(!(*root_add))
     {
         printf("Binary tree is empty!\n");
@@ -233,6 +232,9 @@ void leftView(struct TreeNode** root_add)
                     if(!isEmpty(frontLOT, rearLOT)) enqueue(NULL, &queLOT, &frontLOT, &rearLOT);
                 }
             }
+
+            /*Deallocating memory to created queue used in this specific function*/
+            free(queLOT);
         }
     }
 }

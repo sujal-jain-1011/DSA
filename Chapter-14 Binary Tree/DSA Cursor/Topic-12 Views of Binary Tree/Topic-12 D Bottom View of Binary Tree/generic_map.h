@@ -1,0 +1,33 @@
+/*C program to define a header file that will contain the forward declarations of prototypes of all
+the functions that we are going to use to create, insert and access the elements of unordered map*/
+
+/*Checking whether GENERIC_MAP_H is already defined or not using the macro conditional to
+avoid duplicate definitions and it is not already defined then defining it using the macros*/
+#ifndef GENERIC_MAP_H
+#define GENERIC_MAP_H
+
+/*Including stddef(standard definition) header file for using the size_t data type and
+type defining the structure of name GenericMap from struct GenericMap to GenericMap*/
+#include<stddef.h>
+typedef struct GenericMap GenericMap;
+
+/*Declaring the forward declarations or prototypes of the functions that we are going to use later to manipulate unordered map*/
+/*Prototype of the function for creating an unordered map*/
+GenericMap* map_create(void);
+
+/*Prototype of the function for performing insertion operation in the unordered map and for
+that size of key is required if the key is not an integer or string so to make it hashable*/
+void map_put(GenericMap **map,void *key,size_t key_size,void *value,size_t value_size);
+
+/*Prototype of the functions for getting value of key and for checking existence of key in map*/
+int map_get(GenericMap *map, void *key, size_t key_size, void **out);
+int map_contains(GenericMap *map, void *key, size_t key_size);
+
+/*Prototype of the functions for getting the size of GenericMap, for
+getting keys of GenericMap and for deallocating the allocated memory*/
+size_t map_size(GenericMap *map);
+void map_get_keys(GenericMap *map, void **keys_out);
+void map_free(GenericMap *map);
+
+/*Ending the #define block*/
+#endif

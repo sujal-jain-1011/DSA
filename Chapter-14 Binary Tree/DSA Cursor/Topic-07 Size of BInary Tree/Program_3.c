@@ -26,7 +26,6 @@ struct TreeNode* ptr;
 struct TreeNode** que;
 struct TreeNode** queLOT;
 
-
 /*Function to create a new node for the binary tree and returning it*/
 struct TreeNode* createTreeNode(int data)
 {
@@ -232,6 +231,9 @@ long long unsigned int size(struct TreeNode** root_add)
                     if(!isEmpty(frontLOT, rearLOT)) enqueue(NULL, &queLOT, &frontLOT, &rearLOT);
                 }
             }
+
+            /*Deallocating memory to created queue used in this specific function*/
+            free(queLOT);
 
             /*Returning size variable*/
             return sz;

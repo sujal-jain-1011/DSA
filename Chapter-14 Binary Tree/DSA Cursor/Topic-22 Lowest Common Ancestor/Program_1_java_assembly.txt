@@ -1,0 +1,236 @@
+Classfile /home/sujal/Documents/DSA/Chapter-14 Binary Tree/DSA Cursor/Topic-22 Lowest Common Ancestor/Program_1.class
+  Last modified Apr 18, 2026; size 1839 bytes
+  SHA-256 checksum 877462286b569b9c880ea4c4e5bfa3a2f3a8c388eb7897b414891bc4c12ad7f2
+  Compiled from "Program_1.java"
+public class Program_1
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #80                         // Program_1
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Class              #8            // BinaryTree
+    #8 = Utf8               BinaryTree
+    #9 = Methodref          #7.#3         // BinaryTree."<init>":()V
+   #10 = Methodref          #7.#11        // BinaryTree.createBinaryTree:()Z
+   #11 = NameAndType        #12:#13       // createBinaryTree:()Z
+   #12 = Utf8               createBinaryTree
+   #13 = Utf8               ()Z
+   #14 = Fieldref           #15.#16       // java/lang/System.out:Ljava/io/PrintStream;
+   #15 = Class              #17           // java/lang/System
+   #16 = NameAndType        #18:#19       // out:Ljava/io/PrintStream;
+   #17 = Utf8               java/lang/System
+   #18 = Utf8               out
+   #19 = Utf8               Ljava/io/PrintStream;
+   #20 = String             #21           // Successfully created binary tree!
+   #21 = Utf8               Successfully created binary tree!
+   #22 = Methodref          #23.#24       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #23 = Class              #25           // java/io/PrintStream
+   #24 = NameAndType        #26:#27       // println:(Ljava/lang/String;)V
+   #25 = Utf8               java/io/PrintStream
+   #26 = Utf8               println
+   #27 = Utf8               (Ljava/lang/String;)V
+   #28 = String             #29           // The preorder traversal of binary tree is:
+   #29 = Utf8               The preorder traversal of binary tree is:
+   #30 = Fieldref           #7.#31        // BinaryTree.root:LBinaryTree$TreeNode;
+   #31 = NameAndType        #32:#33       // root:LBinaryTree$TreeNode;
+   #32 = Utf8               root
+   #33 = Utf8               LBinaryTree$TreeNode;
+   #34 = Methodref          #7.#35        // BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+   #35 = NameAndType        #36:#37       // preorder:(LBinaryTree$TreeNode;)V
+   #36 = Utf8               preorder
+   #37 = Utf8               (LBinaryTree$TreeNode;)V
+   #38 = Methodref          #23.#39       // java/io/PrintStream.println:()V
+   #39 = NameAndType        #26:#6        // println:()V
+   #40 = Class              #41           // java/util/Scanner
+   #41 = Utf8               java/util/Scanner
+   #42 = Fieldref           #15.#43       // java/lang/System.in:Ljava/io/InputStream;
+   #43 = NameAndType        #44:#45       // in:Ljava/io/InputStream;
+   #44 = Utf8               in
+   #45 = Utf8               Ljava/io/InputStream;
+   #46 = Methodref          #40.#47       // java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+   #47 = NameAndType        #5:#48        // "<init>":(Ljava/io/InputStream;)V
+   #48 = Utf8               (Ljava/io/InputStream;)V
+   #49 = String             #50           // Enter the node values:
+   #50 = Utf8               Enter the node values:
+   #51 = Methodref          #23.#52       // java/io/PrintStream.print:(Ljava/lang/String;)V
+   #52 = NameAndType        #53:#27       // print:(Ljava/lang/String;)V
+   #53 = Utf8               print
+   #54 = Methodref          #40.#55       // java/util/Scanner.nextInt:()I
+   #55 = NameAndType        #56:#57       // nextInt:()I
+   #56 = Utf8               nextInt
+   #57 = Utf8               ()I
+   #58 = Methodref          #7.#59        // BinaryTree.lca:(LBinaryTree$TreeNode;II)LBinaryTree$TreeNode;
+   #59 = NameAndType        #60:#61       // lca:(LBinaryTree$TreeNode;II)LBinaryTree$TreeNode;
+   #60 = Utf8               lca
+   #61 = Utf8               (LBinaryTree$TreeNode;II)LBinaryTree$TreeNode;
+   #62 = InvokeDynamic      #0:#63        // #0:makeConcatWithConstants:(II)Ljava/lang/String;
+   #63 = NameAndType        #64:#65       // makeConcatWithConstants:(II)Ljava/lang/String;
+   #64 = Utf8               makeConcatWithConstants
+   #65 = Utf8               (II)Ljava/lang/String;
+   #66 = Fieldref           #67.#68       // BinaryTree$TreeNode.val:I
+   #67 = Class              #69           // BinaryTree$TreeNode
+   #68 = NameAndType        #70:#71       // val:I
+   #69 = Utf8               BinaryTree$TreeNode
+   #70 = Utf8               val
+   #71 = Utf8               I
+   #72 = InvokeDynamic      #1:#73        // #1:makeConcatWithConstants:(III)Ljava/lang/String;
+   #73 = NameAndType        #64:#74       // makeConcatWithConstants:(III)Ljava/lang/String;
+   #74 = Utf8               (III)Ljava/lang/String;
+   #75 = Methodref          #40.#76       // java/util/Scanner.close:()V
+   #76 = NameAndType        #77:#6        // close:()V
+   #77 = Utf8               close
+   #78 = String             #79           // Binary tree creation failed!
+   #79 = Utf8               Binary tree creation failed!
+   #80 = Class              #81           // Program_1
+   #81 = Utf8               Program_1
+   #82 = Utf8               Code
+   #83 = Utf8               LineNumberTable
+   #84 = Utf8               main
+   #85 = Utf8               ([Ljava/lang/String;)V
+   #86 = Utf8               StackMapTable
+   #87 = Class              #88           // "[Ljava/lang/String;"
+   #88 = Utf8               [Ljava/lang/String;
+   #89 = Utf8               SourceFile
+   #90 = Utf8               Program_1.java
+   #91 = Utf8               BootstrapMethods
+   #92 = String             #93           // The lowest common ancestor for \u0001 and \u0001 does not exist!
+   #93 = Utf8               The lowest common ancestor for \u0001 and \u0001 does not exist!
+   #94 = String             #95           // The lowest common ancestor for \u0001 and \u0001 is:\u0001
+   #95 = Utf8               The lowest common ancestor for \u0001 and \u0001 is:\u0001
+   #96 = MethodHandle       6:#97         // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #97 = Methodref          #98.#99       // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #98 = Class              #100          // java/lang/invoke/StringConcatFactory
+   #99 = NameAndType        #64:#101      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #100 = Utf8               java/lang/invoke/StringConcatFactory
+  #101 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #102 = Utf8               InnerClasses
+  #103 = Utf8               TreeNode
+  #104 = Class              #105          // java/lang/invoke/MethodHandles$Lookup
+  #105 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #106 = Class              #107          // java/lang/invoke/MethodHandles
+  #107 = Utf8               java/lang/invoke/MethodHandles
+  #108 = Utf8               Lookup
+{
+  public Program_1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 222: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=6, args_size=1
+         0: new           #7                  // class BinaryTree
+         3: dup
+         4: invokespecial #9                  // Method BinaryTree."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #10                 // Method BinaryTree.createBinaryTree:()Z
+        12: ifeq          136
+        15: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        18: ldc           #20                 // String Successfully created binary tree!
+        20: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        23: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: ldc           #28                 // String The preorder traversal of binary tree is:
+        28: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        31: aload_1
+        32: aload_1
+        33: getfield      #30                 // Field BinaryTree.root:LBinaryTree$TreeNode;
+        36: invokevirtual #34                 // Method BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+        39: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        42: invokevirtual #38                 // Method java/io/PrintStream.println:()V
+        45: new           #40                 // class java/util/Scanner
+        48: dup
+        49: getstatic     #42                 // Field java/lang/System.in:Ljava/io/InputStream;
+        52: invokespecial #46                 // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+        55: astore_2
+        56: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: ldc           #49                 // String Enter the node values:
+        61: invokevirtual #51                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        64: aload_2
+        65: invokevirtual #54                 // Method java/util/Scanner.nextInt:()I
+        68: istore_3
+        69: aload_2
+        70: invokevirtual #54                 // Method java/util/Scanner.nextInt:()I
+        73: istore        4
+        75: aload_1
+        76: aload_1
+        77: getfield      #30                 // Field BinaryTree.root:LBinaryTree$TreeNode;
+        80: iload_3
+        81: iload         4
+        83: invokevirtual #58                 // Method BinaryTree.lca:(LBinaryTree$TreeNode;II)LBinaryTree$TreeNode;
+        86: astore        5
+        88: aload         5
+        90: ifnonnull     110
+        93: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        96: iload_3
+        97: iload         4
+        99: invokedynamic #62,  0             // InvokeDynamic #0:makeConcatWithConstants:(II)Ljava/lang/String;
+       104: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       107: goto          129
+       110: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       113: iload_3
+       114: iload         4
+       116: aload         5
+       118: getfield      #66                 // Field BinaryTree$TreeNode.val:I
+       121: invokedynamic #72,  0             // InvokeDynamic #1:makeConcatWithConstants:(III)Ljava/lang/String;
+       126: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       129: aload_2
+       130: invokevirtual #75                 // Method java/util/Scanner.close:()V
+       133: goto          144
+       136: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       139: ldc           #78                 // String Binary tree creation failed!
+       141: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       144: return
+      LineNumberTable:
+        line 228: 0
+        line 231: 8
+        line 233: 15
+        line 234: 23
+        line 235: 31
+        line 236: 39
+        line 240: 45
+        line 241: 64
+        line 242: 88
+        line 243: 110
+        line 244: 133
+        line 246: 136
+        line 247: 144
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 110
+          locals = [ class "[Ljava/lang/String;", class BinaryTree, class java/util/Scanner, int, int, class BinaryTree$TreeNode ]
+          stack = []
+        frame_type = 18 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 6
+          locals = [ class "[Ljava/lang/String;", class BinaryTree ]
+          stack = []
+        frame_type = 7 /* same */
+}
+SourceFile: "Program_1.java"
+BootstrapMethods:
+  0: #96 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #92 The lowest common ancestor for \u0001 and \u0001 does not exist!
+  1: #96 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #94 The lowest common ancestor for \u0001 and \u0001 is:\u0001
+InnerClasses:
+  #103= #67 of #7;                        // TreeNode=class BinaryTree$TreeNode of class BinaryTree
+  public static final #108= #104 of #106; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -1,0 +1,3295 @@
+
+Program_1_cpp.out:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64
+    1004:	48 83 ec 08          	sub    $0x8,%rsp
+    1008:	48 8b 05 e1 5f 00 00 	mov    0x5fe1(%rip),%rax        # 6ff0 <__gmon_start__@Base>
+    100f:	48 85 c0             	test   %rax,%rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   *%rax
+    1016:	48 83 c4 08          	add    $0x8,%rsp
+    101a:	c3                   	ret
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 f2 5e 00 00    	push   0x5ef2(%rip)        # 6f18 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	ff 25 f4 5e 00 00    	jmp    *0x5ef4(%rip)        # 6f20 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102c:	0f 1f 40 00          	nopl   0x0(%rax)
+    1030:	f3 0f 1e fa          	endbr64
+    1034:	68 00 00 00 00       	push   $0x0
+    1039:	e9 e2 ff ff ff       	jmp    1020 <_init+0x20>
+    103e:	66 90                	xchg   %ax,%ax
+    1040:	f3 0f 1e fa          	endbr64
+    1044:	68 01 00 00 00       	push   $0x1
+    1049:	e9 d2 ff ff ff       	jmp    1020 <_init+0x20>
+    104e:	66 90                	xchg   %ax,%ax
+    1050:	f3 0f 1e fa          	endbr64
+    1054:	68 02 00 00 00       	push   $0x2
+    1059:	e9 c2 ff ff ff       	jmp    1020 <_init+0x20>
+    105e:	66 90                	xchg   %ax,%ax
+    1060:	f3 0f 1e fa          	endbr64
+    1064:	68 03 00 00 00       	push   $0x3
+    1069:	e9 b2 ff ff ff       	jmp    1020 <_init+0x20>
+    106e:	66 90                	xchg   %ax,%ax
+    1070:	f3 0f 1e fa          	endbr64
+    1074:	68 04 00 00 00       	push   $0x4
+    1079:	e9 a2 ff ff ff       	jmp    1020 <_init+0x20>
+    107e:	66 90                	xchg   %ax,%ax
+    1080:	f3 0f 1e fa          	endbr64
+    1084:	68 05 00 00 00       	push   $0x5
+    1089:	e9 92 ff ff ff       	jmp    1020 <_init+0x20>
+    108e:	66 90                	xchg   %ax,%ax
+    1090:	f3 0f 1e fa          	endbr64
+    1094:	68 06 00 00 00       	push   $0x6
+    1099:	e9 82 ff ff ff       	jmp    1020 <_init+0x20>
+    109e:	66 90                	xchg   %ax,%ax
+    10a0:	f3 0f 1e fa          	endbr64
+    10a4:	68 07 00 00 00       	push   $0x7
+    10a9:	e9 72 ff ff ff       	jmp    1020 <_init+0x20>
+    10ae:	66 90                	xchg   %ax,%ax
+    10b0:	f3 0f 1e fa          	endbr64
+    10b4:	68 08 00 00 00       	push   $0x8
+    10b9:	e9 62 ff ff ff       	jmp    1020 <_init+0x20>
+    10be:	66 90                	xchg   %ax,%ax
+    10c0:	f3 0f 1e fa          	endbr64
+    10c4:	68 09 00 00 00       	push   $0x9
+    10c9:	e9 52 ff ff ff       	jmp    1020 <_init+0x20>
+    10ce:	66 90                	xchg   %ax,%ax
+    10d0:	f3 0f 1e fa          	endbr64
+    10d4:	68 0a 00 00 00       	push   $0xa
+    10d9:	e9 42 ff ff ff       	jmp    1020 <_init+0x20>
+    10de:	66 90                	xchg   %ax,%ax
+    10e0:	f3 0f 1e fa          	endbr64
+    10e4:	68 0b 00 00 00       	push   $0xb
+    10e9:	e9 32 ff ff ff       	jmp    1020 <_init+0x20>
+    10ee:	66 90                	xchg   %ax,%ax
+    10f0:	f3 0f 1e fa          	endbr64
+    10f4:	68 0c 00 00 00       	push   $0xc
+    10f9:	e9 22 ff ff ff       	jmp    1020 <_init+0x20>
+    10fe:	66 90                	xchg   %ax,%ax
+    1100:	f3 0f 1e fa          	endbr64
+    1104:	68 0d 00 00 00       	push   $0xd
+    1109:	e9 12 ff ff ff       	jmp    1020 <_init+0x20>
+    110e:	66 90                	xchg   %ax,%ax
+    1110:	f3 0f 1e fa          	endbr64
+    1114:	68 0e 00 00 00       	push   $0xe
+    1119:	e9 02 ff ff ff       	jmp    1020 <_init+0x20>
+    111e:	66 90                	xchg   %ax,%ax
+    1120:	f3 0f 1e fa          	endbr64
+    1124:	68 0f 00 00 00       	push   $0xf
+    1129:	e9 f2 fe ff ff       	jmp    1020 <_init+0x20>
+    112e:	66 90                	xchg   %ax,%ax
+    1130:	f3 0f 1e fa          	endbr64
+    1134:	68 10 00 00 00       	push   $0x10
+    1139:	e9 e2 fe ff ff       	jmp    1020 <_init+0x20>
+    113e:	66 90                	xchg   %ax,%ax
+    1140:	f3 0f 1e fa          	endbr64
+    1144:	68 11 00 00 00       	push   $0x11
+    1149:	e9 d2 fe ff ff       	jmp    1020 <_init+0x20>
+    114e:	66 90                	xchg   %ax,%ax
+    1150:	f3 0f 1e fa          	endbr64
+    1154:	68 12 00 00 00       	push   $0x12
+    1159:	e9 c2 fe ff ff       	jmp    1020 <_init+0x20>
+    115e:	66 90                	xchg   %ax,%ax
+    1160:	f3 0f 1e fa          	endbr64
+    1164:	68 13 00 00 00       	push   $0x13
+    1169:	e9 b2 fe ff ff       	jmp    1020 <_init+0x20>
+    116e:	66 90                	xchg   %ax,%ax
+    1170:	f3 0f 1e fa          	endbr64
+    1174:	68 14 00 00 00       	push   $0x14
+    1179:	e9 a2 fe ff ff       	jmp    1020 <_init+0x20>
+    117e:	66 90                	xchg   %ax,%ax
+
+Disassembly of section .plt.got:
+
+0000000000001180 <__cxa_finalize@plt>:
+    1180:	f3 0f 1e fa          	endbr64
+    1184:	ff 25 46 5e 00 00    	jmp    *0x5e46(%rip)        # 6fd0 <__cxa_finalize@GLIBC_2.2.5>
+    118a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+Disassembly of section .plt.sec:
+
+0000000000001190 <_ZSt17__throw_bad_allocv@plt>:
+    1190:	f3 0f 1e fa          	endbr64
+    1194:	ff 25 8e 5d 00 00    	jmp    *0x5d8e(%rip)        # 6f28 <_ZSt17__throw_bad_allocv@GLIBCXX_3.4>
+    119a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000011a0 <__cxa_begin_catch@plt>:
+    11a0:	f3 0f 1e fa          	endbr64
+    11a4:	ff 25 86 5d 00 00    	jmp    *0x5d86(%rip)        # 6f30 <__cxa_begin_catch@CXXABI_1.3>
+    11aa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000011b0 <_ZSt20__throw_length_errorPKc@plt>:
+    11b0:	f3 0f 1e fa          	endbr64
+    11b4:	ff 25 7e 5d 00 00    	jmp    *0x5d7e(%rip)        # 6f38 <_ZSt20__throw_length_errorPKc@GLIBCXX_3.4>
+    11ba:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000011c0 <_ZNSirsERi@plt>:
+    11c0:	f3 0f 1e fa          	endbr64
+    11c4:	ff 25 76 5d 00 00    	jmp    *0x5d76(%rip)        # 6f40 <_ZNSirsERi@GLIBCXX_3.4>
+    11ca:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000011d0 <_ZSt28__throw_bad_array_new_lengthv@plt>:
+    11d0:	f3 0f 1e fa          	endbr64
+    11d4:	ff 25 6e 5d 00 00    	jmp    *0x5d6e(%rip)        # 6f48 <_ZSt28__throw_bad_array_new_lengthv@GLIBCXX_3.4.29>
+    11da:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000011e0 <_ZNSolsEy@plt>:
+    11e0:	f3 0f 1e fa          	endbr64
+    11e4:	ff 25 66 5d 00 00    	jmp    *0x5d66(%rip)        # 6f50 <_ZNSolsEy@GLIBCXX_3.4>
+    11ea:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000011f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>:
+    11f0:	f3 0f 1e fa          	endbr64
+    11f4:	ff 25 5e 5d 00 00    	jmp    *0x5d5e(%rip)        # 6f58 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@GLIBCXX_3.4>
+    11fa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001200 <_Znwm@plt>:
+    1200:	f3 0f 1e fa          	endbr64
+    1204:	ff 25 56 5d 00 00    	jmp    *0x5d56(%rip)        # 6f60 <_Znwm@GLIBCXX_3.4>
+    120a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001210 <_ZdlPvm@plt>:
+    1210:	f3 0f 1e fa          	endbr64
+    1214:	ff 25 4e 5d 00 00    	jmp    *0x5d4e(%rip)        # 6f68 <_ZdlPvm@CXXABI_1.3.9>
+    121a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001220 <_ZNSolsEPFRSoS_E@plt>:
+    1220:	f3 0f 1e fa          	endbr64
+    1224:	ff 25 46 5d 00 00    	jmp    *0x5d46(%rip)        # 6f70 <_ZNSolsEPFRSoS_E@GLIBCXX_3.4>
+    122a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001230 <__stack_chk_fail@plt>:
+    1230:	f3 0f 1e fa          	endbr64
+    1234:	ff 25 3e 5d 00 00    	jmp    *0x5d3e(%rip)        # 6f78 <__stack_chk_fail@GLIBC_2.4>
+    123a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001240 <_ZNSirsERy@plt>:
+    1240:	f3 0f 1e fa          	endbr64
+    1244:	ff 25 36 5d 00 00    	jmp    *0x5d36(%rip)        # 6f80 <_ZNSirsERy@GLIBCXX_3.4>
+    124a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001250 <_ZdaPv@plt>:
+    1250:	f3 0f 1e fa          	endbr64
+    1254:	ff 25 2e 5d 00 00    	jmp    *0x5d2e(%rip)        # 6f88 <_ZdaPv@GLIBCXX_3.4>
+    125a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001260 <__cxa_throw_bad_array_new_length@plt>:
+    1260:	f3 0f 1e fa          	endbr64
+    1264:	ff 25 26 5d 00 00    	jmp    *0x5d26(%rip)        # 6f90 <__cxa_throw_bad_array_new_length@CXXABI_1.3.8>
+    126a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001270 <__cxa_rethrow@plt>:
+    1270:	f3 0f 1e fa          	endbr64
+    1274:	ff 25 1e 5d 00 00    	jmp    *0x5d1e(%rip)        # 6f98 <__cxa_rethrow@CXXABI_1.3>
+    127a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001280 <memmove@plt>:
+    1280:	f3 0f 1e fa          	endbr64
+    1284:	ff 25 16 5d 00 00    	jmp    *0x5d16(%rip)        # 6fa0 <memmove@GLIBC_2.2.5>
+    128a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001290 <__cxa_end_catch@plt>:
+    1290:	f3 0f 1e fa          	endbr64
+    1294:	ff 25 0e 5d 00 00    	jmp    *0x5d0e(%rip)        # 6fa8 <__cxa_end_catch@CXXABI_1.3>
+    129a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000012a0 <_ZnamRKSt9nothrow_t@plt>:
+    12a0:	f3 0f 1e fa          	endbr64
+    12a4:	ff 25 06 5d 00 00    	jmp    *0x5d06(%rip)        # 6fb0 <_ZnamRKSt9nothrow_t@GLIBCXX_3.4>
+    12aa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000012b0 <_ZNSolsEi@plt>:
+    12b0:	f3 0f 1e fa          	endbr64
+    12b4:	ff 25 fe 5c 00 00    	jmp    *0x5cfe(%rip)        # 6fb8 <_ZNSolsEi@GLIBCXX_3.4>
+    12ba:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000012c0 <_Unwind_Resume@plt>:
+    12c0:	f3 0f 1e fa          	endbr64
+    12c4:	ff 25 f6 5c 00 00    	jmp    *0x5cf6(%rip)        # 6fc0 <_Unwind_Resume@GCC_3.0>
+    12ca:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000012d0 <_ZnwmRKSt9nothrow_t@plt>:
+    12d0:	f3 0f 1e fa          	endbr64
+    12d4:	ff 25 ee 5c 00 00    	jmp    *0x5cee(%rip)        # 6fc8 <_ZnwmRKSt9nothrow_t@GLIBCXX_3.4>
+    12da:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+Disassembly of section .text:
+
+00000000000012e0 <_start>:
+    12e0:	f3 0f 1e fa          	endbr64
+    12e4:	31 ed                	xor    %ebp,%ebp
+    12e6:	49 89 d1             	mov    %rdx,%r9
+    12e9:	5e                   	pop    %rsi
+    12ea:	48 89 e2             	mov    %rsp,%rdx
+    12ed:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+    12f1:	50                   	push   %rax
+    12f2:	54                   	push   %rsp
+    12f3:	45 31 c0             	xor    %r8d,%r8d
+    12f6:	31 c9                	xor    %ecx,%ecx
+    12f8:	48 8d 3d ca 00 00 00 	lea    0xca(%rip),%rdi        # 13c9 <main>
+    12ff:	ff 15 db 5c 00 00    	call   *0x5cdb(%rip)        # 6fe0 <__libc_start_main@GLIBC_2.34>
+    1305:	f4                   	hlt
+    1306:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+    130d:	00 00 00 
+
+0000000000001310 <deregister_tm_clones>:
+    1310:	48 8d 3d 01 5d 00 00 	lea    0x5d01(%rip),%rdi        # 7018 <__TMC_END__>
+    1317:	48 8d 05 fa 5c 00 00 	lea    0x5cfa(%rip),%rax        # 7018 <__TMC_END__>
+    131e:	48 39 f8             	cmp    %rdi,%rax
+    1321:	74 15                	je     1338 <deregister_tm_clones+0x28>
+    1323:	48 8b 05 be 5c 00 00 	mov    0x5cbe(%rip),%rax        # 6fe8 <_ITM_deregisterTMCloneTable@Base>
+    132a:	48 85 c0             	test   %rax,%rax
+    132d:	74 09                	je     1338 <deregister_tm_clones+0x28>
+    132f:	ff e0                	jmp    *%rax
+    1331:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+    1338:	c3                   	ret
+    1339:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000001340 <register_tm_clones>:
+    1340:	48 8d 3d d1 5c 00 00 	lea    0x5cd1(%rip),%rdi        # 7018 <__TMC_END__>
+    1347:	48 8d 35 ca 5c 00 00 	lea    0x5cca(%rip),%rsi        # 7018 <__TMC_END__>
+    134e:	48 29 fe             	sub    %rdi,%rsi
+    1351:	48 89 f0             	mov    %rsi,%rax
+    1354:	48 c1 ee 3f          	shr    $0x3f,%rsi
+    1358:	48 c1 f8 03          	sar    $0x3,%rax
+    135c:	48 01 c6             	add    %rax,%rsi
+    135f:	48 d1 fe             	sar    $1,%rsi
+    1362:	74 14                	je     1378 <register_tm_clones+0x38>
+    1364:	48 8b 05 8d 5c 00 00 	mov    0x5c8d(%rip),%rax        # 6ff8 <_ITM_registerTMCloneTable@Base>
+    136b:	48 85 c0             	test   %rax,%rax
+    136e:	74 08                	je     1378 <register_tm_clones+0x38>
+    1370:	ff e0                	jmp    *%rax
+    1372:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+    1378:	c3                   	ret
+    1379:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000001380 <__do_global_dtors_aux>:
+    1380:	f3 0f 1e fa          	endbr64
+    1384:	80 3d ed 5e 00 00 00 	cmpb   $0x0,0x5eed(%rip)        # 7278 <completed.0>
+    138b:	75 2b                	jne    13b8 <__do_global_dtors_aux+0x38>
+    138d:	55                   	push   %rbp
+    138e:	48 83 3d 3a 5c 00 00 	cmpq   $0x0,0x5c3a(%rip)        # 6fd0 <__cxa_finalize@GLIBC_2.2.5>
+    1395:	00 
+    1396:	48 89 e5             	mov    %rsp,%rbp
+    1399:	74 0c                	je     13a7 <__do_global_dtors_aux+0x27>
+    139b:	48 8b 3d 66 5c 00 00 	mov    0x5c66(%rip),%rdi        # 7008 <__dso_handle>
+    13a2:	e8 d9 fd ff ff       	call   1180 <__cxa_finalize@plt>
+    13a7:	e8 64 ff ff ff       	call   1310 <deregister_tm_clones>
+    13ac:	c6 05 c5 5e 00 00 01 	movb   $0x1,0x5ec5(%rip)        # 7278 <completed.0>
+    13b3:	5d                   	pop    %rbp
+    13b4:	c3                   	ret
+    13b5:	0f 1f 00             	nopl   (%rax)
+    13b8:	c3                   	ret
+    13b9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+00000000000013c0 <frame_dummy>:
+    13c0:	f3 0f 1e fa          	endbr64
+    13c4:	e9 77 ff ff ff       	jmp    1340 <register_tm_clones>
+
+00000000000013c9 <main>:
+    13c9:	f3 0f 1e fa          	endbr64
+    13cd:	55                   	push   %rbp
+    13ce:	48 89 e5             	mov    %rsp,%rbp
+    13d1:	48 83 ec 40          	sub    $0x40,%rsp
+    13d5:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    13dc:	00 00 
+    13de:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    13e2:	31 c0                	xor    %eax,%eax
+    13e4:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    13e8:	48 89 c7             	mov    %rax,%rdi
+    13eb:	e8 cc 0b 00 00       	call   1fbc <_ZN10BinaryTreeC1Ev>
+    13f0:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    13f4:	48 89 c7             	mov    %rax,%rdi
+    13f7:	e8 58 05 00 00       	call   1954 <_ZN10BinaryTree16createBinaryTreeEv>
+    13fc:	84 c0                	test   %al,%al
+    13fe:	0f 84 27 01 00 00    	je     152b <main+0x162>
+    1404:	48 8d 05 5d 2d 00 00 	lea    0x2d5d(%rip),%rax        # 4168 <_IO_stdin_used+0x168>
+    140b:	48 89 c6             	mov    %rax,%rsi
+    140e:	48 8d 05 2b 5c 00 00 	lea    0x5c2b(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1415:	48 89 c7             	mov    %rax,%rdi
+    1418:	e8 d3 fd ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    141d:	48 8b 15 b4 5b 00 00 	mov    0x5bb4(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    1424:	48 89 d6             	mov    %rdx,%rsi
+    1427:	48 89 c7             	mov    %rax,%rdi
+    142a:	e8 f1 fd ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    142f:	48 8d 05 5a 2d 00 00 	lea    0x2d5a(%rip),%rax        # 4190 <_IO_stdin_used+0x190>
+    1436:	48 89 c6             	mov    %rax,%rsi
+    1439:	48 8d 05 00 5c 00 00 	lea    0x5c00(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1440:	48 89 c7             	mov    %rax,%rdi
+    1443:	e8 a8 fd ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1448:	48 8b 15 89 5b 00 00 	mov    0x5b89(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    144f:	48 89 d6             	mov    %rdx,%rsi
+    1452:	48 89 c7             	mov    %rax,%rdi
+    1455:	e8 c6 fd ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    145a:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    145e:	48 8d 50 18          	lea    0x18(%rax),%rdx
+    1462:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    1466:	48 89 d6             	mov    %rdx,%rsi
+    1469:	48 89 c7             	mov    %rax,%rdi
+    146c:	e8 89 07 00 00       	call   1bfa <_ZN10BinaryTree8preorderEPPNS_8TreeNodeE>
+    1471:	48 8b 05 60 5b 00 00 	mov    0x5b60(%rip),%rax        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    1478:	48 89 c6             	mov    %rax,%rsi
+    147b:	48 8d 05 be 5b 00 00 	lea    0x5bbe(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1482:	48 89 c7             	mov    %rax,%rdi
+    1485:	e8 96 fd ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    148a:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    148e:	48 8d 50 18          	lea    0x18(%rax),%rdx
+    1492:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    1496:	48 89 d6             	mov    %rdx,%rsi
+    1499:	48 89 c7             	mov    %rax,%rdi
+    149c:	e8 ff 07 00 00       	call   1ca0 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE>
+    14a1:	84 c0                	test   %al,%al
+    14a3:	74 2d                	je     14d2 <main+0x109>
+    14a5:	48 8d 05 14 2d 00 00 	lea    0x2d14(%rip),%rax        # 41c0 <_IO_stdin_used+0x1c0>
+    14ac:	48 89 c6             	mov    %rax,%rsi
+    14af:	48 8d 05 8a 5b 00 00 	lea    0x5b8a(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    14b6:	48 89 c7             	mov    %rax,%rdi
+    14b9:	e8 32 fd ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    14be:	48 8b 15 13 5b 00 00 	mov    0x5b13(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    14c5:	48 89 d6             	mov    %rdx,%rsi
+    14c8:	48 89 c7             	mov    %rax,%rdi
+    14cb:	e8 50 fd ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    14d0:	eb 2b                	jmp    14fd <main+0x134>
+    14d2:	48 8d 05 0f 2d 00 00 	lea    0x2d0f(%rip),%rax        # 41e8 <_IO_stdin_used+0x1e8>
+    14d9:	48 89 c6             	mov    %rax,%rsi
+    14dc:	48 8d 05 5d 5b 00 00 	lea    0x5b5d(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    14e3:	48 89 c7             	mov    %rax,%rdi
+    14e6:	e8 05 fd ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    14eb:	48 8b 15 e6 5a 00 00 	mov    0x5ae6(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    14f2:	48 89 d6             	mov    %rdx,%rsi
+    14f5:	48 89 c7             	mov    %rax,%rdi
+    14f8:	e8 23 fd ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    14fd:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    1501:	48 8d 50 18          	lea    0x18(%rax),%rdx
+    1505:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    1509:	48 89 d6             	mov    %rdx,%rsi
+    150c:	48 89 c7             	mov    %rax,%rdi
+    150f:	e8 38 0a 00 00       	call   1f4c <_ZN10BinaryTree14freeBinaryTreeEPPNS_8TreeNodeE>
+    1514:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1518:	48 85 c0             	test   %rax,%rax
+    151b:	74 39                	je     1556 <main+0x18d>
+    151d:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1521:	48 89 c7             	mov    %rax,%rdi
+    1524:	e8 27 fd ff ff       	call   1250 <_ZdaPv@plt>
+    1529:	eb 2b                	jmp    1556 <main+0x18d>
+    152b:	48 8d 05 e1 2c 00 00 	lea    0x2ce1(%rip),%rax        # 4213 <_IO_stdin_used+0x213>
+    1532:	48 89 c6             	mov    %rax,%rsi
+    1535:	48 8d 05 04 5b 00 00 	lea    0x5b04(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    153c:	48 89 c7             	mov    %rax,%rdi
+    153f:	e8 ac fc ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1544:	48 8b 15 8d 5a 00 00 	mov    0x5a8d(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    154b:	48 89 d6             	mov    %rdx,%rsi
+    154e:	48 89 c7             	mov    %rax,%rdi
+    1551:	e8 ca fc ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    1556:	b8 00 00 00 00       	mov    $0x0,%eax
+    155b:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    155f:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    1566:	00 00 
+    1568:	74 05                	je     156f <main+0x1a6>
+    156a:	e8 c1 fc ff ff       	call   1230 <__stack_chk_fail@plt>
+    156f:	c9                   	leave
+    1570:	c3                   	ret
+
+0000000000001571 <_ZnwmPv>:
+    1571:	f3 0f 1e fa          	endbr64
+    1575:	55                   	push   %rbp
+    1576:	48 89 e5             	mov    %rsp,%rbp
+    1579:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    157d:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    1581:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1585:	5d                   	pop    %rbp
+    1586:	c3                   	ret
+
+0000000000001587 <_ZSt16__deque_buf_sizem>:
+    1587:	f3 0f 1e fa          	endbr64
+    158b:	55                   	push   %rbp
+    158c:	48 89 e5             	mov    %rsp,%rbp
+    158f:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    1593:	48 81 7d f8 ff 01 00 	cmpq   $0x1ff,-0x8(%rbp)
+    159a:	00 
+    159b:	77 10                	ja     15ad <_ZSt16__deque_buf_sizem+0x26>
+    159d:	b8 00 02 00 00       	mov    $0x200,%eax
+    15a2:	ba 00 00 00 00       	mov    $0x0,%edx
+    15a7:	48 f7 75 f8          	divq   -0x8(%rbp)
+    15ab:	eb 05                	jmp    15b2 <_ZSt16__deque_buf_sizem+0x2b>
+    15ad:	b8 01 00 00 00       	mov    $0x1,%eax
+    15b2:	5d                   	pop    %rbp
+    15b3:	c3                   	ret
+
+00000000000015b4 <_ZN10BinaryTree14createTreeNodeEi>:
+    15b4:	f3 0f 1e fa          	endbr64
+    15b8:	55                   	push   %rbp
+    15b9:	48 89 e5             	mov    %rsp,%rbp
+    15bc:	48 83 ec 20          	sub    $0x20,%rsp
+    15c0:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    15c4:	89 75 e4             	mov    %esi,-0x1c(%rbp)
+    15c7:	48 8d 05 2a 57 00 00 	lea    0x572a(%rip),%rax        # 6cf8 <_ZSt7nothrow@GLIBCXX_3.4>
+    15ce:	48 89 c6             	mov    %rax,%rsi
+    15d1:	bf 20 00 00 00       	mov    $0x20,%edi
+    15d6:	e8 f5 fc ff ff       	call   12d0 <_ZnwmRKSt9nothrow_t@plt>
+    15db:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    15df:	48 83 7d f8 00       	cmpq   $0x0,-0x8(%rbp)
+    15e4:	75 32                	jne    1618 <_ZN10BinaryTree14createTreeNodeEi+0x64>
+    15e6:	48 8d 05 1b 2a 00 00 	lea    0x2a1b(%rip),%rax        # 4008 <_IO_stdin_used+0x8>
+    15ed:	48 89 c6             	mov    %rax,%rsi
+    15f0:	48 8d 05 49 5a 00 00 	lea    0x5a49(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    15f7:	48 89 c7             	mov    %rax,%rdi
+    15fa:	e8 f1 fb ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    15ff:	48 8b 15 d2 59 00 00 	mov    0x59d2(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    1606:	48 89 d6             	mov    %rdx,%rsi
+    1609:	48 89 c7             	mov    %rax,%rdi
+    160c:	e8 0f fc ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    1611:	b8 00 00 00 00       	mov    $0x0,%eax
+    1616:	eb 31                	jmp    1649 <_ZN10BinaryTree14createTreeNodeEi+0x95>
+    1618:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    161c:	8b 55 e4             	mov    -0x1c(%rbp),%edx
+    161f:	89 10                	mov    %edx,(%rax)
+    1621:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1625:	48 c7 40 08 00 00 00 	movq   $0x0,0x8(%rax)
+    162c:	00 
+    162d:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1631:	48 c7 40 10 00 00 00 	movq   $0x0,0x10(%rax)
+    1638:	00 
+    1639:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    163d:	48 c7 40 18 00 00 00 	movq   $0x0,0x18(%rax)
+    1644:	00 
+    1645:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1649:	c9                   	leave
+    164a:	c3                   	ret
+    164b:	90                   	nop
+
+000000000000164c <_ZN10BinaryTree22implementCircularQueueEv>:
+    164c:	f3 0f 1e fa          	endbr64
+    1650:	55                   	push   %rbp
+    1651:	48 89 e5             	mov    %rsp,%rbp
+    1654:	48 83 ec 10          	sub    $0x10,%rsp
+    1658:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    165c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1660:	48 8b 00             	mov    (%rax),%rax
+    1663:	48 ba ff ff ff ff ff 	movabs $0xfffffffffffffff,%rdx
+    166a:	ff ff 0f 
+    166d:	48 39 c2             	cmp    %rax,%rdx
+    1670:	72 30                	jb     16a2 <_ZN10BinaryTree22implementCircularQueueEv+0x56>
+    1672:	48 c1 e0 03          	shl    $0x3,%rax
+    1676:	48 8d 15 7b 56 00 00 	lea    0x567b(%rip),%rdx        # 6cf8 <_ZSt7nothrow@GLIBCXX_3.4>
+    167d:	48 89 d6             	mov    %rdx,%rsi
+    1680:	48 89 c7             	mov    %rax,%rdi
+    1683:	e8 18 fc ff ff       	call   12a0 <_ZnamRKSt9nothrow_t@plt>
+    1688:	48 89 c2             	mov    %rax,%rdx
+    168b:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    168f:	48 89 50 28          	mov    %rdx,0x28(%rax)
+    1693:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1697:	48 8b 40 28          	mov    0x28(%rax),%rax
+    169b:	48 85 c0             	test   %rax,%rax
+    169e:	75 39                	jne    16d9 <_ZN10BinaryTree22implementCircularQueueEv+0x8d>
+    16a0:	eb 05                	jmp    16a7 <_ZN10BinaryTree22implementCircularQueueEv+0x5b>
+    16a2:	e8 b9 fb ff ff       	call   1260 <__cxa_throw_bad_array_new_length@plt>
+    16a7:	48 8d 05 92 29 00 00 	lea    0x2992(%rip),%rax        # 4040 <_IO_stdin_used+0x40>
+    16ae:	48 89 c6             	mov    %rax,%rsi
+    16b1:	48 8d 05 88 59 00 00 	lea    0x5988(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    16b8:	48 89 c7             	mov    %rax,%rdi
+    16bb:	e8 30 fb ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    16c0:	48 8b 15 11 59 00 00 	mov    0x5911(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    16c7:	48 89 d6             	mov    %rdx,%rsi
+    16ca:	48 89 c7             	mov    %rax,%rdi
+    16cd:	e8 4e fb ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    16d2:	b8 00 00 00 00       	mov    $0x0,%eax
+    16d7:	eb 05                	jmp    16de <_ZN10BinaryTree22implementCircularQueueEv+0x92>
+    16d9:	b8 01 00 00 00       	mov    $0x1,%eax
+    16de:	c9                   	leave
+    16df:	c3                   	ret
+
+00000000000016e0 <_ZN10BinaryTree6isFullEv>:
+    16e0:	f3 0f 1e fa          	endbr64
+    16e4:	55                   	push   %rbp
+    16e5:	48 89 e5             	mov    %rsp,%rbp
+    16e8:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    16ec:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    16f0:	48 8b 40 10          	mov    0x10(%rax),%rax
+    16f4:	48 8d 48 01          	lea    0x1(%rax),%rcx
+    16f8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    16fc:	48 8b 30             	mov    (%rax),%rsi
+    16ff:	48 89 c8             	mov    %rcx,%rax
+    1702:	ba 00 00 00 00       	mov    $0x0,%edx
+    1707:	48 f7 f6             	div    %rsi
+    170a:	48 89 d1             	mov    %rdx,%rcx
+    170d:	48 89 ca             	mov    %rcx,%rdx
+    1710:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1714:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1718:	48 39 c2             	cmp    %rax,%rdx
+    171b:	0f 94 c0             	sete   %al
+    171e:	5d                   	pop    %rbp
+    171f:	c3                   	ret
+
+0000000000001720 <_ZN10BinaryTree7isEmptyEv>:
+    1720:	f3 0f 1e fa          	endbr64
+    1724:	55                   	push   %rbp
+    1725:	48 89 e5             	mov    %rsp,%rbp
+    1728:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    172c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1730:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1734:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+    1738:	75 15                	jne    174f <_ZN10BinaryTree7isEmptyEv+0x2f>
+    173a:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    173e:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1742:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+    1746:	75 07                	jne    174f <_ZN10BinaryTree7isEmptyEv+0x2f>
+    1748:	b8 01 00 00 00       	mov    $0x1,%eax
+    174d:	eb 05                	jmp    1754 <_ZN10BinaryTree7isEmptyEv+0x34>
+    174f:	b8 00 00 00 00       	mov    $0x0,%eax
+    1754:	85 c0                	test   %eax,%eax
+    1756:	0f 95 c0             	setne  %al
+    1759:	5d                   	pop    %rbp
+    175a:	c3                   	ret
+    175b:	90                   	nop
+
+000000000000175c <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE>:
+    175c:	f3 0f 1e fa          	endbr64
+    1760:	55                   	push   %rbp
+    1761:	48 89 e5             	mov    %rsp,%rbp
+    1764:	48 83 ec 10          	sub    $0x10,%rsp
+    1768:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    176c:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    1770:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1774:	48 89 c7             	mov    %rax,%rdi
+    1777:	e8 64 ff ff ff       	call   16e0 <_ZN10BinaryTree6isFullEv>
+    177c:	84 c0                	test   %al,%al
+    177e:	74 58                	je     17d8 <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE+0x7c>
+    1780:	48 8d 05 ec 28 00 00 	lea    0x28ec(%rip),%rax        # 4073 <_IO_stdin_used+0x73>
+    1787:	48 89 c6             	mov    %rax,%rsi
+    178a:	48 8d 05 af 58 00 00 	lea    0x58af(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1791:	48 89 c7             	mov    %rax,%rdi
+    1794:	e8 57 fa ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1799:	48 89 c2             	mov    %rax,%rdx
+    179c:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    17a0:	8b 00                	mov    (%rax),%eax
+    17a2:	89 c6                	mov    %eax,%esi
+    17a4:	48 89 d7             	mov    %rdx,%rdi
+    17a7:	e8 04 fb ff ff       	call   12b0 <_ZNSolsEi@plt>
+    17ac:	48 89 c2             	mov    %rax,%rdx
+    17af:	48 8d 05 d2 28 00 00 	lea    0x28d2(%rip),%rax        # 4088 <_IO_stdin_used+0x88>
+    17b6:	48 89 c6             	mov    %rax,%rsi
+    17b9:	48 89 d7             	mov    %rdx,%rdi
+    17bc:	e8 2f fa ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    17c1:	48 8b 15 10 58 00 00 	mov    0x5810(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    17c8:	48 89 d6             	mov    %rdx,%rsi
+    17cb:	48 89 c7             	mov    %rax,%rdi
+    17ce:	e8 4d fa ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    17d3:	e9 a2 00 00 00       	jmp    187a <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE+0x11e>
+    17d8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    17dc:	48 89 c7             	mov    %rax,%rdi
+    17df:	e8 3c ff ff ff       	call   1720 <_ZN10BinaryTree7isEmptyEv>
+    17e4:	84 c0                	test   %al,%al
+    17e6:	74 48                	je     1830 <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE+0xd4>
+    17e8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    17ec:	48 8b 40 08          	mov    0x8(%rax),%rax
+    17f0:	48 8d 50 01          	lea    0x1(%rax),%rdx
+    17f4:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    17f8:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    17fc:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1800:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1804:	48 8d 50 01          	lea    0x1(%rax),%rdx
+    1808:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    180c:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    1810:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1814:	48 8b 50 28          	mov    0x28(%rax),%rdx
+    1818:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    181c:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1820:	48 c1 e0 03          	shl    $0x3,%rax
+    1824:	48 01 c2             	add    %rax,%rdx
+    1827:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    182b:	48 89 02             	mov    %rax,(%rdx)
+    182e:	eb 4a                	jmp    187a <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE+0x11e>
+    1830:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1834:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1838:	48 8d 48 01          	lea    0x1(%rax),%rcx
+    183c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1840:	48 8b 30             	mov    (%rax),%rsi
+    1843:	48 89 c8             	mov    %rcx,%rax
+    1846:	ba 00 00 00 00       	mov    $0x0,%edx
+    184b:	48 f7 f6             	div    %rsi
+    184e:	48 89 d1             	mov    %rdx,%rcx
+    1851:	48 89 ca             	mov    %rcx,%rdx
+    1854:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1858:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    185c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1860:	48 8b 50 28          	mov    0x28(%rax),%rdx
+    1864:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1868:	48 8b 40 10          	mov    0x10(%rax),%rax
+    186c:	48 c1 e0 03          	shl    $0x3,%rax
+    1870:	48 01 c2             	add    %rax,%rdx
+    1873:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1877:	48 89 02             	mov    %rax,(%rdx)
+    187a:	c9                   	leave
+    187b:	c3                   	ret
+
+000000000000187c <_ZN10BinaryTree7dequeueEv>:
+    187c:	f3 0f 1e fa          	endbr64
+    1880:	55                   	push   %rbp
+    1881:	48 89 e5             	mov    %rsp,%rbp
+    1884:	48 83 ec 20          	sub    $0x20,%rsp
+    1888:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    188c:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1890:	48 89 c7             	mov    %rax,%rdi
+    1893:	e8 88 fe ff ff       	call   1720 <_ZN10BinaryTree7isEmptyEv>
+    1898:	84 c0                	test   %al,%al
+    189a:	74 35                	je     18d1 <_ZN10BinaryTree7dequeueEv+0x55>
+    189c:	48 8d 05 0d 28 00 00 	lea    0x280d(%rip),%rax        # 40b0 <_IO_stdin_used+0xb0>
+    18a3:	48 89 c6             	mov    %rax,%rsi
+    18a6:	48 8d 05 93 57 00 00 	lea    0x5793(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    18ad:	48 89 c7             	mov    %rax,%rdi
+    18b0:	e8 3b f9 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    18b5:	48 8b 15 1c 57 00 00 	mov    0x571c(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    18bc:	48 89 d6             	mov    %rdx,%rsi
+    18bf:	48 89 c7             	mov    %rax,%rdi
+    18c2:	e8 59 f9 ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    18c7:	b8 00 00 00 00       	mov    $0x0,%eax
+    18cc:	e9 81 00 00 00       	jmp    1952 <_ZN10BinaryTree7dequeueEv+0xd6>
+    18d1:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    18d5:	48 8b 50 28          	mov    0x28(%rax),%rdx
+    18d9:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    18dd:	48 8b 40 08          	mov    0x8(%rax),%rax
+    18e1:	48 c1 e0 03          	shl    $0x3,%rax
+    18e5:	48 01 d0             	add    %rdx,%rax
+    18e8:	48 8b 00             	mov    (%rax),%rax
+    18eb:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    18ef:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    18f3:	48 8b 50 08          	mov    0x8(%rax),%rdx
+    18f7:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    18fb:	48 8b 40 10          	mov    0x10(%rax),%rax
+    18ff:	48 39 c2             	cmp    %rax,%rdx
+    1902:	75 1e                	jne    1922 <_ZN10BinaryTree7dequeueEv+0xa6>
+    1904:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1908:	48 c7 40 10 ff ff ff 	movq   $0xffffffffffffffff,0x10(%rax)
+    190f:	ff 
+    1910:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1914:	48 8b 50 10          	mov    0x10(%rax),%rdx
+    1918:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    191c:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    1920:	eb 2c                	jmp    194e <_ZN10BinaryTree7dequeueEv+0xd2>
+    1922:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1926:	48 8b 40 08          	mov    0x8(%rax),%rax
+    192a:	48 8d 48 01          	lea    0x1(%rax),%rcx
+    192e:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1932:	48 8b 30             	mov    (%rax),%rsi
+    1935:	48 89 c8             	mov    %rcx,%rax
+    1938:	ba 00 00 00 00       	mov    $0x0,%edx
+    193d:	48 f7 f6             	div    %rsi
+    1940:	48 89 d1             	mov    %rdx,%rcx
+    1943:	48 89 ca             	mov    %rcx,%rdx
+    1946:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    194a:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    194e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1952:	c9                   	leave
+    1953:	c3                   	ret
+
+0000000000001954 <_ZN10BinaryTree16createBinaryTreeEv>:
+    1954:	f3 0f 1e fa          	endbr64
+    1958:	55                   	push   %rbp
+    1959:	48 89 e5             	mov    %rsp,%rbp
+    195c:	48 83 ec 50          	sub    $0x50,%rsp
+    1960:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    1964:	48 8d 05 75 27 00 00 	lea    0x2775(%rip),%rax        # 40e0 <_IO_stdin_used+0xe0>
+    196b:	48 89 c6             	mov    %rax,%rsi
+    196e:	48 8d 05 cb 56 00 00 	lea    0x56cb(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1975:	48 89 c7             	mov    %rax,%rdi
+    1978:	e8 73 f8 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    197d:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1981:	48 89 c6             	mov    %rax,%rsi
+    1984:	48 8d 05 d5 57 00 00 	lea    0x57d5(%rip),%rax        # 7160 <_ZSt3cin@GLIBCXX_3.4>
+    198b:	48 89 c7             	mov    %rax,%rdi
+    198e:	e8 ad f8 ff ff       	call   1240 <_ZNSirsERy@plt>
+    1993:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1997:	48 8b 00             	mov    (%rax),%rax
+    199a:	48 85 c0             	test   %rax,%rax
+    199d:	75 35                	jne    19d4 <_ZN10BinaryTree16createBinaryTreeEv+0x80>
+    199f:	48 8d 05 5d 27 00 00 	lea    0x275d(%rip),%rax        # 4103 <_IO_stdin_used+0x103>
+    19a6:	48 89 c6             	mov    %rax,%rsi
+    19a9:	48 8d 05 90 56 00 00 	lea    0x5690(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    19b0:	48 89 c7             	mov    %rax,%rdi
+    19b3:	e8 38 f8 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    19b8:	48 8b 15 19 56 00 00 	mov    0x5619(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    19bf:	48 89 d6             	mov    %rdx,%rsi
+    19c2:	48 89 c7             	mov    %rax,%rdi
+    19c5:	e8 56 f8 ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    19ca:	b8 00 00 00 00       	mov    $0x0,%eax
+    19cf:	e9 23 02 00 00       	jmp    1bf7 <_ZN10BinaryTree16createBinaryTreeEv+0x2a3>
+    19d4:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    19d8:	48 8b 00             	mov    (%rax),%rax
+    19db:	48 ba fe ff ff ff ff 	movabs $0x1ffffffffffffffe,%rdx
+    19e2:	ff ff 1f 
+    19e5:	48 39 c2             	cmp    %rax,%rdx
+    19e8:	72 4f                	jb     1a39 <_ZN10BinaryTree16createBinaryTreeEv+0xe5>
+    19ea:	48 c1 e0 02          	shl    $0x2,%rax
+    19ee:	48 8d 15 03 53 00 00 	lea    0x5303(%rip),%rdx        # 6cf8 <_ZSt7nothrow@GLIBCXX_3.4>
+    19f5:	48 89 d6             	mov    %rdx,%rsi
+    19f8:	48 89 c7             	mov    %rax,%rdi
+    19fb:	e8 a0 f8 ff ff       	call   12a0 <_ZnamRKSt9nothrow_t@plt>
+    1a00:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+    1a04:	48 8d 05 15 27 00 00 	lea    0x2715(%rip),%rax        # 4120 <_IO_stdin_used+0x120>
+    1a0b:	48 89 c6             	mov    %rax,%rsi
+    1a0e:	48 8d 05 2b 56 00 00 	lea    0x562b(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1a15:	48 89 c7             	mov    %rax,%rdi
+    1a18:	e8 d3 f7 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1a1d:	48 8b 15 b4 55 00 00 	mov    0x55b4(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    1a24:	48 89 d6             	mov    %rdx,%rsi
+    1a27:	48 89 c7             	mov    %rax,%rdi
+    1a2a:	e8 f1 f7 ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    1a2f:	48 c7 45 c8 00 00 00 	movq   $0x0,-0x38(%rbp)
+    1a36:	00 
+    1a37:	eb 6f                	jmp    1aa8 <_ZN10BinaryTree16createBinaryTreeEv+0x154>
+    1a39:	e8 22 f8 ff ff       	call   1260 <__cxa_throw_bad_array_new_length@plt>
+    1a3e:	48 8d 05 fe 26 00 00 	lea    0x26fe(%rip),%rax        # 4143 <_IO_stdin_used+0x143>
+    1a45:	48 89 c6             	mov    %rax,%rsi
+    1a48:	48 8d 05 f1 55 00 00 	lea    0x55f1(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1a4f:	48 89 c7             	mov    %rax,%rdi
+    1a52:	e8 99 f7 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1a57:	48 89 c2             	mov    %rax,%rdx
+    1a5a:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    1a5e:	48 89 c6             	mov    %rax,%rsi
+    1a61:	48 89 d7             	mov    %rdx,%rdi
+    1a64:	e8 77 f7 ff ff       	call   11e0 <_ZNSolsEy@plt>
+    1a69:	48 89 c2             	mov    %rax,%rdx
+    1a6c:	48 8d 05 df 26 00 00 	lea    0x26df(%rip),%rax        # 4152 <_IO_stdin_used+0x152>
+    1a73:	48 89 c6             	mov    %rax,%rsi
+    1a76:	48 89 d7             	mov    %rdx,%rdi
+    1a79:	e8 72 f7 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1a7e:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    1a82:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    1a89:	00 
+    1a8a:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    1a8e:	48 01 d0             	add    %rdx,%rax
+    1a91:	48 89 c6             	mov    %rax,%rsi
+    1a94:	48 8d 05 c5 56 00 00 	lea    0x56c5(%rip),%rax        # 7160 <_ZSt3cin@GLIBCXX_3.4>
+    1a9b:	48 89 c7             	mov    %rax,%rdi
+    1a9e:	e8 1d f7 ff ff       	call   11c0 <_ZNSirsERi@plt>
+    1aa3:	48 83 45 c8 01       	addq   $0x1,-0x38(%rbp)
+    1aa8:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1aac:	48 8b 00             	mov    (%rax),%rax
+    1aaf:	48 39 45 c8          	cmp    %rax,-0x38(%rbp)
+    1ab3:	72 89                	jb     1a3e <_ZN10BinaryTree16createBinaryTreeEv+0xea>
+    1ab5:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1ab9:	48 89 c7             	mov    %rax,%rdi
+    1abc:	e8 8b fb ff ff       	call   164c <_ZN10BinaryTree22implementCircularQueueEv>
+    1ac1:	83 f0 01             	xor    $0x1,%eax
+    1ac4:	84 c0                	test   %al,%al
+    1ac6:	74 0a                	je     1ad2 <_ZN10BinaryTree16createBinaryTreeEv+0x17e>
+    1ac8:	b8 00 00 00 00       	mov    $0x0,%eax
+    1acd:	e9 25 01 00 00       	jmp    1bf7 <_ZN10BinaryTree16createBinaryTreeEv+0x2a3>
+    1ad2:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    1ad6:	8b 10                	mov    (%rax),%edx
+    1ad8:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1adc:	89 d6                	mov    %edx,%esi
+    1ade:	48 89 c7             	mov    %rax,%rdi
+    1ae1:	e8 ce fa ff ff       	call   15b4 <_ZN10BinaryTree14createTreeNodeEi>
+    1ae6:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    1aea:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    1aee:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1af2:	48 89 d6             	mov    %rdx,%rsi
+    1af5:	48 89 c7             	mov    %rax,%rdi
+    1af8:	e8 5f fc ff ff       	call   175c <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE>
+    1afd:	48 c7 45 d0 01 00 00 	movq   $0x1,-0x30(%rbp)
+    1b04:	00 
+    1b05:	e9 cb 00 00 00       	jmp    1bd5 <_ZN10BinaryTree16createBinaryTreeEv+0x281>
+    1b0a:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1b0e:	48 89 c7             	mov    %rax,%rdi
+    1b11:	e8 66 fd ff ff       	call   187c <_ZN10BinaryTree7dequeueEv>
+    1b16:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    1b1a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1b1e:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1b22:	48 85 c0             	test   %rax,%rax
+    1b25:	75 4a                	jne    1b71 <_ZN10BinaryTree16createBinaryTreeEv+0x21d>
+    1b27:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+    1b2b:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    1b2f:	48 8d 50 01          	lea    0x1(%rax),%rdx
+    1b33:	48 89 55 d0          	mov    %rdx,-0x30(%rbp)
+    1b37:	48 c1 e0 02          	shl    $0x2,%rax
+    1b3b:	48 01 c8             	add    %rcx,%rax
+    1b3e:	8b 10                	mov    (%rax),%edx
+    1b40:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1b44:	89 d6                	mov    %edx,%esi
+    1b46:	48 89 c7             	mov    %rax,%rdi
+    1b49:	e8 66 fa ff ff       	call   15b4 <_ZN10BinaryTree14createTreeNodeEi>
+    1b4e:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+    1b52:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1b56:	48 8b 55 f0          	mov    -0x10(%rbp),%rdx
+    1b5a:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    1b5e:	48 8b 55 f0          	mov    -0x10(%rbp),%rdx
+    1b62:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1b66:	48 89 d6             	mov    %rdx,%rsi
+    1b69:	48 89 c7             	mov    %rax,%rdi
+    1b6c:	e8 eb fb ff ff       	call   175c <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE>
+    1b71:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1b75:	48 8b 00             	mov    (%rax),%rax
+    1b78:	48 39 45 d0          	cmp    %rax,-0x30(%rbp)
+    1b7c:	73 57                	jae    1bd5 <_ZN10BinaryTree16createBinaryTreeEv+0x281>
+    1b7e:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1b82:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1b86:	48 85 c0             	test   %rax,%rax
+    1b89:	75 4a                	jne    1bd5 <_ZN10BinaryTree16createBinaryTreeEv+0x281>
+    1b8b:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+    1b8f:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    1b93:	48 8d 50 01          	lea    0x1(%rax),%rdx
+    1b97:	48 89 55 d0          	mov    %rdx,-0x30(%rbp)
+    1b9b:	48 c1 e0 02          	shl    $0x2,%rax
+    1b9f:	48 01 c8             	add    %rcx,%rax
+    1ba2:	8b 10                	mov    (%rax),%edx
+    1ba4:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1ba8:	89 d6                	mov    %edx,%esi
+    1baa:	48 89 c7             	mov    %rax,%rdi
+    1bad:	e8 02 fa ff ff       	call   15b4 <_ZN10BinaryTree14createTreeNodeEi>
+    1bb2:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    1bb6:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    1bba:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    1bbe:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    1bc2:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    1bc6:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1bca:	48 89 d6             	mov    %rdx,%rsi
+    1bcd:	48 89 c7             	mov    %rax,%rdi
+    1bd0:	e8 87 fb ff ff       	call   175c <_ZN10BinaryTree7enqueueEPNS_8TreeNodeE>
+    1bd5:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1bd9:	48 8b 00             	mov    (%rax),%rax
+    1bdc:	48 39 45 d0          	cmp    %rax,-0x30(%rbp)
+    1be0:	0f 82 24 ff ff ff    	jb     1b0a <_ZN10BinaryTree16createBinaryTreeEv+0x1b6>
+    1be6:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1bea:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    1bee:	48 89 50 18          	mov    %rdx,0x18(%rax)
+    1bf2:	b8 01 00 00 00       	mov    $0x1,%eax
+    1bf7:	c9                   	leave
+    1bf8:	c3                   	ret
+    1bf9:	90                   	nop
+
+0000000000001bfa <_ZN10BinaryTree8preorderEPPNS_8TreeNodeE>:
+    1bfa:	f3 0f 1e fa          	endbr64
+    1bfe:	55                   	push   %rbp
+    1bff:	48 89 e5             	mov    %rsp,%rbp
+    1c02:	48 83 ec 10          	sub    $0x10,%rsp
+    1c06:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    1c0a:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    1c0e:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1c12:	48 8b 00             	mov    (%rax),%rax
+    1c15:	48 85 c0             	test   %rax,%rax
+    1c18:	74 63                	je     1c7d <_ZN10BinaryTree8preorderEPPNS_8TreeNodeE+0x83>
+    1c1a:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1c1e:	48 8b 00             	mov    (%rax),%rax
+    1c21:	8b 00                	mov    (%rax),%eax
+    1c23:	89 c6                	mov    %eax,%esi
+    1c25:	48 8d 05 14 54 00 00 	lea    0x5414(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1c2c:	48 89 c7             	mov    %rax,%rdi
+    1c2f:	e8 7c f6 ff ff       	call   12b0 <_ZNSolsEi@plt>
+    1c34:	48 89 c2             	mov    %rax,%rdx
+    1c37:	48 8d 05 25 25 00 00 	lea    0x2525(%rip),%rax        # 4163 <_IO_stdin_used+0x163>
+    1c3e:	48 89 c6             	mov    %rax,%rsi
+    1c41:	48 89 d7             	mov    %rdx,%rdi
+    1c44:	e8 a7 f5 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1c49:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1c4d:	48 8b 00             	mov    (%rax),%rax
+    1c50:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    1c54:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1c58:	48 89 d6             	mov    %rdx,%rsi
+    1c5b:	48 89 c7             	mov    %rax,%rdi
+    1c5e:	e8 97 ff ff ff       	call   1bfa <_ZN10BinaryTree8preorderEPPNS_8TreeNodeE>
+    1c63:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1c67:	48 8b 00             	mov    (%rax),%rax
+    1c6a:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    1c6e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1c72:	48 89 d6             	mov    %rdx,%rsi
+    1c75:	48 89 c7             	mov    %rax,%rdi
+    1c78:	e8 7d ff ff ff       	call   1bfa <_ZN10BinaryTree8preorderEPPNS_8TreeNodeE>
+    1c7d:	90                   	nop
+    1c7e:	c9                   	leave
+    1c7f:	c3                   	ret
+
+0000000000001c80 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEED1Ev>:
+    1c80:	f3 0f 1e fa          	endbr64
+    1c84:	55                   	push   %rbp
+    1c85:	48 89 e5             	mov    %rsp,%rbp
+    1c88:	48 83 ec 10          	sub    $0x10,%rsp
+    1c8c:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    1c90:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1c94:	48 89 c7             	mov    %rax,%rdi
+    1c97:	e8 a2 03 00 00       	call   203e <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EED1Ev>
+    1c9c:	90                   	nop
+    1c9d:	c9                   	leave
+    1c9e:	c3                   	ret
+    1c9f:	90                   	nop
+
+0000000000001ca0 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE>:
+    1ca0:	f3 0f 1e fa          	endbr64
+    1ca4:	55                   	push   %rbp
+    1ca5:	48 89 e5             	mov    %rsp,%rbp
+    1ca8:	53                   	push   %rbx
+    1ca9:	48 81 ec 98 00 00 00 	sub    $0x98,%rsp
+    1cb0:	48 89 bd 68 ff ff ff 	mov    %rdi,-0x98(%rbp)
+    1cb7:	48 89 b5 60 ff ff ff 	mov    %rsi,-0xa0(%rbp)
+    1cbe:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    1cc5:	00 00 
+    1cc7:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    1ccb:	31 c0                	xor    %eax,%eax
+    1ccd:	48 8b 85 60 ff ff ff 	mov    -0xa0(%rbp),%rax
+    1cd4:	48 8b 00             	mov    (%rax),%rax
+    1cd7:	48 85 c0             	test   %rax,%rax
+    1cda:	75 35                	jne    1d11 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x71>
+    1cdc:	48 8d 05 20 24 00 00 	lea    0x2420(%rip),%rax        # 4103 <_IO_stdin_used+0x103>
+    1ce3:	48 89 c6             	mov    %rax,%rsi
+    1ce6:	48 8d 05 53 53 00 00 	lea    0x5353(%rip),%rax        # 7040 <_ZSt4cout@GLIBCXX_3.4>
+    1ced:	48 89 c7             	mov    %rax,%rdi
+    1cf0:	e8 fb f4 ff ff       	call   11f0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1cf5:	48 8b 15 dc 52 00 00 	mov    0x52dc(%rip),%rdx        # 6fd8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    1cfc:	48 89 d6             	mov    %rdx,%rsi
+    1cff:	48 89 c7             	mov    %rax,%rdi
+    1d02:	e8 19 f5 ff ff       	call   1220 <_ZNSolsEPFRSoS_E@plt>
+    1d07:	bb 00 00 00 00       	mov    $0x0,%ebx
+    1d0c:	e9 ea 01 00 00       	jmp    1efb <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x25b>
+    1d11:	c6 85 7f ff ff ff 00 	movb   $0x0,-0x81(%rbp)
+    1d18:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1d1c:	48 89 c7             	mov    %rax,%rdi
+    1d1f:	e8 e0 02 00 00       	call   2004 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEEC1IS5_vEEv>
+    1d24:	48 8b 95 60 ff ff ff 	mov    -0xa0(%rbp),%rdx
+    1d2b:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1d2f:	48 89 d6             	mov    %rdx,%rsi
+    1d32:	48 89 c7             	mov    %rax,%rdi
+    1d35:	e8 98 03 00 00       	call   20d2 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushERKS2_>
+    1d3a:	48 c7 45 80 00 00 00 	movq   $0x0,-0x80(%rbp)
+    1d41:	00 
+    1d42:	48 8d 55 80          	lea    -0x80(%rbp),%rdx
+    1d46:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1d4a:	48 89 d6             	mov    %rdx,%rsi
+    1d4d:	48 89 c7             	mov    %rax,%rdi
+    1d50:	e8 a7 03 00 00       	call   20fc <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushEOS2_>
+    1d55:	e9 79 01 00 00       	jmp    1ed3 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x233>
+    1d5a:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1d5e:	48 89 c7             	mov    %rax,%rdi
+    1d61:	e8 ec 03 00 00       	call   2152 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE5frontEv>
+    1d66:	48 8b 00             	mov    (%rax),%rax
+    1d69:	48 89 45 88          	mov    %rax,-0x78(%rbp)
+    1d6d:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1d71:	48 89 c7             	mov    %rax,%rdi
+    1d74:	e8 f7 03 00 00       	call   2170 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE3popEv>
+    1d79:	48 83 7d 88 00       	cmpq   $0x0,-0x78(%rbp)
+    1d7e:	0f 84 ea 00 00 00    	je     1e6e <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1ce>
+    1d84:	0f b6 85 7f ff ff ff 	movzbl -0x81(%rbp),%eax
+    1d8b:	83 f0 01             	xor    $0x1,%eax
+    1d8e:	84 c0                	test   %al,%al
+    1d90:	0f 84 d8 00 00 00    	je     1e6e <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1ce>
+    1d96:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1d9a:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1d9e:	48 85 c0             	test   %rax,%rax
+    1da1:	75 19                	jne    1dbc <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x11c>
+    1da3:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1da7:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1dab:	48 85 c0             	test   %rax,%rax
+    1dae:	75 0c                	jne    1dbc <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x11c>
+    1db0:	c6 85 7f ff ff ff 01 	movb   $0x1,-0x81(%rbp)
+    1db7:	e9 b0 00 00 00       	jmp    1e6c <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1cc>
+    1dbc:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1dc0:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1dc4:	48 85 c0             	test   %rax,%rax
+    1dc7:	74 2d                	je     1df6 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x156>
+    1dc9:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1dcd:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1dd1:	48 85 c0             	test   %rax,%rax
+    1dd4:	75 20                	jne    1df6 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x156>
+    1dd6:	c6 85 7f ff ff ff 01 	movb   $0x1,-0x81(%rbp)
+    1ddd:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1de1:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    1de5:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1de9:	48 89 d6             	mov    %rdx,%rsi
+    1dec:	48 89 c7             	mov    %rax,%rdi
+    1def:	e8 de 02 00 00       	call   20d2 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushERKS2_>
+    1df4:	eb 76                	jmp    1e6c <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1cc>
+    1df6:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1dfa:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1dfe:	48 85 c0             	test   %rax,%rax
+    1e01:	75 17                	jne    1e1a <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x17a>
+    1e03:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e07:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1e0b:	48 85 c0             	test   %rax,%rax
+    1e0e:	74 0a                	je     1e1a <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x17a>
+    1e10:	bb 00 00 00 00       	mov    $0x0,%ebx
+    1e15:	e9 d5 00 00 00       	jmp    1eef <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x24f>
+    1e1a:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e1e:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1e22:	48 85 c0             	test   %rax,%rax
+    1e25:	0f 84 a4 00 00 00    	je     1ecf <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x22f>
+    1e2b:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e2f:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1e33:	48 85 c0             	test   %rax,%rax
+    1e36:	0f 84 93 00 00 00    	je     1ecf <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x22f>
+    1e3c:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e40:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    1e44:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1e48:	48 89 d6             	mov    %rdx,%rsi
+    1e4b:	48 89 c7             	mov    %rax,%rdi
+    1e4e:	e8 7f 02 00 00       	call   20d2 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushERKS2_>
+    1e53:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e57:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    1e5b:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1e5f:	48 89 d6             	mov    %rdx,%rsi
+    1e62:	48 89 c7             	mov    %rax,%rdi
+    1e65:	e8 68 02 00 00       	call   20d2 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushERKS2_>
+    1e6a:	eb 63                	jmp    1ecf <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x22f>
+    1e6c:	eb 61                	jmp    1ecf <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x22f>
+    1e6e:	48 83 7d 88 00       	cmpq   $0x0,-0x78(%rbp)
+    1e73:	74 2a                	je     1e9f <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1ff>
+    1e75:	80 bd 7f ff ff ff 00 	cmpb   $0x0,-0x81(%rbp)
+    1e7c:	74 21                	je     1e9f <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1ff>
+    1e7e:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e82:	48 8b 40 08          	mov    0x8(%rax),%rax
+    1e86:	48 85 c0             	test   %rax,%rax
+    1e89:	75 0d                	jne    1e98 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x1f8>
+    1e8b:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+    1e8f:	48 8b 40 10          	mov    0x10(%rax),%rax
+    1e93:	48 85 c0             	test   %rax,%rax
+    1e96:	74 3a                	je     1ed2 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x232>
+    1e98:	bb 00 00 00 00       	mov    $0x0,%ebx
+    1e9d:	eb 50                	jmp    1eef <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x24f>
+    1e9f:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1ea3:	48 89 c7             	mov    %rax,%rdi
+    1ea6:	e8 89 02 00 00       	call   2134 <_ZNKSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE5emptyEv>
+    1eab:	83 f0 01             	xor    $0x1,%eax
+    1eae:	84 c0                	test   %al,%al
+    1eb0:	74 21                	je     1ed3 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x233>
+    1eb2:	48 c7 45 80 00 00 00 	movq   $0x0,-0x80(%rbp)
+    1eb9:	00 
+    1eba:	48 8d 55 80          	lea    -0x80(%rbp),%rdx
+    1ebe:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1ec2:	48 89 d6             	mov    %rdx,%rsi
+    1ec5:	48 89 c7             	mov    %rax,%rdi
+    1ec8:	e8 2f 02 00 00       	call   20fc <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushEOS2_>
+    1ecd:	eb 04                	jmp    1ed3 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x233>
+    1ecf:	90                   	nop
+    1ed0:	eb 01                	jmp    1ed3 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x233>
+    1ed2:	90                   	nop
+    1ed3:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1ed7:	48 89 c7             	mov    %rax,%rdi
+    1eda:	e8 55 02 00 00       	call   2134 <_ZNKSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE5emptyEv>
+    1edf:	83 f0 01             	xor    $0x1,%eax
+    1ee2:	84 c0                	test   %al,%al
+    1ee4:	0f 85 70 fe ff ff    	jne    1d5a <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0xba>
+    1eea:	bb 01 00 00 00       	mov    $0x1,%ebx
+    1eef:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1ef3:	48 89 c7             	mov    %rax,%rdi
+    1ef6:	e8 85 fd ff ff       	call   1c80 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEED1Ev>
+    1efb:	89 d8                	mov    %ebx,%eax
+    1efd:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    1f01:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    1f08:	00 00 
+    1f0a:	74 39                	je     1f45 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x2a5>
+    1f0c:	eb 32                	jmp    1f40 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x2a0>
+    1f0e:	f3 0f 1e fa          	endbr64
+    1f12:	48 89 c3             	mov    %rax,%rbx
+    1f15:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+    1f19:	48 89 c7             	mov    %rax,%rdi
+    1f1c:	e8 5f fd ff ff       	call   1c80 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEED1Ev>
+    1f21:	48 89 d8             	mov    %rbx,%rax
+    1f24:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    1f28:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    1f2f:	00 00 
+    1f31:	74 05                	je     1f38 <_ZN10BinaryTree17checkCompletenessEPPNS_8TreeNodeE+0x298>
+    1f33:	e8 f8 f2 ff ff       	call   1230 <__stack_chk_fail@plt>
+    1f38:	48 89 c7             	mov    %rax,%rdi
+    1f3b:	e8 80 f3 ff ff       	call   12c0 <_Unwind_Resume@plt>
+    1f40:	e8 eb f2 ff ff       	call   1230 <__stack_chk_fail@plt>
+    1f45:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    1f49:	c9                   	leave
+    1f4a:	c3                   	ret
+    1f4b:	90                   	nop
+
+0000000000001f4c <_ZN10BinaryTree14freeBinaryTreeEPPNS_8TreeNodeE>:
+    1f4c:	f3 0f 1e fa          	endbr64
+    1f50:	55                   	push   %rbp
+    1f51:	48 89 e5             	mov    %rsp,%rbp
+    1f54:	48 83 ec 10          	sub    $0x10,%rsp
+    1f58:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    1f5c:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    1f60:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1f64:	48 8b 00             	mov    (%rax),%rax
+    1f67:	48 85 c0             	test   %rax,%rax
+    1f6a:	74 4d                	je     1fb9 <_ZN10BinaryTree14freeBinaryTreeEPPNS_8TreeNodeE+0x6d>
+    1f6c:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1f70:	48 8b 00             	mov    (%rax),%rax
+    1f73:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    1f77:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1f7b:	48 89 d6             	mov    %rdx,%rsi
+    1f7e:	48 89 c7             	mov    %rax,%rdi
+    1f81:	e8 c6 ff ff ff       	call   1f4c <_ZN10BinaryTree14freeBinaryTreeEPPNS_8TreeNodeE>
+    1f86:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1f8a:	48 8b 00             	mov    (%rax),%rax
+    1f8d:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    1f91:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1f95:	48 89 d6             	mov    %rdx,%rsi
+    1f98:	48 89 c7             	mov    %rax,%rdi
+    1f9b:	e8 ac ff ff ff       	call   1f4c <_ZN10BinaryTree14freeBinaryTreeEPPNS_8TreeNodeE>
+    1fa0:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1fa4:	48 8b 00             	mov    (%rax),%rax
+    1fa7:	48 85 c0             	test   %rax,%rax
+    1faa:	74 0d                	je     1fb9 <_ZN10BinaryTree14freeBinaryTreeEPPNS_8TreeNodeE+0x6d>
+    1fac:	be 20 00 00 00       	mov    $0x20,%esi
+    1fb1:	48 89 c7             	mov    %rax,%rdi
+    1fb4:	e8 57 f2 ff ff       	call   1210 <_ZdlPvm@plt>
+    1fb9:	90                   	nop
+    1fba:	c9                   	leave
+    1fbb:	c3                   	ret
+
+0000000000001fbc <_ZN10BinaryTreeC1Ev>:
+    1fbc:	f3 0f 1e fa          	endbr64
+    1fc0:	55                   	push   %rbp
+    1fc1:	48 89 e5             	mov    %rsp,%rbp
+    1fc4:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    1fc8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1fcc:	48 c7 40 08 ff ff ff 	movq   $0xffffffffffffffff,0x8(%rax)
+    1fd3:	ff 
+    1fd4:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1fd8:	48 c7 40 10 ff ff ff 	movq   $0xffffffffffffffff,0x10(%rax)
+    1fdf:	ff 
+    1fe0:	90                   	nop
+    1fe1:	5d                   	pop    %rbp
+    1fe2:	c3                   	ret
+    1fe3:	90                   	nop
+
+0000000000001fe4 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EEC1Ev>:
+    1fe4:	f3 0f 1e fa          	endbr64
+    1fe8:	55                   	push   %rbp
+    1fe9:	48 89 e5             	mov    %rsp,%rbp
+    1fec:	48 83 ec 10          	sub    $0x10,%rsp
+    1ff0:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    1ff4:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1ff8:	48 89 c7             	mov    %rax,%rdi
+    1ffb:	e8 b8 01 00 00       	call   21b8 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EEC1Ev>
+    2000:	90                   	nop
+    2001:	c9                   	leave
+    2002:	c3                   	ret
+    2003:	90                   	nop
+
+0000000000002004 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEEC1IS5_vEEv>:
+    2004:	f3 0f 1e fa          	endbr64
+    2008:	55                   	push   %rbp
+    2009:	48 89 e5             	mov    %rsp,%rbp
+    200c:	48 83 ec 10          	sub    $0x10,%rsp
+    2010:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2014:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2018:	66 0f ef c0          	pxor   %xmm0,%xmm0
+    201c:	0f 11 00             	movups %xmm0,(%rax)
+    201f:	0f 11 40 10          	movups %xmm0,0x10(%rax)
+    2023:	0f 11 40 20          	movups %xmm0,0x20(%rax)
+    2027:	0f 11 40 30          	movups %xmm0,0x30(%rax)
+    202b:	0f 11 40 40          	movups %xmm0,0x40(%rax)
+    202f:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2033:	48 89 c7             	mov    %rax,%rdi
+    2036:	e8 a9 ff ff ff       	call   1fe4 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EEC1Ev>
+    203b:	90                   	nop
+    203c:	c9                   	leave
+    203d:	c3                   	ret
+
+000000000000203e <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EED1Ev>:
+    203e:	f3 0f 1e fa          	endbr64
+    2042:	55                   	push   %rbp
+    2043:	48 89 e5             	mov    %rsp,%rbp
+    2046:	53                   	push   %rbx
+    2047:	48 83 ec 68          	sub    $0x68,%rsp
+    204b:	48 89 7d 98          	mov    %rdi,-0x68(%rbp)
+    204f:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    2056:	00 00 
+    2058:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    205c:	31 c0                	xor    %eax,%eax
+    205e:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+    2062:	48 89 c7             	mov    %rax,%rdi
+    2065:	e8 72 02 00 00       	call   22dc <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>
+    206a:	48 89 c3             	mov    %rax,%rbx
+    206d:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    2071:	48 8b 55 98          	mov    -0x68(%rbp),%rdx
+    2075:	48 89 d6             	mov    %rdx,%rsi
+    2078:	48 89 c7             	mov    %rax,%rdi
+    207b:	e8 2a 02 00 00       	call   22aa <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE3endEv>
+    2080:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+    2084:	48 8b 55 98          	mov    -0x68(%rbp),%rdx
+    2088:	48 89 d6             	mov    %rdx,%rsi
+    208b:	48 89 c7             	mov    %rax,%rdi
+    208e:	e8 e5 01 00 00       	call   2278 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5beginEv>
+    2093:	48 8d 55 c0          	lea    -0x40(%rbp),%rdx
+    2097:	48 8d 75 a0          	lea    -0x60(%rbp),%rsi
+    209b:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+    209f:	48 89 d9             	mov    %rbx,%rcx
+    20a2:	48 89 c7             	mov    %rax,%rdi
+    20a5:	e8 44 02 00 00       	call   22ee <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE15_M_destroy_dataESt15_Deque_iteratorIS2_RS2_PS2_ES8_RKS3_>
+    20aa:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+    20ae:	48 89 c7             	mov    %rax,%rdi
+    20b1:	e8 56 01 00 00       	call   220c <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EED1Ev>
+    20b6:	90                   	nop
+    20b7:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    20bb:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    20c2:	00 00 
+    20c4:	74 05                	je     20cb <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EED1Ev+0x8d>
+    20c6:	e8 65 f1 ff ff       	call   1230 <__stack_chk_fail@plt>
+    20cb:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    20cf:	c9                   	leave
+    20d0:	c3                   	ret
+    20d1:	90                   	nop
+
+00000000000020d2 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushERKS2_>:
+    20d2:	f3 0f 1e fa          	endbr64
+    20d6:	55                   	push   %rbp
+    20d7:	48 89 e5             	mov    %rsp,%rbp
+    20da:	48 83 ec 10          	sub    $0x10,%rsp
+    20de:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    20e2:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    20e6:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    20ea:	48 8b 55 f0          	mov    -0x10(%rbp),%rdx
+    20ee:	48 89 d6             	mov    %rdx,%rsi
+    20f1:	48 89 c7             	mov    %rax,%rdi
+    20f4:	e8 37 02 00 00       	call   2330 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9push_backERKS2_>
+    20f9:	90                   	nop
+    20fa:	c9                   	leave
+    20fb:	c3                   	ret
+
+00000000000020fc <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE4pushEOS2_>:
+    20fc:	f3 0f 1e fa          	endbr64
+    2100:	55                   	push   %rbp
+    2101:	48 89 e5             	mov    %rsp,%rbp
+    2104:	53                   	push   %rbx
+    2105:	48 83 ec 18          	sub    $0x18,%rsp
+    2109:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    210d:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    2111:	48 8b 5d e8          	mov    -0x18(%rbp),%rbx
+    2115:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    2119:	48 89 c7             	mov    %rax,%rdi
+    211c:	e8 d1 02 00 00       	call   23f2 <_ZSt4moveIRPN10BinaryTree8TreeNodeEEONSt16remove_referenceIT_E4typeEOS5_>
+    2121:	48 89 c6             	mov    %rax,%rsi
+    2124:	48 89 df             	mov    %rbx,%rdi
+    2127:	e8 d8 02 00 00       	call   2404 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9push_backEOS2_>
+    212c:	90                   	nop
+    212d:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2131:	c9                   	leave
+    2132:	c3                   	ret
+    2133:	90                   	nop
+
+0000000000002134 <_ZNKSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE5emptyEv>:
+    2134:	f3 0f 1e fa          	endbr64
+    2138:	55                   	push   %rbp
+    2139:	48 89 e5             	mov    %rsp,%rbp
+    213c:	48 83 ec 10          	sub    $0x10,%rsp
+    2140:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2144:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2148:	48 89 c7             	mov    %rax,%rdi
+    214b:	e8 ea 02 00 00       	call   243a <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5emptyEv>
+    2150:	c9                   	leave
+    2151:	c3                   	ret
+
+0000000000002152 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE5frontEv>:
+    2152:	f3 0f 1e fa          	endbr64
+    2156:	55                   	push   %rbp
+    2157:	48 89 e5             	mov    %rsp,%rbp
+    215a:	48 83 ec 10          	sub    $0x10,%rsp
+    215e:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2162:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2166:	48 89 c7             	mov    %rax,%rdi
+    2169:	e8 fa 02 00 00       	call   2468 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5frontEv>
+    216e:	c9                   	leave
+    216f:	c3                   	ret
+
+0000000000002170 <_ZNSt5queueIPN10BinaryTree8TreeNodeESt5dequeIS2_SaIS2_EEE3popEv>:
+    2170:	f3 0f 1e fa          	endbr64
+    2174:	55                   	push   %rbp
+    2175:	48 89 e5             	mov    %rsp,%rbp
+    2178:	48 83 ec 10          	sub    $0x10,%rsp
+    217c:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2180:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2184:	48 89 c7             	mov    %rax,%rdi
+    2187:	e8 30 03 00 00       	call   24bc <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9pop_frontEv>
+    218c:	90                   	nop
+    218d:	c9                   	leave
+    218e:	c3                   	ret
+    218f:	90                   	nop
+
+0000000000002190 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE11_Deque_implD1Ev>:
+    2190:	f3 0f 1e fa          	endbr64
+    2194:	55                   	push   %rbp
+    2195:	48 89 e5             	mov    %rsp,%rbp
+    2198:	48 83 ec 20          	sub    $0x20,%rsp
+    219c:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    21a0:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    21a4:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    21a8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    21ac:	48 89 c7             	mov    %rax,%rdi
+    21af:	e8 f4 09 00 00       	call   2ba8 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEED1Ev>
+    21b4:	90                   	nop
+    21b5:	90                   	nop
+    21b6:	c9                   	leave
+    21b7:	c3                   	ret
+
+00000000000021b8 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EEC1Ev>:
+    21b8:	f3 0f 1e fa          	endbr64
+    21bc:	55                   	push   %rbp
+    21bd:	48 89 e5             	mov    %rsp,%rbp
+    21c0:	53                   	push   %rbx
+    21c1:	48 83 ec 18          	sub    $0x18,%rsp
+    21c5:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    21c9:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    21cd:	48 89 c7             	mov    %rax,%rdi
+    21d0:	e8 69 03 00 00       	call   253e <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE11_Deque_implC1Ev>
+    21d5:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    21d9:	be 00 00 00 00       	mov    $0x0,%esi
+    21de:	48 89 c7             	mov    %rax,%rdi
+    21e1:	e8 8a 03 00 00       	call   2570 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_initialize_mapEm>
+    21e6:	eb 1e                	jmp    2206 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EEC1Ev+0x4e>
+    21e8:	f3 0f 1e fa          	endbr64
+    21ec:	48 89 c3             	mov    %rax,%rbx
+    21ef:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    21f3:	48 89 c7             	mov    %rax,%rdi
+    21f6:	e8 95 ff ff ff       	call   2190 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE11_Deque_implD1Ev>
+    21fb:	48 89 d8             	mov    %rbx,%rax
+    21fe:	48 89 c7             	mov    %rax,%rdi
+    2201:	e8 ba f0 ff ff       	call   12c0 <_Unwind_Resume@plt>
+    2206:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    220a:	c9                   	leave
+    220b:	c3                   	ret
+
+000000000000220c <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EED1Ev>:
+    220c:	f3 0f 1e fa          	endbr64
+    2210:	55                   	push   %rbp
+    2211:	48 89 e5             	mov    %rsp,%rbp
+    2214:	48 83 ec 10          	sub    $0x10,%rsp
+    2218:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    221c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2220:	48 8b 00             	mov    (%rax),%rax
+    2223:	48 85 c0             	test   %rax,%rax
+    2226:	74 41                	je     2269 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EED1Ev+0x5d>
+    2228:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    222c:	48 8b 40 48          	mov    0x48(%rax),%rax
+    2230:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    2234:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2238:	48 8b 48 28          	mov    0x28(%rax),%rcx
+    223c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2240:	48 89 ce             	mov    %rcx,%rsi
+    2243:	48 89 c7             	mov    %rax,%rdi
+    2246:	e8 2b 05 00 00       	call   2776 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_destroy_nodesEPPS2_S6_>
+    224b:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    224f:	48 8b 50 08          	mov    0x8(%rax),%rdx
+    2253:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2257:	48 8b 08             	mov    (%rax),%rcx
+    225a:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    225e:	48 89 ce             	mov    %rcx,%rsi
+    2261:	48 89 c7             	mov    %rax,%rdi
+    2264:	e8 59 05 00 00       	call   27c2 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_deallocate_mapEPPS2_m>
+    2269:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    226d:	48 89 c7             	mov    %rax,%rdi
+    2270:	e8 1b ff ff ff       	call   2190 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE11_Deque_implD1Ev>
+    2275:	90                   	nop
+    2276:	c9                   	leave
+    2277:	c3                   	ret
+
+0000000000002278 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5beginEv>:
+    2278:	f3 0f 1e fa          	endbr64
+    227c:	55                   	push   %rbp
+    227d:	48 89 e5             	mov    %rsp,%rbp
+    2280:	48 83 ec 10          	sub    $0x10,%rsp
+    2284:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2288:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    228c:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    2290:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    2294:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2298:	48 89 d6             	mov    %rdx,%rsi
+    229b:	48 89 c7             	mov    %rax,%rdi
+    229e:	e8 a5 05 00 00       	call   2848 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EC1ERKS5_>
+    22a3:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    22a7:	c9                   	leave
+    22a8:	c3                   	ret
+    22a9:	90                   	nop
+
+00000000000022aa <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE3endEv>:
+    22aa:	f3 0f 1e fa          	endbr64
+    22ae:	55                   	push   %rbp
+    22af:	48 89 e5             	mov    %rsp,%rbp
+    22b2:	48 83 ec 10          	sub    $0x10,%rsp
+    22b6:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    22ba:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    22be:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    22c2:	48 8d 50 30          	lea    0x30(%rax),%rdx
+    22c6:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    22ca:	48 89 d6             	mov    %rdx,%rsi
+    22cd:	48 89 c7             	mov    %rax,%rdi
+    22d0:	e8 73 05 00 00       	call   2848 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EC1ERKS5_>
+    22d5:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    22d9:	c9                   	leave
+    22da:	c3                   	ret
+    22db:	90                   	nop
+
+00000000000022dc <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>:
+    22dc:	f3 0f 1e fa          	endbr64
+    22e0:	55                   	push   %rbp
+    22e1:	48 89 e5             	mov    %rsp,%rbp
+    22e4:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    22e8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    22ec:	5d                   	pop    %rbp
+    22ed:	c3                   	ret
+
+00000000000022ee <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE15_M_destroy_dataESt15_Deque_iteratorIS2_RS2_PS2_ES8_RKS3_>:
+    22ee:	f3 0f 1e fa          	endbr64
+    22f2:	55                   	push   %rbp
+    22f3:	48 89 e5             	mov    %rsp,%rbp
+    22f6:	48 83 ec 50          	sub    $0x50,%rsp
+    22fa:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    22fe:	48 89 75 c0          	mov    %rsi,-0x40(%rbp)
+    2302:	48 89 55 b8          	mov    %rdx,-0x48(%rbp)
+    2306:	48 89 4d b0          	mov    %rcx,-0x50(%rbp)
+    230a:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    2311:	00 00 
+    2313:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    2317:	31 c0                	xor    %eax,%eax
+    2319:	90                   	nop
+    231a:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    231e:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    2325:	00 00 
+    2327:	74 05                	je     232e <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE15_M_destroy_dataESt15_Deque_iteratorIS2_RS2_PS2_ES8_RKS3_+0x40>
+    2329:	e8 02 ef ff ff       	call   1230 <__stack_chk_fail@plt>
+    232e:	c9                   	leave
+    232f:	c3                   	ret
+
+0000000000002330 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9push_backERKS2_>:
+    2330:	f3 0f 1e fa          	endbr64
+    2334:	55                   	push   %rbp
+    2335:	48 89 e5             	mov    %rsp,%rbp
+    2338:	53                   	push   %rbx
+    2339:	48 83 ec 48          	sub    $0x48,%rsp
+    233d:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    2341:	48 89 75 b0          	mov    %rsi,-0x50(%rbp)
+    2345:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2349:	48 8b 50 30          	mov    0x30(%rax),%rdx
+    234d:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2351:	48 8b 40 40          	mov    0x40(%rax),%rax
+    2355:	48 83 e8 08          	sub    $0x8,%rax
+    2359:	48 39 c2             	cmp    %rax,%rdx
+    235c:	74 7a                	je     23d8 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9push_backERKS2_+0xa8>
+    235e:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2362:	48 8b 40 30          	mov    0x30(%rax),%rax
+    2366:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    236a:	48 89 55 c0          	mov    %rdx,-0x40(%rbp)
+    236e:	48 89 45 c8          	mov    %rax,-0x38(%rbp)
+    2372:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    2376:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    237a:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    237e:	48 89 c7             	mov    %rax,%rdi
+    2381:	e8 87 0a 00 00       	call   2e0d <_ZSt7forwardIRKPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS5_E4typeE>
+    2386:	48 8b 55 c0          	mov    -0x40(%rbp),%rdx
+    238a:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    238e:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    2392:	48 89 55 e0          	mov    %rdx,-0x20(%rbp)
+    2396:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    239a:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    239e:	48 89 c6             	mov    %rax,%rsi
+    23a1:	bf 08 00 00 00       	mov    $0x8,%edi
+    23a6:	e8 c6 f1 ff ff       	call   1571 <_ZnwmPv>
+    23ab:	48 89 c3             	mov    %rax,%rbx
+    23ae:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    23b2:	48 89 c7             	mov    %rax,%rdi
+    23b5:	e8 53 0a 00 00       	call   2e0d <_ZSt7forwardIRKPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS5_E4typeE>
+    23ba:	48 8b 00             	mov    (%rax),%rax
+    23bd:	48 89 03             	mov    %rax,(%rbx)
+    23c0:	90                   	nop
+    23c1:	90                   	nop
+    23c2:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    23c6:	48 8b 40 30          	mov    0x30(%rax),%rax
+    23ca:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    23ce:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    23d2:	48 89 50 30          	mov    %rdx,0x30(%rax)
+    23d6:	eb 13                	jmp    23eb <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9push_backERKS2_+0xbb>
+    23d8:	48 8b 55 b0          	mov    -0x50(%rbp),%rdx
+    23dc:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    23e0:	48 89 d6             	mov    %rdx,%rsi
+    23e3:	48 89 c7             	mov    %rax,%rdi
+    23e6:	e8 af 04 00 00       	call   289a <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_push_back_auxIJRKS2_EEEvDpOT_>
+    23eb:	90                   	nop
+    23ec:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    23f0:	c9                   	leave
+    23f1:	c3                   	ret
+
+00000000000023f2 <_ZSt4moveIRPN10BinaryTree8TreeNodeEEONSt16remove_referenceIT_E4typeEOS5_>:
+    23f2:	f3 0f 1e fa          	endbr64
+    23f6:	55                   	push   %rbp
+    23f7:	48 89 e5             	mov    %rsp,%rbp
+    23fa:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    23fe:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2402:	5d                   	pop    %rbp
+    2403:	c3                   	ret
+
+0000000000002404 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9push_backEOS2_>:
+    2404:	f3 0f 1e fa          	endbr64
+    2408:	55                   	push   %rbp
+    2409:	48 89 e5             	mov    %rsp,%rbp
+    240c:	48 83 ec 10          	sub    $0x10,%rsp
+    2410:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2414:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    2418:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    241c:	48 89 c7             	mov    %rax,%rdi
+    241f:	e8 ce ff ff ff       	call   23f2 <_ZSt4moveIRPN10BinaryTree8TreeNodeEEONSt16remove_referenceIT_E4typeEOS5_>
+    2424:	48 89 c2             	mov    %rax,%rdx
+    2427:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    242b:	48 89 d6             	mov    %rdx,%rsi
+    242e:	48 89 c7             	mov    %rax,%rdi
+    2431:	e8 7c 05 00 00       	call   29b2 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE12emplace_backIJS2_EEERS2_DpOT_>
+    2436:	90                   	nop
+    2437:	c9                   	leave
+    2438:	c3                   	ret
+    2439:	90                   	nop
+
+000000000000243a <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5emptyEv>:
+    243a:	f3 0f 1e fa          	endbr64
+    243e:	55                   	push   %rbp
+    243f:	48 89 e5             	mov    %rsp,%rbp
+    2442:	48 83 ec 10          	sub    $0x10,%rsp
+    2446:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    244a:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    244e:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    2452:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2456:	48 83 c0 30          	add    $0x30,%rax
+    245a:	48 89 d6             	mov    %rdx,%rsi
+    245d:	48 89 c7             	mov    %rax,%rdi
+    2460:	e8 31 06 00 00       	call   2a96 <_ZSteqRKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_ES7_>
+    2465:	c9                   	leave
+    2466:	c3                   	ret
+    2467:	90                   	nop
+
+0000000000002468 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5frontEv>:
+    2468:	f3 0f 1e fa          	endbr64
+    246c:	55                   	push   %rbp
+    246d:	48 89 e5             	mov    %rsp,%rbp
+    2470:	48 83 ec 40          	sub    $0x40,%rsp
+    2474:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    2478:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    247f:	00 00 
+    2481:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    2485:	31 c0                	xor    %eax,%eax
+    2487:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+    248b:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    248f:	48 89 d6             	mov    %rdx,%rsi
+    2492:	48 89 c7             	mov    %rax,%rdi
+    2495:	e8 de fd ff ff       	call   2278 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5beginEv>
+    249a:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+    249e:	48 89 c7             	mov    %rax,%rdi
+    24a1:	e8 16 06 00 00       	call   2abc <_ZNKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EdeEv>
+    24a6:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    24aa:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    24b1:	00 00 
+    24b3:	74 05                	je     24ba <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE5frontEv+0x52>
+    24b5:	e8 76 ed ff ff       	call   1230 <__stack_chk_fail@plt>
+    24ba:	c9                   	leave
+    24bb:	c3                   	ret
+
+00000000000024bc <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9pop_frontEv>:
+    24bc:	f3 0f 1e fa          	endbr64
+    24c0:	55                   	push   %rbp
+    24c1:	48 89 e5             	mov    %rsp,%rbp
+    24c4:	53                   	push   %rbx
+    24c5:	48 83 ec 38          	sub    $0x38,%rsp
+    24c9:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    24cd:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    24d1:	48 8b 50 10          	mov    0x10(%rax),%rdx
+    24d5:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    24d9:	48 8b 40 20          	mov    0x20(%rax),%rax
+    24dd:	48 83 e8 08          	sub    $0x8,%rax
+    24e1:	48 39 c2             	cmp    %rax,%rdx
+    24e4:	74 44                	je     252a <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9pop_frontEv+0x6e>
+    24e6:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    24ea:	48 8b 58 10          	mov    0x10(%rax),%rbx
+    24ee:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    24f2:	48 89 c7             	mov    %rax,%rdi
+    24f5:	e8 e2 fd ff ff       	call   22dc <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>
+    24fa:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    24fe:	48 89 5d d8          	mov    %rbx,-0x28(%rbp)
+    2502:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2506:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    250a:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    250e:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2512:	90                   	nop
+    2513:	90                   	nop
+    2514:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2518:	48 8b 40 10          	mov    0x10(%rax),%rax
+    251c:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    2520:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2524:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    2528:	eb 0c                	jmp    2536 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE9pop_frontEv+0x7a>
+    252a:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    252e:	48 89 c7             	mov    %rax,%rdi
+    2531:	e8 9c 05 00 00       	call   2ad2 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_pop_front_auxEv>
+    2536:	90                   	nop
+    2537:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    253b:	c9                   	leave
+    253c:	c3                   	ret
+    253d:	90                   	nop
+
+000000000000253e <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE11_Deque_implC1Ev>:
+    253e:	f3 0f 1e fa          	endbr64
+    2542:	55                   	push   %rbp
+    2543:	48 89 e5             	mov    %rsp,%rbp
+    2546:	48 83 ec 20          	sub    $0x20,%rsp
+    254a:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    254e:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2552:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+    2556:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    255a:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    255e:	90                   	nop
+    255f:	90                   	nop
+    2560:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2564:	48 89 c7             	mov    %rax,%rdi
+    2567:	e8 f2 05 00 00       	call   2b5e <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_Deque_impl_dataC1Ev>
+    256c:	90                   	nop
+    256d:	c9                   	leave
+    256e:	c3                   	ret
+    256f:	90                   	nop
+
+0000000000002570 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_initialize_mapEm>:
+    2570:	f3 0f 1e fa          	endbr64
+    2574:	55                   	push   %rbp
+    2575:	48 89 e5             	mov    %rsp,%rbp
+    2578:	53                   	push   %rbx
+    2579:	48 83 ec 48          	sub    $0x48,%rsp
+    257d:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    2581:	48 89 75 b0          	mov    %rsi,-0x50(%rbp)
+    2585:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    258c:	00 00 
+    258e:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2592:	31 c0                	xor    %eax,%eax
+    2594:	bf 08 00 00 00       	mov    $0x8,%edi
+    2599:	e8 e9 ef ff ff       	call   1587 <_ZSt16__deque_buf_sizem>
+    259e:	48 89 c3             	mov    %rax,%rbx
+    25a1:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    25a5:	ba 00 00 00 00       	mov    $0x0,%edx
+    25aa:	48 f7 f3             	div    %rbx
+    25ad:	48 83 c0 01          	add    $0x1,%rax
+    25b1:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    25b5:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    25b9:	48 83 c0 02          	add    $0x2,%rax
+    25bd:	48 89 45 c8          	mov    %rax,-0x38(%rbp)
+    25c1:	48 c7 45 c0 08 00 00 	movq   $0x8,-0x40(%rbp)
+    25c8:	00 
+    25c9:	48 8d 55 c8          	lea    -0x38(%rbp),%rdx
+    25cd:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+    25d1:	48 89 d6             	mov    %rdx,%rsi
+    25d4:	48 89 c7             	mov    %rax,%rdi
+    25d7:	e8 db 05 00 00       	call   2bb7 <_ZSt3maxImERKT_S2_S2_>
+    25dc:	48 8b 10             	mov    (%rax),%rdx
+    25df:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    25e3:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    25e7:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    25eb:	48 8b 50 08          	mov    0x8(%rax),%rdx
+    25ef:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    25f3:	48 89 d6             	mov    %rdx,%rsi
+    25f6:	48 89 c7             	mov    %rax,%rdi
+    25f9:	e8 e8 05 00 00       	call   2be6 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_allocate_mapEm>
+    25fe:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    2602:	48 89 02             	mov    %rax,(%rdx)
+    2605:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2609:	48 8b 10             	mov    (%rax),%rdx
+    260c:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2610:	48 8b 40 08          	mov    0x8(%rax),%rax
+    2614:	48 2b 45 d0          	sub    -0x30(%rbp),%rax
+    2618:	48 d1 e8             	shr    $1,%rax
+    261b:	48 c1 e0 03          	shl    $0x3,%rax
+    261f:	48 01 d0             	add    %rdx,%rax
+    2622:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+    2626:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    262a:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    2631:	00 
+    2632:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    2636:	48 01 d0             	add    %rdx,%rax
+    2639:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    263d:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    2641:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+    2645:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2649:	48 89 ce             	mov    %rcx,%rsi
+    264c:	48 89 c7             	mov    %rax,%rdi
+    264f:	e8 4e 06 00 00       	call   2ca2 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_create_nodesEPPS2_S6_>
+    2654:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2658:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    265c:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    2660:	48 89 c6             	mov    %rax,%rsi
+    2663:	48 89 d7             	mov    %rdx,%rdi
+    2666:	e8 c3 06 00 00       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    266b:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    266f:	48 83 c0 30          	add    $0x30,%rax
+    2673:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    2677:	48 83 ea 08          	sub    $0x8,%rdx
+    267b:	48 89 d6             	mov    %rdx,%rsi
+    267e:	48 89 c7             	mov    %rax,%rdi
+    2681:	e8 a8 06 00 00       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    2686:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    268a:	48 8b 50 18          	mov    0x18(%rax),%rdx
+    268e:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2692:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    2696:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    269a:	48 8b 58 38          	mov    0x38(%rax),%rbx
+    269e:	bf 08 00 00 00       	mov    $0x8,%edi
+    26a3:	e8 df ee ff ff       	call   1587 <_ZSt16__deque_buf_sizem>
+    26a8:	48 89 c1             	mov    %rax,%rcx
+    26ab:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    26af:	ba 00 00 00 00       	mov    $0x0,%edx
+    26b4:	48 f7 f1             	div    %rcx
+    26b7:	48 89 d1             	mov    %rdx,%rcx
+    26ba:	48 89 c8             	mov    %rcx,%rax
+    26bd:	48 c1 e0 03          	shl    $0x3,%rax
+    26c1:	48 8d 14 03          	lea    (%rbx,%rax,1),%rdx
+    26c5:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    26c9:	48 89 50 30          	mov    %rdx,0x30(%rax)
+    26cd:	90                   	nop
+    26ce:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    26d2:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    26d9:	00 00 
+    26db:	0f 84 8f 00 00 00    	je     2770 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_initialize_mapEm+0x200>
+    26e1:	e9 85 00 00 00       	jmp    276b <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_initialize_mapEm+0x1fb>
+    26e6:	f3 0f 1e fa          	endbr64
+    26ea:	48 89 c7             	mov    %rax,%rdi
+    26ed:	e8 ae ea ff ff       	call   11a0 <__cxa_begin_catch@plt>
+    26f2:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    26f6:	48 8b 50 08          	mov    0x8(%rax),%rdx
+    26fa:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    26fe:	48 8b 08             	mov    (%rax),%rcx
+    2701:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2705:	48 89 ce             	mov    %rcx,%rsi
+    2708:	48 89 c7             	mov    %rax,%rdi
+    270b:	e8 b2 00 00 00       	call   27c2 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_deallocate_mapEPPS2_m>
+    2710:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2714:	48 c7 00 00 00 00 00 	movq   $0x0,(%rax)
+    271b:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    271f:	48 c7 40 08 00 00 00 	movq   $0x0,0x8(%rax)
+    2726:	00 
+    2727:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    272b:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    2732:	00 00 
+    2734:	74 05                	je     273b <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_initialize_mapEm+0x1cb>
+    2736:	e8 f5 ea ff ff       	call   1230 <__stack_chk_fail@plt>
+    273b:	e8 30 eb ff ff       	call   1270 <__cxa_rethrow@plt>
+    2740:	f3 0f 1e fa          	endbr64
+    2744:	48 89 c3             	mov    %rax,%rbx
+    2747:	e8 44 eb ff ff       	call   1290 <__cxa_end_catch@plt>
+    274c:	48 89 d8             	mov    %rbx,%rax
+    274f:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    2753:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    275a:	00 00 
+    275c:	74 05                	je     2763 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_initialize_mapEm+0x1f3>
+    275e:	e8 cd ea ff ff       	call   1230 <__stack_chk_fail@plt>
+    2763:	48 89 c7             	mov    %rax,%rdi
+    2766:	e8 55 eb ff ff       	call   12c0 <_Unwind_Resume@plt>
+    276b:	e8 c0 ea ff ff       	call   1230 <__stack_chk_fail@plt>
+    2770:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2774:	c9                   	leave
+    2775:	c3                   	ret
+
+0000000000002776 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_destroy_nodesEPPS2_S6_>:
+    2776:	f3 0f 1e fa          	endbr64
+    277a:	55                   	push   %rbp
+    277b:	48 89 e5             	mov    %rsp,%rbp
+    277e:	48 83 ec 30          	sub    $0x30,%rsp
+    2782:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    2786:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    278a:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    278e:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    2792:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    2796:	eb 1b                	jmp    27b3 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_destroy_nodesEPPS2_S6_+0x3d>
+    2798:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    279c:	48 8b 10             	mov    (%rax),%rdx
+    279f:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    27a3:	48 89 d6             	mov    %rdx,%rsi
+    27a6:	48 89 c7             	mov    %rax,%rdi
+    27a9:	e8 d4 05 00 00       	call   2d82 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE18_M_deallocate_nodeEPS2_>
+    27ae:	48 83 45 f8 08       	addq   $0x8,-0x8(%rbp)
+    27b3:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    27b7:	48 3b 45 d8          	cmp    -0x28(%rbp),%rax
+    27bb:	72 db                	jb     2798 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_destroy_nodesEPPS2_S6_+0x22>
+    27bd:	90                   	nop
+    27be:	90                   	nop
+    27bf:	c9                   	leave
+    27c0:	c3                   	ret
+    27c1:	90                   	nop
+
+00000000000027c2 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_deallocate_mapEPPS2_m>:
+    27c2:	f3 0f 1e fa          	endbr64
+    27c6:	55                   	push   %rbp
+    27c7:	48 89 e5             	mov    %rsp,%rbp
+    27ca:	48 83 ec 40          	sub    $0x40,%rsp
+    27ce:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+    27d2:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+    27d6:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+    27da:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    27e1:	00 00 
+    27e3:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    27e7:	31 c0                	xor    %eax,%eax
+    27e9:	48 8d 45 e7          	lea    -0x19(%rbp),%rax
+    27ed:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+    27f1:	48 89 d6             	mov    %rdx,%rsi
+    27f4:	48 89 c7             	mov    %rax,%rdi
+    27f7:	e8 d4 05 00 00       	call   2dd0 <_ZNKSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE20_M_get_map_allocatorEv>
+    27fc:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2800:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2804:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2808:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+    280c:	48 8b 55 f0          	mov    -0x10(%rbp),%rdx
+    2810:	48 8b 4d e8          	mov    -0x18(%rbp),%rcx
+    2814:	48 8d 45 e7          	lea    -0x19(%rbp),%rax
+    2818:	48 89 ce             	mov    %rcx,%rsi
+    281b:	48 89 c7             	mov    %rax,%rdi
+    281e:	e8 f7 08 00 00       	call   311a <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEE10deallocateEPS3_m>
+    2823:	90                   	nop
+    2824:	48 8d 45 e7          	lea    -0x19(%rbp),%rax
+    2828:	48 89 c7             	mov    %rax,%rdi
+    282b:	e8 da 08 00 00       	call   310a <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEED1Ev>
+    2830:	90                   	nop
+    2831:	90                   	nop
+    2832:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2836:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    283d:	00 00 
+    283f:	74 05                	je     2846 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_deallocate_mapEPPS2_m+0x84>
+    2841:	e8 ea e9 ff ff       	call   1230 <__stack_chk_fail@plt>
+    2846:	c9                   	leave
+    2847:	c3                   	ret
+
+0000000000002848 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EC1ERKS5_>:
+    2848:	f3 0f 1e fa          	endbr64
+    284c:	55                   	push   %rbp
+    284d:	48 89 e5             	mov    %rsp,%rbp
+    2850:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2854:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    2858:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    285c:	48 8b 10             	mov    (%rax),%rdx
+    285f:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2863:	48 89 10             	mov    %rdx,(%rax)
+    2866:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    286a:	48 8b 50 08          	mov    0x8(%rax),%rdx
+    286e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2872:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    2876:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    287a:	48 8b 50 10          	mov    0x10(%rax),%rdx
+    287e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2882:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    2886:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    288a:	48 8b 50 18          	mov    0x18(%rax),%rdx
+    288e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2892:	48 89 50 18          	mov    %rdx,0x18(%rax)
+    2896:	90                   	nop
+    2897:	5d                   	pop    %rbp
+    2898:	c3                   	ret
+    2899:	90                   	nop
+
+000000000000289a <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_push_back_auxIJRKS2_EEEvDpOT_>:
+    289a:	f3 0f 1e fa          	endbr64
+    289e:	55                   	push   %rbp
+    289f:	48 89 e5             	mov    %rsp,%rbp
+    28a2:	53                   	push   %rbx
+    28a3:	48 83 ec 48          	sub    $0x48,%rsp
+    28a7:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    28ab:	48 89 75 b0          	mov    %rsi,-0x50(%rbp)
+    28af:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    28b3:	48 89 c7             	mov    %rax,%rdi
+    28b6:	e8 65 05 00 00       	call   2e20 <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE4sizeEv>
+    28bb:	48 89 c3             	mov    %rax,%rbx
+    28be:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    28c2:	48 89 c7             	mov    %rax,%rdi
+    28c5:	e8 84 05 00 00       	call   2e4e <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE8max_sizeEv>
+    28ca:	48 39 c3             	cmp    %rax,%rbx
+    28cd:	0f 94 c0             	sete   %al
+    28d0:	84 c0                	test   %al,%al
+    28d2:	74 0f                	je     28e3 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_push_back_auxIJRKS2_EEEvDpOT_+0x49>
+    28d4:	48 8d 05 55 19 00 00 	lea    0x1955(%rip),%rax        # 4230 <_IO_stdin_used+0x230>
+    28db:	48 89 c7             	mov    %rax,%rdi
+    28de:	e8 cd e8 ff ff       	call   11b0 <_ZSt20__throw_length_errorPKc@plt>
+    28e3:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    28e7:	be 01 00 00 00       	mov    $0x1,%esi
+    28ec:	48 89 c7             	mov    %rax,%rdi
+    28ef:	e8 80 05 00 00       	call   2e74 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE22_M_reserve_map_at_backEm>
+    28f4:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    28f8:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    28fc:	48 8b 52 48          	mov    0x48(%rdx),%rdx
+    2900:	48 8d 5a 08          	lea    0x8(%rdx),%rbx
+    2904:	48 89 c7             	mov    %rax,%rdi
+    2907:	e8 ce 05 00 00       	call   2eda <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_allocate_nodeEv>
+    290c:	48 89 03             	mov    %rax,(%rbx)
+    290f:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    2913:	48 89 c7             	mov    %rax,%rdi
+    2916:	e8 f2 04 00 00       	call   2e0d <_ZSt7forwardIRKPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS5_E4typeE>
+    291b:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    291f:	48 8b 52 30          	mov    0x30(%rdx),%rdx
+    2923:	48 8b 4d b8          	mov    -0x48(%rbp),%rcx
+    2927:	48 89 4d c0          	mov    %rcx,-0x40(%rbp)
+    292b:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+    292f:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    2933:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2937:	48 89 c7             	mov    %rax,%rdi
+    293a:	e8 ce 04 00 00       	call   2e0d <_ZSt7forwardIRKPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS5_E4typeE>
+    293f:	48 8b 55 c0          	mov    -0x40(%rbp),%rdx
+    2943:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    2947:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    294b:	48 89 55 e0          	mov    %rdx,-0x20(%rbp)
+    294f:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2953:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    2957:	48 89 c6             	mov    %rax,%rsi
+    295a:	bf 08 00 00 00       	mov    $0x8,%edi
+    295f:	e8 0d ec ff ff       	call   1571 <_ZnwmPv>
+    2964:	48 89 c3             	mov    %rax,%rbx
+    2967:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    296b:	48 89 c7             	mov    %rax,%rdi
+    296e:	e8 9a 04 00 00       	call   2e0d <_ZSt7forwardIRKPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS5_E4typeE>
+    2973:	48 8b 00             	mov    (%rax),%rax
+    2976:	48 89 03             	mov    %rax,(%rbx)
+    2979:	90                   	nop
+    297a:	90                   	nop
+    297b:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    297f:	48 83 c0 30          	add    $0x30,%rax
+    2983:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    2987:	48 8b 52 48          	mov    0x48(%rdx),%rdx
+    298b:	48 83 c2 08          	add    $0x8,%rdx
+    298f:	48 89 d6             	mov    %rdx,%rsi
+    2992:	48 89 c7             	mov    %rax,%rdi
+    2995:	e8 94 03 00 00       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    299a:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    299e:	48 8b 50 38          	mov    0x38(%rax),%rdx
+    29a2:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    29a6:	48 89 50 30          	mov    %rdx,0x30(%rax)
+    29aa:	90                   	nop
+    29ab:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    29af:	c9                   	leave
+    29b0:	c3                   	ret
+    29b1:	90                   	nop
+
+00000000000029b2 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE12emplace_backIJS2_EEERS2_DpOT_>:
+    29b2:	f3 0f 1e fa          	endbr64
+    29b6:	55                   	push   %rbp
+    29b7:	48 89 e5             	mov    %rsp,%rbp
+    29ba:	53                   	push   %rbx
+    29bb:	48 83 ec 48          	sub    $0x48,%rsp
+    29bf:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    29c3:	48 89 75 b0          	mov    %rsi,-0x50(%rbp)
+    29c7:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    29cb:	48 8b 50 30          	mov    0x30(%rax),%rdx
+    29cf:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    29d3:	48 8b 40 40          	mov    0x40(%rax),%rax
+    29d7:	48 83 e8 08          	sub    $0x8,%rax
+    29db:	48 39 c2             	cmp    %rax,%rdx
+    29de:	0f 84 82 00 00 00    	je     2a66 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE12emplace_backIJS2_EEERS2_DpOT_+0xb4>
+    29e4:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    29e8:	48 89 c7             	mov    %rax,%rdi
+    29eb:	e8 2b 05 00 00       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    29f0:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    29f4:	48 8b 52 30          	mov    0x30(%rdx),%rdx
+    29f8:	48 8b 4d b8          	mov    -0x48(%rbp),%rcx
+    29fc:	48 89 4d c0          	mov    %rcx,-0x40(%rbp)
+    2a00:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+    2a04:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    2a08:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2a0c:	48 89 c7             	mov    %rax,%rdi
+    2a0f:	e8 07 05 00 00       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    2a14:	48 8b 55 c0          	mov    -0x40(%rbp),%rdx
+    2a18:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    2a1c:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    2a20:	48 89 55 e0          	mov    %rdx,-0x20(%rbp)
+    2a24:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2a28:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    2a2c:	48 89 c6             	mov    %rax,%rsi
+    2a2f:	bf 08 00 00 00       	mov    $0x8,%edi
+    2a34:	e8 38 eb ff ff       	call   1571 <_ZnwmPv>
+    2a39:	48 89 c3             	mov    %rax,%rbx
+    2a3c:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2a40:	48 89 c7             	mov    %rax,%rdi
+    2a43:	e8 d3 04 00 00       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    2a48:	48 8b 00             	mov    (%rax),%rax
+    2a4b:	48 89 03             	mov    %rax,(%rbx)
+    2a4e:	90                   	nop
+    2a4f:	90                   	nop
+    2a50:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2a54:	48 8b 40 30          	mov    0x30(%rax),%rax
+    2a58:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    2a5c:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2a60:	48 89 50 30          	mov    %rdx,0x30(%rax)
+    2a64:	eb 1e                	jmp    2a84 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE12emplace_backIJS2_EEERS2_DpOT_+0xd2>
+    2a66:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    2a6a:	48 89 c7             	mov    %rax,%rdi
+    2a6d:	e8 a9 04 00 00       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    2a72:	48 89 c2             	mov    %rax,%rdx
+    2a75:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2a79:	48 89 d6             	mov    %rdx,%rsi
+    2a7c:	48 89 c7             	mov    %rax,%rdi
+    2a7f:	e8 aa 04 00 00       	call   2f2e <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_push_back_auxIJS2_EEEvDpOT_>
+    2a84:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2a88:	48 89 c7             	mov    %rax,%rdi
+    2a8b:	e8 b6 05 00 00       	call   3046 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE4backEv>
+    2a90:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2a94:	c9                   	leave
+    2a95:	c3                   	ret
+
+0000000000002a96 <_ZSteqRKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_ES7_>:
+    2a96:	f3 0f 1e fa          	endbr64
+    2a9a:	55                   	push   %rbp
+    2a9b:	48 89 e5             	mov    %rsp,%rbp
+    2a9e:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2aa2:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    2aa6:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2aaa:	48 8b 10             	mov    (%rax),%rdx
+    2aad:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    2ab1:	48 8b 00             	mov    (%rax),%rax
+    2ab4:	48 39 c2             	cmp    %rax,%rdx
+    2ab7:	0f 94 c0             	sete   %al
+    2aba:	5d                   	pop    %rbp
+    2abb:	c3                   	ret
+
+0000000000002abc <_ZNKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EdeEv>:
+    2abc:	f3 0f 1e fa          	endbr64
+    2ac0:	55                   	push   %rbp
+    2ac1:	48 89 e5             	mov    %rsp,%rbp
+    2ac4:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2ac8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2acc:	48 8b 00             	mov    (%rax),%rax
+    2acf:	5d                   	pop    %rbp
+    2ad0:	c3                   	ret
+    2ad1:	90                   	nop
+
+0000000000002ad2 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_pop_front_auxEv>:
+    2ad2:	f3 0f 1e fa          	endbr64
+    2ad6:	55                   	push   %rbp
+    2ad7:	48 89 e5             	mov    %rsp,%rbp
+    2ada:	53                   	push   %rbx
+    2adb:	48 83 ec 38          	sub    $0x38,%rsp
+    2adf:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    2ae3:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2ae7:	48 8b 58 10          	mov    0x10(%rax),%rbx
+    2aeb:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2aef:	48 89 c7             	mov    %rax,%rdi
+    2af2:	e8 e5 f7 ff ff       	call   22dc <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>
+    2af7:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    2afb:	48 89 5d d8          	mov    %rbx,-0x28(%rbp)
+    2aff:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2b03:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    2b07:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    2b0b:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2b0f:	90                   	nop
+    2b10:	90                   	nop
+    2b11:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2b15:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    2b19:	48 8b 52 18          	mov    0x18(%rdx),%rdx
+    2b1d:	48 89 d6             	mov    %rdx,%rsi
+    2b20:	48 89 c7             	mov    %rax,%rdi
+    2b23:	e8 5a 02 00 00       	call   2d82 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE18_M_deallocate_nodeEPS2_>
+    2b28:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2b2c:	48 83 c0 10          	add    $0x10,%rax
+    2b30:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    2b34:	48 8b 52 28          	mov    0x28(%rdx),%rdx
+    2b38:	48 83 c2 08          	add    $0x8,%rdx
+    2b3c:	48 89 d6             	mov    %rdx,%rsi
+    2b3f:	48 89 c7             	mov    %rax,%rdi
+    2b42:	e8 e7 01 00 00       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    2b47:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2b4b:	48 8b 50 18          	mov    0x18(%rax),%rdx
+    2b4f:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    2b53:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    2b57:	90                   	nop
+    2b58:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2b5c:	c9                   	leave
+    2b5d:	c3                   	ret
+
+0000000000002b5e <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_Deque_impl_dataC1Ev>:
+    2b5e:	f3 0f 1e fa          	endbr64
+    2b62:	55                   	push   %rbp
+    2b63:	48 89 e5             	mov    %rsp,%rbp
+    2b66:	48 83 ec 10          	sub    $0x10,%rsp
+    2b6a:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2b6e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2b72:	48 c7 00 00 00 00 00 	movq   $0x0,(%rax)
+    2b79:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2b7d:	48 c7 40 08 00 00 00 	movq   $0x0,0x8(%rax)
+    2b84:	00 
+    2b85:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2b89:	48 83 c0 10          	add    $0x10,%rax
+    2b8d:	48 89 c7             	mov    %rax,%rdi
+    2b90:	e8 11 05 00 00       	call   30a6 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EC1Ev>
+    2b95:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2b99:	48 83 c0 30          	add    $0x30,%rax
+    2b9d:	48 89 c7             	mov    %rax,%rdi
+    2ba0:	e8 01 05 00 00       	call   30a6 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EC1Ev>
+    2ba5:	90                   	nop
+    2ba6:	c9                   	leave
+    2ba7:	c3                   	ret
+
+0000000000002ba8 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEED1Ev>:
+    2ba8:	f3 0f 1e fa          	endbr64
+    2bac:	55                   	push   %rbp
+    2bad:	48 89 e5             	mov    %rsp,%rbp
+    2bb0:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2bb4:	90                   	nop
+    2bb5:	5d                   	pop    %rbp
+    2bb6:	c3                   	ret
+
+0000000000002bb7 <_ZSt3maxImERKT_S2_S2_>:
+    2bb7:	f3 0f 1e fa          	endbr64
+    2bbb:	55                   	push   %rbp
+    2bbc:	48 89 e5             	mov    %rsp,%rbp
+    2bbf:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2bc3:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    2bc7:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2bcb:	48 8b 10             	mov    (%rax),%rdx
+    2bce:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    2bd2:	48 8b 00             	mov    (%rax),%rax
+    2bd5:	48 39 c2             	cmp    %rax,%rdx
+    2bd8:	73 06                	jae    2be0 <_ZSt3maxImERKT_S2_S2_+0x29>
+    2bda:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    2bde:	eb 04                	jmp    2be4 <_ZSt3maxImERKT_S2_S2_+0x2d>
+    2be0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2be4:	5d                   	pop    %rbp
+    2be5:	c3                   	ret
+
+0000000000002be6 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_allocate_mapEm>:
+    2be6:	f3 0f 1e fa          	endbr64
+    2bea:	55                   	push   %rbp
+    2beb:	48 89 e5             	mov    %rsp,%rbp
+    2bee:	53                   	push   %rbx
+    2bef:	48 83 ec 38          	sub    $0x38,%rsp
+    2bf3:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    2bf7:	48 89 75 c0          	mov    %rsi,-0x40(%rbp)
+    2bfb:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    2c02:	00 00 
+    2c04:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2c08:	31 c0                	xor    %eax,%eax
+    2c0a:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+    2c0e:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    2c12:	48 89 d6             	mov    %rdx,%rsi
+    2c15:	48 89 c7             	mov    %rax,%rdi
+    2c18:	e8 b3 01 00 00       	call   2dd0 <_ZNKSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE20_M_get_map_allocatorEv>
+    2c1d:	48 8b 45 c0          	mov    -0x40(%rbp),%rax
+    2c21:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    2c25:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+    2c29:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+    2c2d:	ba 00 00 00 00       	mov    $0x0,%edx
+    2c32:	48 89 ce             	mov    %rcx,%rsi
+    2c35:	48 89 c7             	mov    %rax,%rdi
+    2c38:	e8 a9 08 00 00       	call   34e6 <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEE8allocateEmPKv>
+    2c3d:	48 89 c3             	mov    %rax,%rbx
+    2c40:	90                   	nop
+    2c41:	90                   	nop
+    2c42:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+    2c46:	48 89 c7             	mov    %rax,%rdi
+    2c49:	e8 bc 04 00 00       	call   310a <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEED1Ev>
+    2c4e:	90                   	nop
+    2c4f:	48 89 d8             	mov    %rbx,%rax
+    2c52:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    2c56:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    2c5d:	00 00 
+    2c5f:	74 3a                	je     2c9b <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_allocate_mapEm+0xb5>
+    2c61:	eb 33                	jmp    2c96 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_allocate_mapEm+0xb0>
+    2c63:	f3 0f 1e fa          	endbr64
+    2c67:	48 89 c3             	mov    %rax,%rbx
+    2c6a:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+    2c6e:	48 89 c7             	mov    %rax,%rdi
+    2c71:	e8 94 04 00 00       	call   310a <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEED1Ev>
+    2c76:	90                   	nop
+    2c77:	48 89 d8             	mov    %rbx,%rax
+    2c7a:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    2c7e:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    2c85:	00 00 
+    2c87:	74 05                	je     2c8e <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_allocate_mapEm+0xa8>
+    2c89:	e8 a2 e5 ff ff       	call   1230 <__stack_chk_fail@plt>
+    2c8e:	48 89 c7             	mov    %rax,%rdi
+    2c91:	e8 2a e6 ff ff       	call   12c0 <_Unwind_Resume@plt>
+    2c96:	e8 95 e5 ff ff       	call   1230 <__stack_chk_fail@plt>
+    2c9b:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2c9f:	c9                   	leave
+    2ca0:	c3                   	ret
+    2ca1:	90                   	nop
+
+0000000000002ca2 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_create_nodesEPPS2_S6_>:
+    2ca2:	f3 0f 1e fa          	endbr64
+    2ca6:	55                   	push   %rbp
+    2ca7:	48 89 e5             	mov    %rsp,%rbp
+    2caa:	53                   	push   %rbx
+    2cab:	48 83 ec 38          	sub    $0x38,%rsp
+    2caf:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+    2cb3:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+    2cb7:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+    2cbb:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2cbf:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2cc3:	eb 18                	jmp    2cdd <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_create_nodesEPPS2_S6_+0x3b>
+    2cc5:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    2cc9:	48 89 c7             	mov    %rax,%rdi
+    2ccc:	e8 09 02 00 00       	call   2eda <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_allocate_nodeEv>
+    2cd1:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    2cd5:	48 89 02             	mov    %rax,(%rdx)
+    2cd8:	48 83 45 e8 08       	addq   $0x8,-0x18(%rbp)
+    2cdd:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2ce1:	48 3b 45 c8          	cmp    -0x38(%rbp),%rax
+    2ce5:	72 de                	jb     2cc5 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_create_nodesEPPS2_S6_+0x23>
+    2ce7:	eb 3f                	jmp    2d28 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_create_nodesEPPS2_S6_+0x86>
+    2ce9:	f3 0f 1e fa          	endbr64
+    2ced:	48 89 c7             	mov    %rax,%rdi
+    2cf0:	e8 ab e4 ff ff       	call   11a0 <__cxa_begin_catch@plt>
+    2cf5:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    2cf9:	48 8b 4d d0          	mov    -0x30(%rbp),%rcx
+    2cfd:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    2d01:	48 89 ce             	mov    %rcx,%rsi
+    2d04:	48 89 c7             	mov    %rax,%rdi
+    2d07:	e8 6a fa ff ff       	call   2776 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_destroy_nodesEPPS2_S6_>
+    2d0c:	e8 5f e5 ff ff       	call   1270 <__cxa_rethrow@plt>
+    2d11:	f3 0f 1e fa          	endbr64
+    2d15:	48 89 c3             	mov    %rax,%rbx
+    2d18:	e8 73 e5 ff ff       	call   1290 <__cxa_end_catch@plt>
+    2d1d:	48 89 d8             	mov    %rbx,%rax
+    2d20:	48 89 c7             	mov    %rax,%rdi
+    2d23:	e8 98 e5 ff ff       	call   12c0 <_Unwind_Resume@plt>
+    2d28:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2d2c:	c9                   	leave
+    2d2d:	c3                   	ret
+
+0000000000002d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>:
+    2d2e:	f3 0f 1e fa          	endbr64
+    2d32:	55                   	push   %rbp
+    2d33:	48 89 e5             	mov    %rsp,%rbp
+    2d36:	53                   	push   %rbx
+    2d37:	48 83 ec 18          	sub    $0x18,%rsp
+    2d3b:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    2d3f:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    2d43:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2d47:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    2d4b:	48 89 50 18          	mov    %rdx,0x18(%rax)
+    2d4f:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    2d53:	48 8b 10             	mov    (%rax),%rdx
+    2d56:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2d5a:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    2d5e:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2d62:	48 8b 58 08          	mov    0x8(%rax),%rbx
+    2d66:	e8 79 03 00 00       	call   30e4 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E14_S_buffer_sizeEv>
+    2d6b:	48 c1 e0 03          	shl    $0x3,%rax
+    2d6f:	48 8d 14 03          	lea    (%rbx,%rax,1),%rdx
+    2d73:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2d77:	48 89 50 10          	mov    %rdx,0x10(%rax)
+    2d7b:	90                   	nop
+    2d7c:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    2d80:	c9                   	leave
+    2d81:	c3                   	ret
+
+0000000000002d82 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE18_M_deallocate_nodeEPS2_>:
+    2d82:	f3 0f 1e fa          	endbr64
+    2d86:	55                   	push   %rbp
+    2d87:	48 89 e5             	mov    %rsp,%rbp
+    2d8a:	48 83 ec 30          	sub    $0x30,%rsp
+    2d8e:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+    2d92:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+    2d96:	bf 08 00 00 00       	mov    $0x8,%edi
+    2d9b:	e8 e7 e7 ff ff       	call   1587 <_ZSt16__deque_buf_sizem>
+    2da0:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+    2da4:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    2da8:	48 8b 55 d0          	mov    -0x30(%rbp),%rdx
+    2dac:	48 89 55 f0          	mov    %rdx,-0x10(%rbp)
+    2db0:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    2db4:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    2db8:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+    2dbc:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2dc0:	48 89 ce             	mov    %rcx,%rsi
+    2dc3:	48 89 c7             	mov    %rax,%rdi
+    2dc6:	e8 87 07 00 00       	call   3552 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEE10deallocateEPS2_m>
+    2dcb:	90                   	nop
+    2dcc:	90                   	nop
+    2dcd:	c9                   	leave
+    2dce:	c3                   	ret
+    2dcf:	90                   	nop
+
+0000000000002dd0 <_ZNKSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE20_M_get_map_allocatorEv>:
+    2dd0:	f3 0f 1e fa          	endbr64
+    2dd4:	55                   	push   %rbp
+    2dd5:	48 89 e5             	mov    %rsp,%rbp
+    2dd8:	48 83 ec 30          	sub    $0x30,%rsp
+    2ddc:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+    2de0:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+    2de4:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2de8:	48 89 c7             	mov    %rax,%rdi
+    2deb:	e8 08 03 00 00       	call   30f8 <_ZNKSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>
+    2df0:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+    2df4:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    2df8:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+    2dfc:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2e00:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    2e04:	90                   	nop
+    2e05:	90                   	nop
+    2e06:	90                   	nop
+    2e07:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    2e0b:	c9                   	leave
+    2e0c:	c3                   	ret
+
+0000000000002e0d <_ZSt7forwardIRKPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS5_E4typeE>:
+    2e0d:	f3 0f 1e fa          	endbr64
+    2e11:	55                   	push   %rbp
+    2e12:	48 89 e5             	mov    %rsp,%rbp
+    2e15:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2e19:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2e1d:	5d                   	pop    %rbp
+    2e1e:	c3                   	ret
+    2e1f:	90                   	nop
+
+0000000000002e20 <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE4sizeEv>:
+    2e20:	f3 0f 1e fa          	endbr64
+    2e24:	55                   	push   %rbp
+    2e25:	48 89 e5             	mov    %rsp,%rbp
+    2e28:	48 83 ec 10          	sub    $0x10,%rsp
+    2e2c:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2e30:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2e34:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    2e38:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2e3c:	48 83 c0 30          	add    $0x30,%rax
+    2e40:	48 89 d6             	mov    %rdx,%rsi
+    2e43:	48 89 c7             	mov    %rax,%rdi
+    2e46:	e8 04 03 00 00       	call   314f <_ZStmiRKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_ES7_>
+    2e4b:	c9                   	leave
+    2e4c:	c3                   	ret
+    2e4d:	90                   	nop
+
+0000000000002e4e <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE8max_sizeEv>:
+    2e4e:	f3 0f 1e fa          	endbr64
+    2e52:	55                   	push   %rbp
+    2e53:	48 89 e5             	mov    %rsp,%rbp
+    2e56:	48 83 ec 10          	sub    $0x10,%rsp
+    2e5a:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2e5e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2e62:	48 89 c7             	mov    %rax,%rdi
+    2e65:	e8 8e 02 00 00       	call   30f8 <_ZNKSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>
+    2e6a:	48 89 c7             	mov    %rax,%rdi
+    2e6d:	e8 69 03 00 00       	call   31db <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE11_S_max_sizeERKS3_>
+    2e72:	c9                   	leave
+    2e73:	c3                   	ret
+
+0000000000002e74 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE22_M_reserve_map_at_backEm>:
+    2e74:	f3 0f 1e fa          	endbr64
+    2e78:	55                   	push   %rbp
+    2e79:	48 89 e5             	mov    %rsp,%rbp
+    2e7c:	48 83 ec 10          	sub    $0x10,%rsp
+    2e80:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2e84:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    2e88:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    2e8c:	48 8d 50 01          	lea    0x1(%rax),%rdx
+    2e90:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2e94:	48 8b 48 08          	mov    0x8(%rax),%rcx
+    2e98:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2e9c:	48 8b 70 48          	mov    0x48(%rax),%rsi
+    2ea0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2ea4:	48 8b 00             	mov    (%rax),%rax
+    2ea7:	48 29 c6             	sub    %rax,%rsi
+    2eaa:	48 89 f0             	mov    %rsi,%rax
+    2ead:	48 c1 f8 03          	sar    $0x3,%rax
+    2eb1:	48 89 c6             	mov    %rax,%rsi
+    2eb4:	48 89 c8             	mov    %rcx,%rax
+    2eb7:	48 29 f0             	sub    %rsi,%rax
+    2eba:	48 39 d0             	cmp    %rdx,%rax
+    2ebd:	73 18                	jae    2ed7 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE22_M_reserve_map_at_backEm+0x63>
+    2ebf:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+    2ec3:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2ec7:	ba 00 00 00 00       	mov    $0x0,%edx
+    2ecc:	48 89 ce             	mov    %rcx,%rsi
+    2ecf:	48 89 c7             	mov    %rax,%rdi
+    2ed2:	e8 85 03 00 00       	call   325c <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb>
+    2ed7:	90                   	nop
+    2ed8:	c9                   	leave
+    2ed9:	c3                   	ret
+
+0000000000002eda <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_allocate_nodeEv>:
+    2eda:	f3 0f 1e fa          	endbr64
+    2ede:	55                   	push   %rbp
+    2edf:	48 89 e5             	mov    %rsp,%rbp
+    2ee2:	48 83 ec 20          	sub    $0x20,%rsp
+    2ee6:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    2eea:	bf 08 00 00 00       	mov    $0x8,%edi
+    2eef:	e8 93 e6 ff ff       	call   1587 <_ZSt16__deque_buf_sizem>
+    2ef4:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    2ef8:	48 89 55 f0          	mov    %rdx,-0x10(%rbp)
+    2efc:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    2f00:	48 8b 4d f8          	mov    -0x8(%rbp),%rcx
+    2f04:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    2f08:	ba 00 00 00 00       	mov    $0x0,%edx
+    2f0d:	48 89 ce             	mov    %rcx,%rsi
+    2f10:	48 89 c7             	mov    %rax,%rdi
+    2f13:	e8 3c 07 00 00       	call   3654 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEE8allocateEmPKv>
+    2f18:	90                   	nop
+    2f19:	c9                   	leave
+    2f1a:	c3                   	ret
+
+0000000000002f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>:
+    2f1b:	f3 0f 1e fa          	endbr64
+    2f1f:	55                   	push   %rbp
+    2f20:	48 89 e5             	mov    %rsp,%rbp
+    2f23:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    2f27:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    2f2b:	5d                   	pop    %rbp
+    2f2c:	c3                   	ret
+    2f2d:	90                   	nop
+
+0000000000002f2e <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_push_back_auxIJS2_EEEvDpOT_>:
+    2f2e:	f3 0f 1e fa          	endbr64
+    2f32:	55                   	push   %rbp
+    2f33:	48 89 e5             	mov    %rsp,%rbp
+    2f36:	53                   	push   %rbx
+    2f37:	48 83 ec 48          	sub    $0x48,%rsp
+    2f3b:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    2f3f:	48 89 75 b0          	mov    %rsi,-0x50(%rbp)
+    2f43:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2f47:	48 89 c7             	mov    %rax,%rdi
+    2f4a:	e8 d1 fe ff ff       	call   2e20 <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE4sizeEv>
+    2f4f:	48 89 c3             	mov    %rax,%rbx
+    2f52:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2f56:	48 89 c7             	mov    %rax,%rdi
+    2f59:	e8 f0 fe ff ff       	call   2e4e <_ZNKSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE8max_sizeEv>
+    2f5e:	48 39 c3             	cmp    %rax,%rbx
+    2f61:	0f 94 c0             	sete   %al
+    2f64:	84 c0                	test   %al,%al
+    2f66:	74 0f                	je     2f77 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE16_M_push_back_auxIJS2_EEEvDpOT_+0x49>
+    2f68:	48 8d 05 c1 12 00 00 	lea    0x12c1(%rip),%rax        # 4230 <_IO_stdin_used+0x230>
+    2f6f:	48 89 c7             	mov    %rax,%rdi
+    2f72:	e8 39 e2 ff ff       	call   11b0 <_ZSt20__throw_length_errorPKc@plt>
+    2f77:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2f7b:	be 01 00 00 00       	mov    $0x1,%esi
+    2f80:	48 89 c7             	mov    %rax,%rdi
+    2f83:	e8 ec fe ff ff       	call   2e74 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE22_M_reserve_map_at_backEm>
+    2f88:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    2f8c:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    2f90:	48 8b 52 48          	mov    0x48(%rdx),%rdx
+    2f94:	48 8d 5a 08          	lea    0x8(%rdx),%rbx
+    2f98:	48 89 c7             	mov    %rax,%rdi
+    2f9b:	e8 3a ff ff ff       	call   2eda <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE16_M_allocate_nodeEv>
+    2fa0:	48 89 03             	mov    %rax,(%rbx)
+    2fa3:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    2fa7:	48 89 c7             	mov    %rax,%rdi
+    2faa:	e8 6c ff ff ff       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    2faf:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    2fb3:	48 8b 52 30          	mov    0x30(%rdx),%rdx
+    2fb7:	48 8b 4d b8          	mov    -0x48(%rbp),%rcx
+    2fbb:	48 89 4d c0          	mov    %rcx,-0x40(%rbp)
+    2fbf:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+    2fc3:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    2fc7:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    2fcb:	48 89 c7             	mov    %rax,%rdi
+    2fce:	e8 48 ff ff ff       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    2fd3:	48 8b 55 c0          	mov    -0x40(%rbp),%rdx
+    2fd7:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    2fdb:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    2fdf:	48 89 55 e0          	mov    %rdx,-0x20(%rbp)
+    2fe3:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    2fe7:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    2feb:	48 89 c6             	mov    %rax,%rsi
+    2fee:	bf 08 00 00 00       	mov    $0x8,%edi
+    2ff3:	e8 79 e5 ff ff       	call   1571 <_ZnwmPv>
+    2ff8:	48 89 c3             	mov    %rax,%rbx
+    2ffb:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    2fff:	48 89 c7             	mov    %rax,%rdi
+    3002:	e8 14 ff ff ff       	call   2f1b <_ZSt7forwardIPN10BinaryTree8TreeNodeEEOT_RNSt16remove_referenceIS3_E4typeE>
+    3007:	48 8b 00             	mov    (%rax),%rax
+    300a:	48 89 03             	mov    %rax,(%rbx)
+    300d:	90                   	nop
+    300e:	90                   	nop
+    300f:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3013:	48 83 c0 30          	add    $0x30,%rax
+    3017:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    301b:	48 8b 52 48          	mov    0x48(%rdx),%rdx
+    301f:	48 83 c2 08          	add    $0x8,%rdx
+    3023:	48 89 d6             	mov    %rdx,%rsi
+    3026:	48 89 c7             	mov    %rax,%rdi
+    3029:	e8 00 fd ff ff       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    302e:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3032:	48 8b 50 38          	mov    0x38(%rax),%rdx
+    3036:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    303a:	48 89 50 30          	mov    %rdx,0x30(%rax)
+    303e:	90                   	nop
+    303f:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    3043:	c9                   	leave
+    3044:	c3                   	ret
+    3045:	90                   	nop
+
+0000000000003046 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE4backEv>:
+    3046:	f3 0f 1e fa          	endbr64
+    304a:	55                   	push   %rbp
+    304b:	48 89 e5             	mov    %rsp,%rbp
+    304e:	48 83 ec 40          	sub    $0x40,%rsp
+    3052:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    3056:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    305d:	00 00 
+    305f:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    3063:	31 c0                	xor    %eax,%eax
+    3065:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+    3069:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    306d:	48 89 d6             	mov    %rdx,%rsi
+    3070:	48 89 c7             	mov    %rax,%rdi
+    3073:	e8 32 f2 ff ff       	call   22aa <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE3endEv>
+    3078:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+    307c:	48 89 c7             	mov    %rax,%rdi
+    307f:	e8 fc 03 00 00       	call   3480 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EmmEv>
+    3084:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+    3088:	48 89 c7             	mov    %rax,%rdi
+    308b:	e8 2c fa ff ff       	call   2abc <_ZNKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EdeEv>
+    3090:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    3094:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    309b:	00 00 
+    309d:	74 05                	je     30a4 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE4backEv+0x5e>
+    309f:	e8 8c e1 ff ff       	call   1230 <__stack_chk_fail@plt>
+    30a4:	c9                   	leave
+    30a5:	c3                   	ret
+
+00000000000030a6 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EC1Ev>:
+    30a6:	f3 0f 1e fa          	endbr64
+    30aa:	55                   	push   %rbp
+    30ab:	48 89 e5             	mov    %rsp,%rbp
+    30ae:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    30b2:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    30b6:	48 c7 00 00 00 00 00 	movq   $0x0,(%rax)
+    30bd:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    30c1:	48 c7 40 08 00 00 00 	movq   $0x0,0x8(%rax)
+    30c8:	00 
+    30c9:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    30cd:	48 c7 40 10 00 00 00 	movq   $0x0,0x10(%rax)
+    30d4:	00 
+    30d5:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    30d9:	48 c7 40 18 00 00 00 	movq   $0x0,0x18(%rax)
+    30e0:	00 
+    30e1:	90                   	nop
+    30e2:	5d                   	pop    %rbp
+    30e3:	c3                   	ret
+
+00000000000030e4 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E14_S_buffer_sizeEv>:
+    30e4:	f3 0f 1e fa          	endbr64
+    30e8:	55                   	push   %rbp
+    30e9:	48 89 e5             	mov    %rsp,%rbp
+    30ec:	bf 08 00 00 00       	mov    $0x8,%edi
+    30f1:	e8 91 e4 ff ff       	call   1587 <_ZSt16__deque_buf_sizem>
+    30f6:	5d                   	pop    %rbp
+    30f7:	c3                   	ret
+
+00000000000030f8 <_ZNKSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE19_M_get_Tp_allocatorEv>:
+    30f8:	f3 0f 1e fa          	endbr64
+    30fc:	55                   	push   %rbp
+    30fd:	48 89 e5             	mov    %rsp,%rbp
+    3100:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3104:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    3108:	5d                   	pop    %rbp
+    3109:	c3                   	ret
+
+000000000000310a <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEED1Ev>:
+    310a:	f3 0f 1e fa          	endbr64
+    310e:	55                   	push   %rbp
+    310f:	48 89 e5             	mov    %rsp,%rbp
+    3112:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3116:	90                   	nop
+    3117:	5d                   	pop    %rbp
+    3118:	c3                   	ret
+    3119:	90                   	nop
+
+000000000000311a <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEE10deallocateEPS3_m>:
+    311a:	f3 0f 1e fa          	endbr64
+    311e:	55                   	push   %rbp
+    311f:	48 89 e5             	mov    %rsp,%rbp
+    3122:	48 83 ec 20          	sub    $0x20,%rsp
+    3126:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    312a:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    312e:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    3132:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    3136:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    313d:	00 
+    313e:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    3142:	48 89 d6             	mov    %rdx,%rsi
+    3145:	48 89 c7             	mov    %rax,%rdi
+    3148:	e8 c3 e0 ff ff       	call   1210 <_ZdlPvm@plt>
+    314d:	c9                   	leave
+    314e:	c3                   	ret
+
+000000000000314f <_ZStmiRKSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_ES7_>:
+    314f:	f3 0f 1e fa          	endbr64
+    3153:	55                   	push   %rbp
+    3154:	48 89 e5             	mov    %rsp,%rbp
+    3157:	48 83 ec 10          	sub    $0x10,%rsp
+    315b:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    315f:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    3163:	e8 7c ff ff ff       	call   30e4 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E14_S_buffer_sizeEv>
+    3168:	48 89 c1             	mov    %rax,%rcx
+    316b:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    316f:	48 8b 50 18          	mov    0x18(%rax),%rdx
+    3173:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    3177:	48 8b 40 18          	mov    0x18(%rax),%rax
+    317b:	48 29 c2             	sub    %rax,%rdx
+    317e:	48 89 d0             	mov    %rdx,%rax
+    3181:	48 c1 f8 03          	sar    $0x3,%rax
+    3185:	48 89 c2             	mov    %rax,%rdx
+    3188:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    318c:	48 8b 40 18          	mov    0x18(%rax),%rax
+    3190:	48 85 c0             	test   %rax,%rax
+    3193:	0f 95 c0             	setne  %al
+    3196:	0f b6 c0             	movzbl %al,%eax
+    3199:	48 29 c2             	sub    %rax,%rdx
+    319c:	48 0f af d1          	imul   %rcx,%rdx
+    31a0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    31a4:	48 8b 08             	mov    (%rax),%rcx
+    31a7:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    31ab:	48 8b 40 08          	mov    0x8(%rax),%rax
+    31af:	48 29 c1             	sub    %rax,%rcx
+    31b2:	48 89 c8             	mov    %rcx,%rax
+    31b5:	48 c1 f8 03          	sar    $0x3,%rax
+    31b9:	48 8d 0c 02          	lea    (%rdx,%rax,1),%rcx
+    31bd:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    31c1:	48 8b 50 10          	mov    0x10(%rax),%rdx
+    31c5:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    31c9:	48 8b 00             	mov    (%rax),%rax
+    31cc:	48 29 c2             	sub    %rax,%rdx
+    31cf:	48 89 d0             	mov    %rdx,%rax
+    31d2:	48 c1 f8 03          	sar    $0x3,%rax
+    31d6:	48 01 c8             	add    %rcx,%rax
+    31d9:	c9                   	leave
+    31da:	c3                   	ret
+
+00000000000031db <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE11_S_max_sizeERKS3_>:
+    31db:	f3 0f 1e fa          	endbr64
+    31df:	55                   	push   %rbp
+    31e0:	48 89 e5             	mov    %rsp,%rbp
+    31e3:	48 83 ec 40          	sub    $0x40,%rsp
+    31e7:	48 89 7d c8          	mov    %rdi,-0x38(%rbp)
+    31eb:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    31f2:	00 00 
+    31f4:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    31f8:	31 c0                	xor    %eax,%eax
+    31fa:	48 b8 ff ff ff ff ff 	movabs $0x7fffffffffffffff,%rax
+    3201:	ff ff 7f 
+    3204:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    3208:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    320c:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    3210:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    3214:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    3218:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    321c:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+    3220:	48 b8 ff ff ff ff ff 	movabs $0xfffffffffffffff,%rax
+    3227:	ff ff 0f 
+    322a:	90                   	nop
+    322b:	90                   	nop
+    322c:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+    3230:	48 8d 55 d8          	lea    -0x28(%rbp),%rdx
+    3234:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+    3238:	48 89 d6             	mov    %rdx,%rsi
+    323b:	48 89 c7             	mov    %rax,%rdi
+    323e:	e8 44 03 00 00       	call   3587 <_ZSt3minImERKT_S2_S2_>
+    3243:	48 8b 00             	mov    (%rax),%rax
+    3246:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    324a:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    3251:	00 00 
+    3253:	74 05                	je     325a <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE11_S_max_sizeERKS3_+0x7f>
+    3255:	e8 d6 df ff ff       	call   1230 <__stack_chk_fail@plt>
+    325a:	c9                   	leave
+    325b:	c3                   	ret
+
+000000000000325c <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb>:
+    325c:	f3 0f 1e fa          	endbr64
+    3260:	55                   	push   %rbp
+    3261:	48 89 e5             	mov    %rsp,%rbp
+    3264:	53                   	push   %rbx
+    3265:	48 83 ec 58          	sub    $0x58,%rsp
+    3269:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    326d:	48 89 75 b0          	mov    %rsi,-0x50(%rbp)
+    3271:	89 d0                	mov    %edx,%eax
+    3273:	88 45 ac             	mov    %al,-0x54(%rbp)
+    3276:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    327a:	48 8b 50 48          	mov    0x48(%rax),%rdx
+    327e:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3282:	48 8b 40 28          	mov    0x28(%rax),%rax
+    3286:	48 29 c2             	sub    %rax,%rdx
+    3289:	48 89 d0             	mov    %rdx,%rax
+    328c:	48 c1 f8 03          	sar    $0x3,%rax
+    3290:	48 83 c0 01          	add    $0x1,%rax
+    3294:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    3298:	48 8b 55 b0          	mov    -0x50(%rbp),%rdx
+    329c:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    32a0:	48 01 d0             	add    %rdx,%rax
+    32a3:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+    32a7:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    32ab:	48 8b 40 08          	mov    0x8(%rax),%rax
+    32af:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+    32b3:	48 01 d2             	add    %rdx,%rdx
+    32b6:	48 39 c2             	cmp    %rax,%rdx
+    32b9:	0f 83 aa 00 00 00    	jae    3369 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x10d>
+    32bf:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    32c3:	48 8b 10             	mov    (%rax),%rdx
+    32c6:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    32ca:	48 8b 40 08          	mov    0x8(%rax),%rax
+    32ce:	48 2b 45 d8          	sub    -0x28(%rbp),%rax
+    32d2:	48 d1 e8             	shr    $1,%rax
+    32d5:	48 8d 0c c5 00 00 00 	lea    0x0(,%rax,8),%rcx
+    32dc:	00 
+    32dd:	80 7d ac 00          	cmpb   $0x0,-0x54(%rbp)
+    32e1:	74 0a                	je     32ed <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x91>
+    32e3:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    32e7:	48 c1 e0 03          	shl    $0x3,%rax
+    32eb:	eb 05                	jmp    32f2 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x96>
+    32ed:	b8 00 00 00 00       	mov    $0x0,%eax
+    32f2:	48 01 c8             	add    %rcx,%rax
+    32f5:	48 01 d0             	add    %rdx,%rax
+    32f8:	48 89 45 c8          	mov    %rax,-0x38(%rbp)
+    32fc:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3300:	48 8b 40 28          	mov    0x28(%rax),%rax
+    3304:	48 39 45 c8          	cmp    %rax,-0x38(%rbp)
+    3308:	73 28                	jae    3332 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0xd6>
+    330a:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    330e:	48 8b 40 48          	mov    0x48(%rax),%rax
+    3312:	48 8d 48 08          	lea    0x8(%rax),%rcx
+    3316:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    331a:	48 8b 40 28          	mov    0x28(%rax),%rax
+    331e:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    3322:	48 89 ce             	mov    %rcx,%rsi
+    3325:	48 89 c7             	mov    %rax,%rdi
+    3328:	e8 89 02 00 00       	call   35b6 <_ZSt4copyIPPPN10BinaryTree8TreeNodeES4_ET0_T_S6_S5_>
+    332d:	e9 09 01 00 00       	jmp    343b <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x1df>
+    3332:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    3336:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    333d:	00 
+    333e:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    3342:	48 01 c2             	add    %rax,%rdx
+    3345:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3349:	48 8b 40 48          	mov    0x48(%rax),%rax
+    334d:	48 8d 48 08          	lea    0x8(%rax),%rcx
+    3351:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3355:	48 8b 40 28          	mov    0x28(%rax),%rax
+    3359:	48 89 ce             	mov    %rcx,%rsi
+    335c:	48 89 c7             	mov    %rax,%rdi
+    335f:	e8 a1 02 00 00       	call   3605 <_ZSt13copy_backwardIPPPN10BinaryTree8TreeNodeES4_ET0_T_S6_S5_>
+    3364:	e9 d2 00 00 00       	jmp    343b <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x1df>
+    3369:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    336d:	48 8b 58 08          	mov    0x8(%rax),%rbx
+    3371:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3375:	48 8d 50 08          	lea    0x8(%rax),%rdx
+    3379:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+    337d:	48 89 c6             	mov    %rax,%rsi
+    3380:	48 89 d7             	mov    %rdx,%rdi
+    3383:	e8 2f f8 ff ff       	call   2bb7 <_ZSt3maxImERKT_S2_S2_>
+    3388:	48 8b 00             	mov    (%rax),%rax
+    338b:	48 01 d8             	add    %rbx,%rax
+    338e:	48 83 c0 02          	add    $0x2,%rax
+    3392:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    3396:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    339a:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    339e:	48 89 d6             	mov    %rdx,%rsi
+    33a1:	48 89 c7             	mov    %rax,%rdi
+    33a4:	e8 3d f8 ff ff       	call   2be6 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE15_M_allocate_mapEm>
+    33a9:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    33ad:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    33b1:	48 2b 45 d8          	sub    -0x28(%rbp),%rax
+    33b5:	48 d1 e8             	shr    $1,%rax
+    33b8:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    33bf:	00 
+    33c0:	80 7d ac 00          	cmpb   $0x0,-0x54(%rbp)
+    33c4:	74 0a                	je     33d0 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x174>
+    33c6:	48 8b 45 b0          	mov    -0x50(%rbp),%rax
+    33ca:	48 c1 e0 03          	shl    $0x3,%rax
+    33ce:	eb 05                	jmp    33d5 <_ZNSt5dequeIPN10BinaryTree8TreeNodeESaIS2_EE17_M_reallocate_mapEmb+0x179>
+    33d0:	b8 00 00 00 00       	mov    $0x0,%eax
+    33d5:	48 01 c2             	add    %rax,%rdx
+    33d8:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    33dc:	48 01 d0             	add    %rdx,%rax
+    33df:	48 89 45 c8          	mov    %rax,-0x38(%rbp)
+    33e3:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    33e7:	48 8b 40 48          	mov    0x48(%rax),%rax
+    33eb:	48 8d 48 08          	lea    0x8(%rax),%rcx
+    33ef:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    33f3:	48 8b 40 28          	mov    0x28(%rax),%rax
+    33f7:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    33fb:	48 89 ce             	mov    %rcx,%rsi
+    33fe:	48 89 c7             	mov    %rax,%rdi
+    3401:	e8 b0 01 00 00       	call   35b6 <_ZSt4copyIPPPN10BinaryTree8TreeNodeES4_ET0_T_S6_S5_>
+    3406:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    340a:	48 8b 55 b8          	mov    -0x48(%rbp),%rdx
+    340e:	48 8b 52 08          	mov    0x8(%rdx),%rdx
+    3412:	48 8b 4d b8          	mov    -0x48(%rbp),%rcx
+    3416:	48 8b 09             	mov    (%rcx),%rcx
+    3419:	48 89 ce             	mov    %rcx,%rsi
+    341c:	48 89 c7             	mov    %rax,%rdi
+    341f:	e8 9e f3 ff ff       	call   27c2 <_ZNSt11_Deque_baseIPN10BinaryTree8TreeNodeESaIS2_EE17_M_deallocate_mapEPPS2_m>
+    3424:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3428:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    342c:	48 89 10             	mov    %rdx,(%rax)
+    342f:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3433:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    3437:	48 89 50 08          	mov    %rdx,0x8(%rax)
+    343b:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    343f:	48 8d 50 10          	lea    0x10(%rax),%rdx
+    3443:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    3447:	48 89 c6             	mov    %rax,%rsi
+    344a:	48 89 d7             	mov    %rdx,%rdi
+    344d:	e8 dc f8 ff ff       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    3452:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    3456:	48 83 c0 30          	add    $0x30,%rax
+    345a:	48 8b 55 d0          	mov    -0x30(%rbp),%rdx
+    345e:	48 c1 e2 03          	shl    $0x3,%rdx
+    3462:	48 8d 4a f8          	lea    -0x8(%rdx),%rcx
+    3466:	48 8b 55 c8          	mov    -0x38(%rbp),%rdx
+    346a:	48 01 ca             	add    %rcx,%rdx
+    346d:	48 89 d6             	mov    %rdx,%rsi
+    3470:	48 89 c7             	mov    %rax,%rdi
+    3473:	e8 b6 f8 ff ff       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    3478:	90                   	nop
+    3479:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    347d:	c9                   	leave
+    347e:	c3                   	ret
+    347f:	90                   	nop
+
+0000000000003480 <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EmmEv>:
+    3480:	f3 0f 1e fa          	endbr64
+    3484:	55                   	push   %rbp
+    3485:	48 89 e5             	mov    %rsp,%rbp
+    3488:	48 83 ec 10          	sub    $0x10,%rsp
+    348c:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3490:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    3494:	48 8b 10             	mov    (%rax),%rdx
+    3497:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    349b:	48 8b 40 08          	mov    0x8(%rax),%rax
+    349f:	48 39 c2             	cmp    %rax,%rdx
+    34a2:	75 2a                	jne    34ce <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_EmmEv+0x4e>
+    34a4:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34a8:	48 8b 40 18          	mov    0x18(%rax),%rax
+    34ac:	48 8d 50 f8          	lea    -0x8(%rax),%rdx
+    34b0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34b4:	48 89 d6             	mov    %rdx,%rsi
+    34b7:	48 89 c7             	mov    %rax,%rdi
+    34ba:	e8 6f f8 ff ff       	call   2d2e <_ZNSt15_Deque_iteratorIPN10BinaryTree8TreeNodeERS2_PS2_E11_M_set_nodeEPS4_>
+    34bf:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34c3:	48 8b 50 10          	mov    0x10(%rax),%rdx
+    34c7:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34cb:	48 89 10             	mov    %rdx,(%rax)
+    34ce:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34d2:	48 8b 00             	mov    (%rax),%rax
+    34d5:	48 8d 50 f8          	lea    -0x8(%rax),%rdx
+    34d9:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34dd:	48 89 10             	mov    %rdx,(%rax)
+    34e0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    34e4:	c9                   	leave
+    34e5:	c3                   	ret
+
+00000000000034e6 <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEE8allocateEmPKv>:
+    34e6:	f3 0f 1e fa          	endbr64
+    34ea:	55                   	push   %rbp
+    34eb:	48 89 e5             	mov    %rsp,%rbp
+    34ee:	48 83 ec 30          	sub    $0x30,%rsp
+    34f2:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    34f6:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    34fa:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    34fe:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    3502:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    3506:	48 b8 ff ff ff ff ff 	movabs $0xfffffffffffffff,%rax
+    350d:	ff ff 0f 
+    3510:	48 3b 45 e0          	cmp    -0x20(%rbp),%rax
+    3514:	0f 92 c0             	setb   %al
+    3517:	0f b6 c0             	movzbl %al,%eax
+    351a:	48 85 c0             	test   %rax,%rax
+    351d:	0f 95 c0             	setne  %al
+    3520:	84 c0                	test   %al,%al
+    3522:	74 1a                	je     353e <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEE8allocateEmPKv+0x58>
+    3524:	48 b8 ff ff ff ff ff 	movabs $0x1fffffffffffffff,%rax
+    352b:	ff ff 1f 
+    352e:	48 3b 45 e0          	cmp    -0x20(%rbp),%rax
+    3532:	73 05                	jae    3539 <_ZNSt15__new_allocatorIPPN10BinaryTree8TreeNodeEE8allocateEmPKv+0x53>
+    3534:	e8 97 dc ff ff       	call   11d0 <_ZSt28__throw_bad_array_new_lengthv@plt>
+    3539:	e8 52 dc ff ff       	call   1190 <_ZSt17__throw_bad_allocv@plt>
+    353e:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    3542:	48 c1 e0 03          	shl    $0x3,%rax
+    3546:	48 89 c7             	mov    %rax,%rdi
+    3549:	e8 b2 dc ff ff       	call   1200 <_Znwm@plt>
+    354e:	90                   	nop
+    354f:	c9                   	leave
+    3550:	c3                   	ret
+    3551:	90                   	nop
+
+0000000000003552 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEE10deallocateEPS2_m>:
+    3552:	f3 0f 1e fa          	endbr64
+    3556:	55                   	push   %rbp
+    3557:	48 89 e5             	mov    %rsp,%rbp
+    355a:	48 83 ec 20          	sub    $0x20,%rsp
+    355e:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3562:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    3566:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    356a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    356e:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    3575:	00 
+    3576:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    357a:	48 89 d6             	mov    %rdx,%rsi
+    357d:	48 89 c7             	mov    %rax,%rdi
+    3580:	e8 8b dc ff ff       	call   1210 <_ZdlPvm@plt>
+    3585:	c9                   	leave
+    3586:	c3                   	ret
+
+0000000000003587 <_ZSt3minImERKT_S2_S2_>:
+    3587:	f3 0f 1e fa          	endbr64
+    358b:	55                   	push   %rbp
+    358c:	48 89 e5             	mov    %rsp,%rbp
+    358f:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3593:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    3597:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    359b:	48 8b 10             	mov    (%rax),%rdx
+    359e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    35a2:	48 8b 00             	mov    (%rax),%rax
+    35a5:	48 39 c2             	cmp    %rax,%rdx
+    35a8:	73 06                	jae    35b0 <_ZSt3minImERKT_S2_S2_+0x29>
+    35aa:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    35ae:	eb 04                	jmp    35b4 <_ZSt3minImERKT_S2_S2_+0x2d>
+    35b0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    35b4:	5d                   	pop    %rbp
+    35b5:	c3                   	ret
+
+00000000000035b6 <_ZSt4copyIPPPN10BinaryTree8TreeNodeES4_ET0_T_S6_S5_>:
+    35b6:	f3 0f 1e fa          	endbr64
+    35ba:	55                   	push   %rbp
+    35bb:	48 89 e5             	mov    %rsp,%rbp
+    35be:	53                   	push   %rbx
+    35bf:	48 83 ec 28          	sub    $0x28,%rsp
+    35c3:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    35c7:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    35cb:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    35cf:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    35d3:	48 89 c7             	mov    %rax,%rdi
+    35d6:	e8 e4 00 00 00       	call   36bf <_ZSt12__miter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    35db:	48 89 c3             	mov    %rax,%rbx
+    35de:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    35e2:	48 89 c7             	mov    %rax,%rdi
+    35e5:	e8 d5 00 00 00       	call   36bf <_ZSt12__miter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    35ea:	48 89 c1             	mov    %rax,%rcx
+    35ed:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    35f1:	48 89 c2             	mov    %rax,%rdx
+    35f4:	48 89 de             	mov    %rbx,%rsi
+    35f7:	48 89 cf             	mov    %rcx,%rdi
+    35fa:	e8 d2 00 00 00       	call   36d1 <_ZSt13__copy_move_aILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>
+    35ff:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    3603:	c9                   	leave
+    3604:	c3                   	ret
+
+0000000000003605 <_ZSt13copy_backwardIPPPN10BinaryTree8TreeNodeES4_ET0_T_S6_S5_>:
+    3605:	f3 0f 1e fa          	endbr64
+    3609:	55                   	push   %rbp
+    360a:	48 89 e5             	mov    %rsp,%rbp
+    360d:	53                   	push   %rbx
+    360e:	48 83 ec 28          	sub    $0x28,%rsp
+    3612:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    3616:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    361a:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    361e:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    3622:	48 89 c7             	mov    %rax,%rdi
+    3625:	e8 95 00 00 00       	call   36bf <_ZSt12__miter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    362a:	48 89 c3             	mov    %rax,%rbx
+    362d:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    3631:	48 89 c7             	mov    %rax,%rdi
+    3634:	e8 86 00 00 00       	call   36bf <_ZSt12__miter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    3639:	48 89 c1             	mov    %rax,%rcx
+    363c:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    3640:	48 89 c2             	mov    %rax,%rdx
+    3643:	48 89 de             	mov    %rbx,%rsi
+    3646:	48 89 cf             	mov    %rcx,%rdi
+    3649:	e8 f1 00 00 00       	call   373f <_ZSt22__copy_move_backward_aILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>
+    364e:	48 8b 5d f8          	mov    -0x8(%rbp),%rbx
+    3652:	c9                   	leave
+    3653:	c3                   	ret
+
+0000000000003654 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEE8allocateEmPKv>:
+    3654:	f3 0f 1e fa          	endbr64
+    3658:	55                   	push   %rbp
+    3659:	48 89 e5             	mov    %rsp,%rbp
+    365c:	48 83 ec 30          	sub    $0x30,%rsp
+    3660:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    3664:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    3668:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    366c:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    3670:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    3674:	48 b8 ff ff ff ff ff 	movabs $0xfffffffffffffff,%rax
+    367b:	ff ff 0f 
+    367e:	48 3b 45 e0          	cmp    -0x20(%rbp),%rax
+    3682:	0f 92 c0             	setb   %al
+    3685:	0f b6 c0             	movzbl %al,%eax
+    3688:	48 85 c0             	test   %rax,%rax
+    368b:	0f 95 c0             	setne  %al
+    368e:	84 c0                	test   %al,%al
+    3690:	74 1a                	je     36ac <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEE8allocateEmPKv+0x58>
+    3692:	48 b8 ff ff ff ff ff 	movabs $0x1fffffffffffffff,%rax
+    3699:	ff ff 1f 
+    369c:	48 3b 45 e0          	cmp    -0x20(%rbp),%rax
+    36a0:	73 05                	jae    36a7 <_ZNSt15__new_allocatorIPN10BinaryTree8TreeNodeEE8allocateEmPKv+0x53>
+    36a2:	e8 29 db ff ff       	call   11d0 <_ZSt28__throw_bad_array_new_lengthv@plt>
+    36a7:	e8 e4 da ff ff       	call   1190 <_ZSt17__throw_bad_allocv@plt>
+    36ac:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    36b0:	48 c1 e0 03          	shl    $0x3,%rax
+    36b4:	48 89 c7             	mov    %rax,%rdi
+    36b7:	e8 44 db ff ff       	call   1200 <_Znwm@plt>
+    36bc:	90                   	nop
+    36bd:	c9                   	leave
+    36be:	c3                   	ret
+
+00000000000036bf <_ZSt12__miter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>:
+    36bf:	f3 0f 1e fa          	endbr64
+    36c3:	55                   	push   %rbp
+    36c4:	48 89 e5             	mov    %rsp,%rbp
+    36c7:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    36cb:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    36cf:	5d                   	pop    %rbp
+    36d0:	c3                   	ret
+
+00000000000036d1 <_ZSt13__copy_move_aILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>:
+    36d1:	f3 0f 1e fa          	endbr64
+    36d5:	55                   	push   %rbp
+    36d6:	48 89 e5             	mov    %rsp,%rbp
+    36d9:	41 54                	push   %r12
+    36db:	53                   	push   %rbx
+    36dc:	48 83 ec 20          	sub    $0x20,%rsp
+    36e0:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    36e4:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    36e8:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    36ec:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    36f0:	48 89 c7             	mov    %rax,%rdi
+    36f3:	e8 b5 00 00 00       	call   37ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    36f8:	49 89 c4             	mov    %rax,%r12
+    36fb:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    36ff:	48 89 c7             	mov    %rax,%rdi
+    3702:	e8 a6 00 00 00       	call   37ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    3707:	48 89 c3             	mov    %rax,%rbx
+    370a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    370e:	48 89 c7             	mov    %rax,%rdi
+    3711:	e8 97 00 00 00       	call   37ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    3716:	4c 89 e2             	mov    %r12,%rdx
+    3719:	48 89 de             	mov    %rbx,%rsi
+    371c:	48 89 c7             	mov    %rax,%rdi
+    371f:	e8 9b 00 00 00       	call   37bf <_ZSt14__copy_move_a1ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>
+    3724:	48 89 c2             	mov    %rax,%rdx
+    3727:	48 8d 45 d8          	lea    -0x28(%rbp),%rax
+    372b:	48 89 d6             	mov    %rdx,%rsi
+    372e:	48 89 c7             	mov    %rax,%rdi
+    3731:	e8 ba 00 00 00       	call   37f0 <_ZSt12__niter_wrapIPPPN10BinaryTree8TreeNodeEET_RKS5_S5_>
+    3736:	48 83 c4 20          	add    $0x20,%rsp
+    373a:	5b                   	pop    %rbx
+    373b:	41 5c                	pop    %r12
+    373d:	5d                   	pop    %rbp
+    373e:	c3                   	ret
+
+000000000000373f <_ZSt22__copy_move_backward_aILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>:
+    373f:	f3 0f 1e fa          	endbr64
+    3743:	55                   	push   %rbp
+    3744:	48 89 e5             	mov    %rsp,%rbp
+    3747:	41 54                	push   %r12
+    3749:	53                   	push   %rbx
+    374a:	48 83 ec 20          	sub    $0x20,%rsp
+    374e:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    3752:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    3756:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    375a:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    375e:	48 89 c7             	mov    %rax,%rdi
+    3761:	e8 47 00 00 00       	call   37ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    3766:	49 89 c4             	mov    %rax,%r12
+    3769:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    376d:	48 89 c7             	mov    %rax,%rdi
+    3770:	e8 38 00 00 00       	call   37ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    3775:	48 89 c3             	mov    %rax,%rbx
+    3778:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    377c:	48 89 c7             	mov    %rax,%rdi
+    377f:	e8 29 00 00 00       	call   37ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>
+    3784:	4c 89 e2             	mov    %r12,%rdx
+    3787:	48 89 de             	mov    %rbx,%rsi
+    378a:	48 89 c7             	mov    %rax,%rdi
+    378d:	e8 74 00 00 00       	call   3806 <_ZSt23__copy_move_backward_a1ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>
+    3792:	48 89 c2             	mov    %rax,%rdx
+    3795:	48 8d 45 d8          	lea    -0x28(%rbp),%rax
+    3799:	48 89 d6             	mov    %rdx,%rsi
+    379c:	48 89 c7             	mov    %rax,%rdi
+    379f:	e8 4c 00 00 00       	call   37f0 <_ZSt12__niter_wrapIPPPN10BinaryTree8TreeNodeEET_RKS5_S5_>
+    37a4:	48 83 c4 20          	add    $0x20,%rsp
+    37a8:	5b                   	pop    %rbx
+    37a9:	41 5c                	pop    %r12
+    37ab:	5d                   	pop    %rbp
+    37ac:	c3                   	ret
+
+00000000000037ad <_ZSt12__niter_baseIPPPN10BinaryTree8TreeNodeEET_S5_>:
+    37ad:	f3 0f 1e fa          	endbr64
+    37b1:	55                   	push   %rbp
+    37b2:	48 89 e5             	mov    %rsp,%rbp
+    37b5:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    37b9:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    37bd:	5d                   	pop    %rbp
+    37be:	c3                   	ret
+
+00000000000037bf <_ZSt14__copy_move_a1ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>:
+    37bf:	f3 0f 1e fa          	endbr64
+    37c3:	55                   	push   %rbp
+    37c4:	48 89 e5             	mov    %rsp,%rbp
+    37c7:	48 83 ec 20          	sub    $0x20,%rsp
+    37cb:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    37cf:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    37d3:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    37d7:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    37db:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+    37df:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    37e3:	48 89 ce             	mov    %rcx,%rsi
+    37e6:	48 89 c7             	mov    %rax,%rdi
+    37e9:	e8 49 00 00 00       	call   3837 <_ZSt14__copy_move_a2ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>
+    37ee:	c9                   	leave
+    37ef:	c3                   	ret
+
+00000000000037f0 <_ZSt12__niter_wrapIPPPN10BinaryTree8TreeNodeEET_RKS5_S5_>:
+    37f0:	f3 0f 1e fa          	endbr64
+    37f4:	55                   	push   %rbp
+    37f5:	48 89 e5             	mov    %rsp,%rbp
+    37f8:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    37fc:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    3800:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    3804:	5d                   	pop    %rbp
+    3805:	c3                   	ret
+
+0000000000003806 <_ZSt23__copy_move_backward_a1ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>:
+    3806:	f3 0f 1e fa          	endbr64
+    380a:	55                   	push   %rbp
+    380b:	48 89 e5             	mov    %rsp,%rbp
+    380e:	48 83 ec 20          	sub    $0x20,%rsp
+    3812:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3816:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    381a:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    381e:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    3822:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+    3826:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    382a:	48 89 ce             	mov    %rcx,%rsi
+    382d:	48 89 c7             	mov    %rax,%rdi
+    3830:	e8 33 00 00 00       	call   3868 <_ZSt23__copy_move_backward_a2ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>
+    3835:	c9                   	leave
+    3836:	c3                   	ret
+
+0000000000003837 <_ZSt14__copy_move_a2ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>:
+    3837:	f3 0f 1e fa          	endbr64
+    383b:	55                   	push   %rbp
+    383c:	48 89 e5             	mov    %rsp,%rbp
+    383f:	48 83 ec 20          	sub    $0x20,%rsp
+    3843:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3847:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    384b:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    384f:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    3853:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+    3857:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    385b:	48 89 ce             	mov    %rcx,%rsi
+    385e:	48 89 c7             	mov    %rax,%rdi
+    3861:	e8 33 00 00 00       	call   3899 <_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_>
+    3866:	c9                   	leave
+    3867:	c3                   	ret
+
+0000000000003868 <_ZSt23__copy_move_backward_a2ILb0EPPPN10BinaryTree8TreeNodeES4_ET1_T0_S6_S5_>:
+    3868:	f3 0f 1e fa          	endbr64
+    386c:	55                   	push   %rbp
+    386d:	48 89 e5             	mov    %rsp,%rbp
+    3870:	48 83 ec 20          	sub    $0x20,%rsp
+    3874:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    3878:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    387c:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    3880:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    3884:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+    3888:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    388c:	48 89 ce             	mov    %rcx,%rsi
+    388f:	48 89 c7             	mov    %rax,%rdi
+    3892:	e8 8a 00 00 00       	call   3921 <_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_>
+    3897:	c9                   	leave
+    3898:	c3                   	ret
+
+0000000000003899 <_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_>:
+    3899:	f3 0f 1e fa          	endbr64
+    389d:	55                   	push   %rbp
+    389e:	48 89 e5             	mov    %rsp,%rbp
+    38a1:	48 83 ec 30          	sub    $0x30,%rsp
+    38a5:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    38a9:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    38ad:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    38b1:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    38b5:	48 2b 45 e8          	sub    -0x18(%rbp),%rax
+    38b9:	48 c1 f8 03          	sar    $0x3,%rax
+    38bd:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    38c1:	48 83 7d f8 01       	cmpq   $0x1,-0x8(%rbp)
+    38c6:	0f 9f c0             	setg   %al
+    38c9:	0f b6 c0             	movzbl %al,%eax
+    38cc:	48 85 c0             	test   %rax,%rax
+    38cf:	74 21                	je     38f2 <_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_+0x59>
+    38d1:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    38d5:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    38dc:	00 
+    38dd:	48 8b 4d e8          	mov    -0x18(%rbp),%rcx
+    38e1:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    38e5:	48 89 ce             	mov    %rcx,%rsi
+    38e8:	48 89 c7             	mov    %rax,%rdi
+    38eb:	e8 90 d9 ff ff       	call   1280 <memmove@plt>
+    38f0:	eb 1a                	jmp    390c <_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_+0x73>
+    38f2:	48 83 7d f8 01       	cmpq   $0x1,-0x8(%rbp)
+    38f7:	75 13                	jne    390c <_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_+0x73>
+    38f9:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    38fd:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    3901:	48 89 d6             	mov    %rdx,%rsi
+    3904:	48 89 c7             	mov    %rax,%rdi
+    3907:	e8 b4 00 00 00       	call   39c0 <_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneIPPN10BinaryTree8TreeNodeES6_EEvPT_PT0_>
+    390c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    3910:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    3917:	00 
+    3918:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    391c:	48 01 d0             	add    %rdx,%rax
+    391f:	c9                   	leave
+    3920:	c3                   	ret
+
+0000000000003921 <_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_>:
+    3921:	f3 0f 1e fa          	endbr64
+    3925:	55                   	push   %rbp
+    3926:	48 89 e5             	mov    %rsp,%rbp
+    3929:	48 83 ec 30          	sub    $0x30,%rsp
+    392d:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+    3931:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    3935:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    3939:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    393d:	48 2b 45 e8          	sub    -0x18(%rbp),%rax
+    3941:	48 c1 f8 03          	sar    $0x3,%rax
+    3945:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    3949:	48 83 7d f8 01       	cmpq   $0x1,-0x8(%rbp)
+    394e:	0f 9f c0             	setg   %al
+    3951:	0f b6 c0             	movzbl %al,%eax
+    3954:	48 85 c0             	test   %rax,%rax
+    3957:	74 32                	je     398b <_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_+0x6a>
+    3959:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    395d:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    3964:	00 
+    3965:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    3969:	48 c1 e0 03          	shl    $0x3,%rax
+    396d:	48 f7 d8             	neg    %rax
+    3970:	48 89 c1             	mov    %rax,%rcx
+    3973:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    3977:	48 01 c1             	add    %rax,%rcx
+    397a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    397e:	48 89 c6             	mov    %rax,%rsi
+    3981:	48 89 cf             	mov    %rcx,%rdi
+    3984:	e8 f7 d8 ff ff       	call   1280 <memmove@plt>
+    3989:	eb 1e                	jmp    39a9 <_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_+0x88>
+    398b:	48 83 7d f8 01       	cmpq   $0x1,-0x8(%rbp)
+    3990:	75 17                	jne    39a9 <_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPPN10BinaryTree8TreeNodeES6_EEPT0_PT_SA_S8_+0x88>
+    3992:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    3996:	48 8d 50 f8          	lea    -0x8(%rax),%rdx
+    399a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    399e:	48 89 c6             	mov    %rax,%rsi
+    39a1:	48 89 d7             	mov    %rdx,%rdi
+    39a4:	e8 17 00 00 00       	call   39c0 <_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneIPPN10BinaryTree8TreeNodeES6_EEvPT_PT0_>
+    39a9:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    39ad:	48 c1 e0 03          	shl    $0x3,%rax
+    39b1:	48 f7 d8             	neg    %rax
+    39b4:	48 89 c2             	mov    %rax,%rdx
+    39b7:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    39bb:	48 01 d0             	add    %rdx,%rax
+    39be:	c9                   	leave
+    39bf:	c3                   	ret
+
+00000000000039c0 <_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneIPPN10BinaryTree8TreeNodeES6_EEvPT_PT0_>:
+    39c0:	f3 0f 1e fa          	endbr64
+    39c4:	55                   	push   %rbp
+    39c5:	48 89 e5             	mov    %rsp,%rbp
+    39c8:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+    39cc:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+    39d0:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    39d4:	48 8b 10             	mov    (%rax),%rdx
+    39d7:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    39db:	48 89 10             	mov    %rdx,(%rax)
+    39de:	90                   	nop
+    39df:	5d                   	pop    %rbp
+    39e0:	c3                   	ret
+
+Disassembly of section .fini:
+
+00000000000039e4 <_fini>:
+    39e4:	f3 0f 1e fa          	endbr64
+    39e8:	48 83 ec 08          	sub    $0x8,%rsp
+    39ec:	48 83 c4 08          	add    $0x8,%rsp
+    39f0:	c3                   	ret

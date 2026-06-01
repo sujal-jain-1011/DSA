@@ -23,7 +23,6 @@ class BinaryTree:
             def __init__(self, data):
                 self.val, self.left, self.right=data, None, None
 
-
         #Member function of class: to create a new node for the binary tree and returning it
         def createTreeNode(self, data):
             """Dynamically allocating memory for the new node and checking if the memory allocation was successful
@@ -161,7 +160,7 @@ class BinaryTree:
         #Member function of class: to print the left view of the binary tree using iterative approach
         def leftView(self, root_add):
             """Handling corner case: when binary tree is empty, in that
-            case we are going to print Binary tree is empty!" and return"""
+            case we are going to print "Binary tree is empty!" and return"""
             if(not(root_add)):
                 print("Binary tree is empty!")
                 return False

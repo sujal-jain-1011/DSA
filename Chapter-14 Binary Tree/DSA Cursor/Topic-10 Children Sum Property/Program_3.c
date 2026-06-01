@@ -26,7 +26,6 @@ struct TreeNode* ptr;
 struct TreeNode** que;
 struct TreeNode** queLOT;
 
-
 /*Function to create a new node for the binary tree and returning it*/
 struct TreeNode* createTreeNode(int data)
 {
@@ -191,7 +190,7 @@ except leaf node the value of current node equals the value of left child plus t
 short unsigned int csp(struct TreeNode** root_add)
 {
     /*Handling corner case: when binary tree is empty, in that
-    case we are going to print Binary tree is empty!" and return*/
+    case we are going to print "Binary tree is empty!" and return*/
     if(!(*root_add))
     {
         printf("Binary tree is empty!\n");
@@ -233,7 +232,7 @@ short unsigned int csp(struct TreeNode** root_add)
                         if(qptr->right) {enqueue(qptr->right, &queLOT, &frontLOT, &rearLOT); rightChild=qptr->right->val;}
 
                         /*Checking for csp property*/
-                        if(qptr->val!=(leftChild+rightChild)) return 0;
+                        if(qptr->val!=(leftChild+rightChild)) {free(queLOT); return 0};
                     }
                 }
                 else
@@ -242,6 +241,9 @@ short unsigned int csp(struct TreeNode** root_add)
                     if(!isEmpty(frontLOT, rearLOT)) enqueue(NULL, &queLOT, &frontLOT, &rearLOT);
                 }
             }
+
+            /*Deallocating memory to created queue used in this specific function*/
+            free(queLOT);
 
             /*Returning one to indicate that csp property is satisfied*/
             return 1;

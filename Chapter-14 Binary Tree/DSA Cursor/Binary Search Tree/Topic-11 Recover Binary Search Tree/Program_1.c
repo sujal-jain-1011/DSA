@@ -1,0 +1,320 @@
+/*C program to implement a binary search tree by allocating memory dynamically from the heap,
+that means we are going to create a binary search tree using queue data structure and an array,
+we are also going to first swap exactly two node values of the binary search tree and then
+we are going to recover the binary search tree from that distorted binary search tree*/
+
+/*Including limits.h header file for using ULLONG_MAX, stdio.h header file for input
+and output functions and stdlib.h header file for memory allocation functions*/
+#include<limits.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+/*Defining some global variables: capacity variable of long long unsigned int type for the capacity of binary search tree,
+front and rear variables of long long unsigned int type for the front and rear indices of the queue, a root pointer to
+store the address of the root node of the binary search tree, a ptr pointer to traverse the binary search tree for it's creation
+and a queue pointer to store the address of the first cell that will created to implement the queue data structure*/
+long long unsigned int capacity, front=ULLONG_MAX, rear=ULLONG_MAX;
+
+/*Defining a structure for binary search tree node that contains data, left and right child pointers
+and defining a function that will create a new node for the binary search tree when called*/
+struct TreeNode{
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
+struct TreeNode* root;
+struct TreeNode* ptr; 
+struct TreeNode** que;
+
+/*Function to create a new node for the binary search tree and returning it*/
+struct TreeNode* createTreeNode(int data)
+{
+    /*Dynamically allocating memory for the new node using malloc function and checking if the memory allocation was
+    successful if it was, then populating the node with the data passed to function and returning it's address*/
+    struct TreeNode* newTreeNode=(struct TreeNode*)malloc(sizeof(struct TreeNode));
+    if(newTreeNode==NULL)
+    {
+        printf("Memory allocation failed for node of binary search tree!\n");
+        return NULL;
+    }
+    
+    /*Assigning the data passed to function to the val field of the new
+    node and initializing the left and right child pointers to NULL*/
+    newTreeNode->val=data;
+    newTreeNode->left=NULL;
+    newTreeNode->right=NULL;
+
+    /*Returning the newly created node*/
+    return newTreeNode;
+}
+
+/*Function to implement circular queue data structure that will be used to create a complete binary search tree
+this function is going to take no arguments since we can directly access the capacity global variable*/
+short unsigned int implementCircularQueue()
+{
+    /*Allocating memory dynamically to create an array for implementing circular queue
+    data structure and checking if the memory allocation was successful or not*/
+    que=(struct TreeNode**)malloc(capacity*sizeof(struct TreeNode*));
+    if(que==NULL)
+    {
+        printf("Memory allocation failed for queue data structure!\n");
+        return 0;
+    }
+
+    /*Returning one if memory allocation was successful*/
+    return 1;
+}
+
+/*Function to check whether the circular queue is full or not if rear+1
+mod capacity equals front then the queue is full otherwise it is not*/
+short unsigned int isFull() {return (((rear+1)%capacity==front)?1:0);}
+
+/*Function to check whether the circular queue is empty or not if
+both front and rear equals ULLONG_MAX then queue is empty otherwise not*/
+short unsigned int isEmpty() {return ((front==ULLONG_MAX && rear==ULLONG_MAX)?1:0);}
+
+/*Function to implement the enqueue function for circular queue data structure*/
+void enqueue(struct TreeNode* root_add)
+{
+    /*Checking whether the queue is full or not using the isFull function,
+    if it is full then we can't insert and hence return without enqueuing*/
+    if(isFull()) 
+    {
+        printf("Can't insert %d into queue, since queue is full!\n", root_add->val);
+        return;
+    }
+
+    /*Checking for first insertion in the circular queue data structure*/
+    if(isEmpty())
+    {
+        /*It is the first insertion in the queue data structure*/
+        front+=1; rear+=1;
+        que[rear]=root_add;
+    }
+    else {rear=(rear+1)%capacity; que[rear]=root_add;}
+}
+
+/*Function to implement the dequeue function for circular queue data structure*/
+struct TreeNode* dequeue()
+{
+    /*Checking whether the queue is empty or not using the isEmpty function,
+    if it is empty then we can't delete and hence return without dequeuing*/
+    if(isEmpty()) 
+    {
+        printf("Can't delete from queue, since queue is empty!\n");
+        return NULL;
+    }
+
+    /*Getting the first element of queue and checking for
+    last deletion from the circular queue data structure*/
+    struct TreeNode* start_elm=que[front];
+    if(front==rear) front=rear=ULLONG_MAX;
+    else front=(front+1)%capacity;
+
+    /*Returning the front element of queue*/
+    return start_elm;
+}
+
+/*Defining custom compare function to help standard qsort function to sort array elements in
+ascending order which contains the elements of the binary search tree in scrambled order*/
+int cmp(const void *a,const void *b){return (*(int*)a-*(int*)b);}
+
+/*Function to implement the binary search tree using the array elements (after sorting it), by choosing
+the middle element as the root element of the BST and doing it recursively for left and right subtrees*/
+struct TreeNode* implementBinarySearchTree(int *arr, long long unsigned int low, long long unsigned int high)
+{
+    /*Declaring base case for recursion: when low is greater than high then we can't create a BST*/
+    if(low<=high)
+    {
+        /*Since we are working with long long unsigned int type iterators i.e. low and high we need
+        to take into consideration the wrap around property of long long unsigned int type*/
+        
+        /*Getting the middle element of the array using low and high iterators, creating root node with this
+        element and then calling implementBinarySearchTree function recursively for left and right subtrees*/
+        long long unsigned int mid=low+(high-low)/2;
+        struct TreeNode* rootNode=createTreeNode(arr[mid]);
+
+        /*Checking for wrap around for high iterator variable before calling
+        the implementBinarySearchTree function for creating left subtree*/
+        if(mid>0) rootNode->left=implementBinarySearchTree(arr, low, mid-1);
+        rootNode->right=implementBinarySearchTree(arr, mid+1, high);
+
+        /*Returning root node of the created binary search subtree*/
+        return rootNode;
+    }
+    else return NULL;
+}
+
+/*Function to create a complete binary search tree using queue data structure*/
+short unsigned int createBinarySearchTree()
+{
+    /*Getting the input for capacity variable from user*/
+    printf("Enter the capacity of binary search tree:");
+    scanf("%llu", &capacity);
+
+    /*User is instructed to enter the capacity less than ULLONG_MAX to avoid wrap around
+    otherwise the result will not be as predicted because of the wrap around property,
+    writing a basic check but it won't be evaluated because of the wrap around property*/
+    if(capacity>ULLONG_MAX || capacity<0)
+    {
+        printf("Invalid user input for capacity!\n");
+        return 0;
+    }
+
+    /*Handling corner case: when capacity is zero*/
+    if(capacity==0) {printf("binary search tree is empty!\n"); return 0;}
+
+    /*Declaring an array to store the elements of the binary search tree
+    and taking the user input for the node values of the binary search tree*/
+    int *arr=(int*)malloc(capacity*sizeof(int));
+
+    /*Running a loop to get the elements of binary search tree from user*/
+    printf("Enter the elements of binary search tree:\n");
+    for(long long unsigned int i=0; i<capacity; i++)
+    {
+        printf("Enter element %llu of binary search tree:", i);
+        scanf("%d", (arr+i));
+    }
+
+    /*Calling standard qsort function with the array as argument to sort the elements of array in ascending order
+    and then implementBinarySearchTree function with the sorted array as argument to construct binary search tree
+    and assigning the root node of the BST created by implementBinarySearchTree function to root global variable*/
+    qsort(arr, capacity, sizeof(int), cmp); root=implementBinarySearchTree(arr, 0, capacity-1);
+
+    /*Freeing up the memory allocated to array and returning one for successful creation of binary search tree*/
+    free(arr);
+    return 1;
+}
+
+/*Function to print the preorder traversal of the binary search tree by taking the address of root node*/
+void preorder(struct TreeNode** root_add)
+{
+    /*Declaring base case for recursion: when the binary search tree is/becomes empty*/
+    if((*root_add))
+    {
+        /*Printing the value of current node to console, calling preorder function
+        recursively for left subtree and then calling it recursively for right subtree*/
+        printf("%d ", (*root_add)->val);
+        preorder(&((*root_add)->left));
+        preorder(&((*root_add)->right));
+    }
+}
+
+/*Function to print the inorder traversal of the binary search tree by taking the address of root node*/
+void inorder(struct TreeNode** root_add)
+{
+    /*Declaring base case for recursion: when the binary search tree is/becomes empty*/
+    if((*root_add))
+    {
+        /*Calling inorder function recursively for left subtree, printing the value of
+        current node to console, and then calling it recursively for right subtree*/
+        inorder(&((*root_add)->left));
+        printf("%d ", (*root_add)->val);
+        inorder(&((*root_add)->right));
+    }
+}
+
+/*Function to populate an array (vector) from the inorder traversal of the BST*/
+void inorderPopulate(struct TreeNode** root_add, struct TreeNode*** arr, long long unsigned int* iter)
+{
+    /*Declaring base case for recursion: when binary search tree is/becomes empty*/
+    if((*(root_add)))
+    {
+        /*Calling the inorderPopulate function recursively for left subtree, then
+        pushing the address of current node into array (vector) and then calling
+        inorderPopulate function recursively for the right subtree of current node*/
+        inorderPopulate(&((*(root_add))->left), arr, iter);
+        (*(arr+(*iter)++))=root_add;
+        inorderPopulate(&((*(root_add))->right), arr, iter);
+    }
+}
+
+/*Function to recover binary search tree from given binary tree*/
+void recoverBST(struct TreeNode** root_add, struct TreeNode*** arr)
+{
+    /*Declaring base case for recursion: when binary search tree is/becomes empty*/
+    if((*(root_add)))
+    {
+        /*Calling recoverBST function recursively for the left subtree of current node, proecessing the
+        current node and then calling recoverBST function recursively fo right subtree of current node*/
+        recoverBST(&((*(root_add))->left), arr);
+        if(!arr[1]) arr[1]=root_add;
+        else
+        {
+            /*Setting the values of arr[0], arr[1] and checking whether there is any offchart element or not*/
+            arr[0]=arr[1]; arr[1]=root_add;
+            if(!arr[2] && (*(arr[0]))->val>(*(arr[1]))->val){arr[2]=arr[0]; arr[4]=arr[1];}
+            else if(arr[2] && !arr[3] && (*(arr[0]))->val>(*(arr[1]))->val){arr[3]=arr[1];}
+        }
+        recoverBST(&((*(root_add))->right), arr);
+    }
+}
+
+/*Function to swap node values of two nodes of the binary search tree*/
+void swap(struct TreeNode** ptr1, struct TreeNode** ptr2){int temp=(*ptr1)->val; (*ptr1)->val=(*ptr2)->val; (*ptr2)->val=temp;}
+
+/*Function to deallocate the space allocated to binary search tree in order to avoid memory leakages,
+for that we are going to do the postorder traversal of binary search tree in order to deallocate
+memory to binary search tree, so that we don't loose the address or reference of the child nodes*/
+void freeBinarySearchTree(struct TreeNode** root_add)
+{
+    /*Declaring base case for recursion: when binary search tree is/becomes empty*/
+    if((*root_add))
+    {
+        /*Calling freeBinaryTree function recursively for left and right subtrees
+        of the current node and then deallocating memory to current node of tree*/
+        freeBinarySearchTree(&((*root_add)->left));
+        freeBinarySearchTree(&((*root_add)->right));
+        free(*root_add);
+    }
+}
+
+/*Defining main function(driver code)*/
+int main(void)
+{
+    /*Checking whether the binary search tree creation failed or not*/
+    if(createBinarySearchTree())
+    {
+        printf("Successfully created binary search tree!\n");
+        printf("The inorder traversal of BST before distortion is:\n");
+        inorder(&root); printf("\n");
+
+        /*Calling inorderPopulate function to populate a vector from the inorder
+        traversal of the binary search tree which will be used to swap exactly
+        two node values of the binary search (taking input from the user)*/
+        struct TreeNode*** arr=(struct TreeNode***)malloc(capacity*sizeof(struct TreeNode**));
+        long long unsigned int iter=0; inorderPopulate(&root, arr, &iter);
+
+        /*Taking input from the user to swap exactly two node values of BST for which
+        user is requested to enter positive values (including zero) otherwise the result
+        will not be as predicted because of the wrap around property of unsigned data type*/
+        long long unsigned int first, second;
+        printf("Enter the node indices of whose data you need to swap:");
+        scanf("%llu %llu", &first, &second); first%=capacity; second%=capacity;
+
+        /*Swapping the node values of the indices (nodes in the inorder traversal of BST) given by user*/
+        swap((*(arr+first)), (*(arr+second)));
+
+        /*Calling the inorder function after distorting the binary search tree to print
+        inorder traversal of the distorted BST then calling recoverBST to recover the actual
+        BST from the distorted BST and again calling inorder function to print the traversal*/
+        printf("The inorder traversal of BST after distortion is:\n");
+        inorder(&root); printf("\n");
+
+        /*Declaring an arry of five pointer variables to keep track of out of order nodes
+        in BST and calling recoverBST function to recover the BST from the distorted BST*/
+        struct TreeNode*** array=(struct TreeNode***)malloc(5*sizeof(struct TreeNode**));
+        for(short unsigned int iter=0; iter<5; iter++) array[iter]=NULL;
+        printf("Recovering BST...\n"); recoverBST(&root, array);
+        if(!array[3]) swap((*(array+2)), (*(array+4))); 
+        else swap((*(array+2)), (*(array+3)));
+
+        /*Calling inorder function to print the inorder traversal of the recovered BST*/
+        printf("The inorder traversal of recovered BST is:\n"); inorder(&root); printf("\n");
+
+        /*Deallocating memory to created binary search tree*/
+        freeBinarySearchTree(&root);
+    }
+    else printf("Binary search tree creation failed!\n");
+    return 0;
+}

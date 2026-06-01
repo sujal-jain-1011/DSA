@@ -22,7 +22,6 @@ class BinaryTree:
             def __init__(self, data):
                 self.val, self.left, self.right=data, None, None
 
-
         #Member function of class: to create a new node for the binary tree and returning it
         def createTreeNode(self, data):
             """Dynamically allocating memory for the new node and checking if the memory allocation was successful

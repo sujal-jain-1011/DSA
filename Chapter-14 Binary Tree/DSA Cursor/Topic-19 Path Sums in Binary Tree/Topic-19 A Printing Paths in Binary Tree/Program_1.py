@@ -1,0 +1,210 @@
+"""Python program to implement a binary tree by allocating memory dynamically from the heap,
+that means we are going to create a complete binary tree using queue data structure and
+we are also going to print all the root to leaf paths in the constructed binary tree"""
+
+#Declaring a class to implement the binary tree
+class BinaryTree:
+
+        """Defining some class variables: capacity variable of long long unsigned int type for the capacity of binary tree,
+        front and rear variables of long long unsigned int type for the front and rear indices of the queue, a root pointer to
+        store the address of the root node of the binary tree, a ptr pointer to traverse the binary tree for it's creation
+        and a queue pointer to store the address of the first cell that will be created to implement the queue data structure"""
+        def __init__(self):
+            self.capacity, self.front, self.rear, self.pathCounter=0, -1, -1, 0
+            self.root, self.ptr, self.que, self.path=None, None, None, []
+
+        """Defining a class for binary tree node that contains data, left and right child pointers
+        and defining a function that will create a new node for the binary tree when called"""
+        class TreeNode:
+            def __init__(self, data):
+                self.val, self.left, self.right=data, None, None
+
+        #Member function of class: to create a new node for the binary tree and returning it
+        def createTreeNode(self, data):
+            """Dynamically allocating memory for the new node and checking if the memory allocation was successful
+            if it was, then populating the node with the data passed to function and returning it's address"""
+            try:
+                newTreeNode=self.TreeNode(data)
+            except:
+                print("Memory allocation failed for node of binary tree!")
+                return None
+            
+            #Returning the newly created node
+            return newTreeNode;
+
+        """Member function of class: to implement circular queue data structure that will be used to create a complete
+        binary tree this function is going to take no arguments since we can directly access the capacity global variable"""
+        def implementCircularQueue(self):
+            """Allocating memory dynamically to create an array for implementing circular queue
+            data structure and checking if the memory allocation was successful or not"""
+            try:
+                self.que=[None for iter in range(0, self.capacity)]
+            except:
+                print("Memory allocation failed for queue data structure!");
+                return False;
+
+            #Returning true if memory allocation was successful
+            return True;
+
+        """Member function of class: to check whether the circular queue is full or not
+        if rear+1 mod capacity equals front then the queue is full otherwise it is not"""
+        def isFull(self):
+            return 1 if((self.rear+1)%self.capacity==self.front) else 0
+
+        """Member function of class: to check whether the circular queue is empty or not
+        if both front and rear equals negative one then queue is empty otherwise not"""
+        def isEmpty(self):
+            return 1 if(self.front==-1 and self.rear==-1) else 0
+
+        #Member function of class: to implement the enqueue function for circular queue data structure
+        def enqueue(self, root_add):
+            """Checking whether the queue is full or not using the isFull function,
+            if it is full then we can't insert and hence return without enqueuing"""
+            if(self.isFull()):
+                print(f"Can't insert {root_add.val} into queue, since queue is full!")
+                return
+
+            #Checking for first insertion in the circular queue data structure
+            if(self.isEmpty()):
+                #It is the first insertion in the queue data structure
+                self.front+=1; self.rear+=1;
+                self.que[self.rear]=root_add;
+            else:
+                self.rear=(self.rear+1)%self.capacity
+                self.que[self.rear]=root_add
+
+        #Member function of class: to implement the dequeue function for circular queue data structure
+        def dequeue(self):
+            """Checking whether the queue is empty or not using the isEmpty function,
+            if it is empty then we can't delete and hence return without dequeuing"""
+            if(self.isEmpty()):
+                print("Can't delete from queue, since queue is empty!")
+                return None
+
+            """Getting the first element of queue and checking for
+            last deletion from the circular queue data structure"""
+            start_elm=self.que[self.front];
+            if(self.front==self.rear):
+                self.front=self.rear=-1
+            else:
+                self.front=(self.front+1)%self.capacity;
+
+            #Returning the front element of queue
+            return start_elm
+
+        #Member function of class: to create a complete binary tree using queue data structure
+        def createBinaryTree(self):
+            #Getting the input for capacity variable from user
+            self.capacity=int(input("Enter the capacity of binary tree:"))
+            
+            """User is instructed to enter the capacity greater than or
+            equal to zero otherwise the result will not be as predicted"""
+            if(self.capacity<0):
+                print("Invalid user input for capacity!");
+                return False
+
+            #Handling corner case: when capacity is zero
+            if(self.capacity==0):
+                print("Binary tree is empty!")
+                return False
+
+            """Declaring an array to store the elements of the binary tree
+            and taking the user input for the node values of the binary tree"""
+            try:
+                arr=[None for iter in range(0, self.capacity)]
+            except:
+                print("Memory allocation failed for array of binary tree!");
+                return False
+
+            #Running a loop to get the elements of binary tree from user
+            print("Enter the elements of binary tree:");
+            for iter in range(0, self.capacity):
+                arr[iter]=int(input(f"Enter element {iter} of binary tree:"))
+
+            """Calling implementCircularQueue to initialize the circular queue data structure
+            and inserting the root node into the newly created circular queue data structure"""
+            if(not(self.implementCircularQueue())):
+                return False
+            root_start=self.createTreeNode(arr[0]);
+            self.enqueue(root_start);
+
+            #Running a loop to create the binary tree from the user input elements
+            iter=1;
+            while(iter<self.capacity):
+                #Dequeuing the front element of queue and enqueuing it's child nodes into queue
+                currentTreeNode=self.dequeue()
+
+                #Checking for insertion in left child pointer
+                if(not(currentTreeNode.left)):
+                    #Creating new TreeNode for left child pointer and inserting into queue
+                    left_child=self.createTreeNode(arr[iter])
+                    iter+=1
+                    currentTreeNode.left=left_child;
+                    self.enqueue(left_child);
+                #Checking for insertion in right child pointer
+                if(iter<self.capacity and not(currentTreeNode.right)):
+                    #Creating new TreeNode for left child pointer and inserting into queue
+                    right_child=self.createTreeNode(arr[iter])
+                    iter+=1
+                    currentTreeNode.right=right_child
+                    self.enqueue(right_child)
+
+            #Assigning root_start to root global variable and returning one for successful creation of binary tree
+            self.root=root_start
+            return True
+
+        #Member function of class: to print the preorder traversal the binary tree by taking the root node
+        def preorder(self, root_add):
+            #Declaring base case for recursion: when the binary tree is/becomes empty
+            if(root_add):
+                """Printing the value of current node to console, calling preorder function
+                recursively for left subtree and then calling it recursively for right subtree"""
+                print(root_add.val, end=" ")
+                self.preorder(root_add.left)
+                self.preorder(root_add.right)
+
+        #Member function of class: to print all the root to leaf paths in the binary tree
+        def allPaths(self, root_add):
+            #Declaring base case for recursion: when binary tree is/becomes empty
+            if(root_add):
+                """Pushing the data of the current node into vector and then calling the function recursively
+                for left and right subtree of current node and then popping current element from vector"""
+                self.path.append(root_add.val)
+
+                """Checking whether the current node is a leaf node or not, if it is leaf node
+                then we are going to print the path here only and return from here after popping"""
+                if(not(root_add.left) and not(root_add.right)):
+                    #Printing the current contents of the vector and then returning after popping the current node
+                    print(f"Path {1+self.pathCounter} of binary tree is:", end=" ")
+                    self.pathCounter+=1
+                    sz=len(self.path)
+                    for it in range(sz):
+                        print(self.path[it], end=" ")
+                    print()
+
+                    #Popping current node and then returning
+                    self.path.pop()
+                    return
+
+                #Calling the allPaths function recursively for left and right subtree of current node
+                self.allPaths(root_add.left)
+                self.allPaths(root_add.right)
+
+                #Popping current element out of vector
+                self.path.pop()
+
+#Declaring object of class BinaryTree
+BT=BinaryTree();
+
+#Checking whether the binary tree creation failed or not
+if(BT.createBinaryTree()):
+    print("Successfully created binary tree!")
+    print("The preorder traversal of binary tree is:")
+    BT.preorder(BT.root)
+    print()
+
+    #Calling allPaths function to print all the paths of binary tree
+    print("All the paths of the binary tree are:")
+    BT.allPaths(BT.root);
+else:
+    print("Binary tree creation failed!")

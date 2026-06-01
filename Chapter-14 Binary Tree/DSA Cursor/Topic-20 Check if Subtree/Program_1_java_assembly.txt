@@ -1,0 +1,179 @@
+Classfile /home/sujal/Documents/DSA/Chapter-14 Binary Tree/DSA Cursor/Topic-20 Check if Subtree/Program_1.class
+  Last modified Apr 18, 2026; size 1160 bytes
+  SHA-256 checksum 52893c018eacdb4630a703430b966efbb29c6cc0928e0d088a56d883eb73354b
+  Compiled from "Program_1.java"
+public class Program_1
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #53                         // Program_1
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 2
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // BinaryTree
+   #8 = Utf8               BinaryTree
+   #9 = Methodref          #7.#3          // BinaryTree."<init>":()V
+  #10 = Methodref          #7.#11         // BinaryTree.initialize:()V
+  #11 = NameAndType        #12:#6         // initialize:()V
+  #12 = Utf8               initialize
+  #13 = Methodref          #7.#14         // BinaryTree.createBinaryTree:(I)Z
+  #14 = NameAndType        #15:#16        // createBinaryTree:(I)Z
+  #15 = Utf8               createBinaryTree
+  #16 = Utf8               (I)Z
+  #17 = Fieldref           #18.#19        // java/lang/System.out:Ljava/io/PrintStream;
+  #18 = Class              #20            // java/lang/System
+  #19 = NameAndType        #21:#22        // out:Ljava/io/PrintStream;
+  #20 = Utf8               java/lang/System
+  #21 = Utf8               out
+  #22 = Utf8               Ljava/io/PrintStream;
+  #23 = String             #24            // Successfully created both the binary trees!
+  #24 = Utf8               Successfully created both the binary trees!
+  #25 = Methodref          #26.#27        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #26 = Class              #28            // java/io/PrintStream
+  #27 = NameAndType        #29:#30        // println:(Ljava/lang/String;)V
+  #28 = Utf8               java/io/PrintStream
+  #29 = Utf8               println
+  #30 = Utf8               (Ljava/lang/String;)V
+  #31 = String             #32            // The preorder traversal of binary tree 1 is:
+  #32 = Utf8               The preorder traversal of binary tree 1 is:
+  #33 = Fieldref           #7.#34         // BinaryTree.rootNodes:[LBinaryTree$TreeNode;
+  #34 = NameAndType        #35:#36        // rootNodes:[LBinaryTree$TreeNode;
+  #35 = Utf8               rootNodes
+  #36 = Utf8               [LBinaryTree$TreeNode;
+  #37 = Methodref          #7.#38         // BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+  #38 = NameAndType        #39:#40        // preorder:(LBinaryTree$TreeNode;)V
+  #39 = Utf8               preorder
+  #40 = Utf8               (LBinaryTree$TreeNode;)V
+  #41 = Methodref          #26.#42        // java/io/PrintStream.println:()V
+  #42 = NameAndType        #29:#6         // println:()V
+  #43 = Methodref          #7.#44         // BinaryTree.isSubtree:(LBinaryTree$TreeNode;LBinaryTree$TreeNode;)Z
+  #44 = NameAndType        #45:#46        // isSubtree:(LBinaryTree$TreeNode;LBinaryTree$TreeNode;)Z
+  #45 = Utf8               isSubtree
+  #46 = Utf8               (LBinaryTree$TreeNode;LBinaryTree$TreeNode;)Z
+  #47 = String             #48            // Binary tree 2 is subtree of binary tree 1!
+  #48 = Utf8               Binary tree 2 is subtree of binary tree 1!
+  #49 = String             #50            // Binary tree 2 is not a subtree of binary tree 1!
+  #50 = Utf8               Binary tree 2 is not a subtree of binary tree 1!
+  #51 = String             #52            // Binary trees creation failed!
+  #52 = Utf8               Binary trees creation failed!
+  #53 = Class              #54            // Program_1
+  #54 = Utf8               Program_1
+  #55 = Utf8               Code
+  #56 = Utf8               LineNumberTable
+  #57 = Utf8               main
+  #58 = Utf8               ([Ljava/lang/String;)V
+  #59 = Utf8               StackMapTable
+  #60 = Utf8               SourceFile
+  #61 = Utf8               Program_1.java
+  #62 = Utf8               InnerClasses
+  #63 = Class              #64            // BinaryTree$TreeNode
+  #64 = Utf8               BinaryTree$TreeNode
+  #65 = Utf8               TreeNode
+{
+  public Program_1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 269: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=2, args_size=1
+         0: new           #7                  // class BinaryTree
+         3: dup
+         4: invokespecial #9                  // Method BinaryTree."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #10                 // Method BinaryTree.initialize:()V
+        12: aload_1
+        13: iconst_0
+        14: invokevirtual #13                 // Method BinaryTree.createBinaryTree:(I)Z
+        17: ifeq          125
+        20: aload_1
+        21: iconst_1
+        22: invokevirtual #13                 // Method BinaryTree.createBinaryTree:(I)Z
+        25: ifeq          125
+        28: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        31: ldc           #23                 // String Successfully created both the binary trees!
+        33: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        36: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        39: ldc           #31                 // String The preorder traversal of binary tree 1 is:
+        41: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        44: aload_1
+        45: aload_1
+        46: getfield      #33                 // Field BinaryTree.rootNodes:[LBinaryTree$TreeNode;
+        49: iconst_0
+        50: aaload
+        51: invokevirtual #37                 // Method BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+        54: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        57: invokevirtual #41                 // Method java/io/PrintStream.println:()V
+        60: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        63: ldc           #31                 // String The preorder traversal of binary tree 1 is:
+        65: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        68: aload_1
+        69: aload_1
+        70: getfield      #33                 // Field BinaryTree.rootNodes:[LBinaryTree$TreeNode;
+        73: iconst_1
+        74: aaload
+        75: invokevirtual #37                 // Method BinaryTree.preorder:(LBinaryTree$TreeNode;)V
+        78: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        81: invokevirtual #41                 // Method java/io/PrintStream.println:()V
+        84: aload_1
+        85: aload_1
+        86: getfield      #33                 // Field BinaryTree.rootNodes:[LBinaryTree$TreeNode;
+        89: iconst_0
+        90: aaload
+        91: aload_1
+        92: getfield      #33                 // Field BinaryTree.rootNodes:[LBinaryTree$TreeNode;
+        95: iconst_1
+        96: aaload
+        97: invokevirtual #43                 // Method BinaryTree.isSubtree:(LBinaryTree$TreeNode;LBinaryTree$TreeNode;)Z
+       100: ifeq          114
+       103: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       106: ldc           #47                 // String Binary tree 2 is subtree of binary tree 1!
+       108: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       111: goto          133
+       114: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       117: ldc           #49                 // String Binary tree 2 is not a subtree of binary tree 1!
+       119: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       122: goto          133
+       125: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       128: ldc           #51                 // String Binary trees creation failed!
+       130: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       133: return
+      LineNumberTable:
+        line 276: 0
+        line 277: 8
+        line 280: 12
+        line 284: 28
+        line 285: 36
+        line 286: 44
+        line 287: 60
+        line 288: 68
+        line 291: 84
+        line 292: 114
+        line 294: 125
+        line 295: 133
+      StackMapTable: number_of_entries = 3
+        frame_type = 252 /* append */
+          offset_delta = 114
+          locals = [ class BinaryTree ]
+        frame_type = 10 /* same */
+        frame_type = 7 /* same */
+}
+SourceFile: "Program_1.java"
+InnerClasses:
+  #65= #63 of #7;                         // TreeNode=class BinaryTree$TreeNode of class BinaryTree
