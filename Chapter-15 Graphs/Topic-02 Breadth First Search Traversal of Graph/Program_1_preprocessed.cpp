@@ -51867,7 +51867,7 @@ class Graph{
 
                         AdjNeigh* temp=initAdjNeigh(neighNode); if(!temp) return false;
                         temp->next=GN[iter]->adj; GN[iter]->adj=temp;
-                        AdjNeigh* reverse = initAdjNeigh(GN[iter]); if(!reverse) return false;
+                        AdjNeigh* reverse=initAdjNeigh(GN[iter]); if(!reverse) return false;
                         reverse->next=neighNode->adj; neighNode->adj=reverse;
                     }
                 }
@@ -51936,10 +51936,10 @@ class Graph{
                         {
 
 
-                            if(!visited[(start[iter]->dt)->val])
+                            if(!visited[((ptr->vertex)->dt)->val])
                             {
 
-                                que.push((ptr->vertex)); visited[(start[iter]->dt)->val]=true;
+                                que.push((ptr->vertex)); visited[((ptr->vertex)->dt)->val]=true;
                             }
                             ptr=ptr->next;
                         }

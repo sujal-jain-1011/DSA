@@ -91,7 +91,7 @@ class Graph{
             aN->vertex=vtx; aN->next=nullptr; return aN;
         }
 
-        /*Member function to initialize graph node by populating fields of graphNode structure, with the given parameters*/
+        /*Member function of class: to initialize graph node by populating fields of graphNode structure, with the given parameters*/
         graphNode* initStructGraphNode(Data* dataNode)
         {
             /*Dynamically allocating memory for GraphNode type structure, checking for memory allocation
@@ -189,7 +189,7 @@ class Graph{
                         /*Inserting neighbor node into adjacency list of current node and vice-versa*/
                         AdjNeigh* temp=initAdjNeigh(neighNode); if(!temp) return false;
                         temp->next=GN[iter]->adj; GN[iter]->adj=temp;
-                        AdjNeigh* reverse = initAdjNeigh(GN[iter]); if(!reverse) return false;
+                        AdjNeigh* reverse=initAdjNeigh(GN[iter]); if(!reverse) return false;
                         reverse->next=neighNode->adj; neighNode->adj=reverse;
                     }
                 }
@@ -199,7 +199,7 @@ class Graph{
             return true;
         }
 
-        /*Function to print a particular data type passed as argument to this function*/
+        /*Member function of class: to print a particular data type passed as argument to this function*/
         void printDT(Data* dN)
         {
             /*Checking which data type we need to print using the switch case statement*/
@@ -212,7 +212,7 @@ class Graph{
             }
         }
 
-        /*Function to print the nodes of graph along with their neighbor nodes*/
+        /*Member function of class: to print the nodes of graph along with their neighbor nodes*/
         void printGraph(graphNode** startNode)
         {
             /*Iterating each node of the given graph and for each node we are going
@@ -230,7 +230,7 @@ class Graph{
             }cout<<endl;
         }
 
-        /*Member function of class: /*Function to print the breadth first search traversal of the given graph*/
+        /*Member function of class: to print the breadth first search traversal of the given graph*/
         void bfs(graphNode** start)
         {
             /*Declaring a map to store the status of the nodes of the graph: i.e.
@@ -258,10 +258,10 @@ class Graph{
                         {
                             /*Checking whether the current neighbor node is already visited or not, if not then pushing
                             into the queue else we are going to skip the current node, since it is already visited*/
-                            if(!visited[(start[iter]->dt)->val])
+                            if(!visited[((ptr->vertex)->dt)->val])
                             {
                                 /*Pushing the unvisited node into queue and marking the current neighbor node visited*/
-                                que.push((ptr->vertex)); visited[(start[iter]->dt)->val]=true;
+                                que.push((ptr->vertex)); visited[((ptr->vertex)->dt)->val]=true;
                             }
                             ptr=ptr->next; 
                         }

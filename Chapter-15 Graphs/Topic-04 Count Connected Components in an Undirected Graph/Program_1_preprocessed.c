@@ -2271,6 +2271,7 @@ unsigned int countConnected(graphNode** start)
     GenericQueue* que=(GenericQueue*)malloc(sizeof(GenericQueue)); queueInit(que, sizeof(graphNode*));
     for(long long unsigned int iter=0; iter<capacity; iter++)
     {
+
         void* ot; map_get(visited, (((start[iter])->dt)->val), (((start[iter])->dt)->sizeOfVal), &ot);
         if(!(*((sui*)(ot))))
         {

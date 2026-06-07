@@ -1886,10 +1886,7 @@ _ZN5Graph3bfsEPPNS_9GraphNodeE:
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	jmp	.L110
 .L112:
-	movq	-200(%rbp), %rax
-	leaq	0(,%rax,8), %rdx
-	movq	-224(%rbp), %rax
-	addq	%rdx, %rax
+	movq	-192(%rbp), %rax
 	movq	(%rax), %rax
 	movq	(%rax), %rax
 	movq	%rax, %rdx
@@ -1906,10 +1903,7 @@ _ZN5Graph3bfsEPPNS_9GraphNodeE:
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
 	call	_ZNSt5queueIPN5Graph9GraphNodeESt5dequeIS2_SaIS2_EEE4pushERKS2_
-	movq	-200(%rbp), %rax
-	leaq	0(,%rax,8), %rdx
-	movq	-224(%rbp), %rax
-	addq	%rdx, %rax
+	movq	-192(%rbp), %rax
 	movq	(%rax), %rax
 	movq	(%rax), %rax
 	movq	%rax, %rdx

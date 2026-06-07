@@ -2193,7 +2193,7 @@ short unsigned int createGraph(enum dataType type)
 
                 AdjNeigh* temp=initAdjNeigh(neighNode); if(!temp) return 0;
                 temp->next=GN[iter]->adj; GN[iter]->adj=temp;
-                AdjNeigh* reverse = initAdjNeigh(GN[iter]); if(!reverse) return 0;
+                AdjNeigh* reverse=initAdjNeigh(GN[iter]); if(!reverse) return 0;
                 reverse->next=neighNode->adj; neighNode->adj=reverse;
             }
         }
